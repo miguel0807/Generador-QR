@@ -1,0 +1,151 @@
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.vbprojAssemblyReference.cache
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Cargar.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\zxing.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Generar.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Volumen.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Modulo_de_reimpresion.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.exe.config
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.FormPrincipal.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Domain.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\DataAccess.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Domain.pdb
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Domain.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\DataAccess.pdb
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\DataAccess.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Login.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Common.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Common.pdb
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\Common.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Verificador.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\malvarado\source\repos\Proyecto\Proyecto\obj\Debug\Proyecto.Presentacion.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.vbprojAssemblyReference.cache
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Cargar.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Login.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.FormPrincipal.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Generar.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Modulo_de_reimpresion.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Presentacion.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Verificador.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Volumen.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.exe.config
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Common.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Domain.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\zxing.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\DataAccess.dll
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Domain.pdb
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Domain.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Common.pdb
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\Common.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\DataAccess.pdb
+C:\Users\malvarado\source\repos\Error\Proyecto\bin\Debug\DataAccess.xml
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Error\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.exe.config
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Common.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Domain.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\zxing.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\DataAccess.dll
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Domain.pdb
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Domain.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Common.pdb
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\DataAccess.pdb
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\DataAccess.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.vbprojAssemblyReference.cache
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Cargar.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Configuracion.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Login.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.FormPrincipal.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Generar.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Modulo_de_reimpresion.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Presentacion.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Verificador.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Volumen.resources
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.exe.config
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Common.dll
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\DataAccess.dll
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Domain.dll
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Common.pdb
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\DataAccess.pdb
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\DataAccess.xml
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Domain.pdb
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\Domain.xml
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.vbprojAssemblyReference.cache
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Cargar.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Configuracion.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Form1.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Login.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.FormPrincipal.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Generar.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Modulo_de_reimpresion.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Resources.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Presentacion.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Verificador.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.Volumen.resources
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.vbproj.GenerateResource.cache
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.exe.manifest
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.application
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Proyecto.vbproj.CopyComplete
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.exe
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.xml
+C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.pdb
+C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Common.xml
