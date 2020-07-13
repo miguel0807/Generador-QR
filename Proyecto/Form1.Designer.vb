@@ -67,6 +67,13 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel8.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -513,7 +520,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(576, 113)
+        Me.Button1.Location = New System.Drawing.Point(1045, 28)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 58)
         Me.Button1.TabIndex = 104
@@ -522,18 +529,85 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(466, 197)
+        Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Location = New System.Drawing.Point(506, 174)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 82)
+        Me.Button2.Size = New System.Drawing.Size(121, 82)
         Me.Button2.TabIndex = 105
-        Me.Button2.Text = "Conexion"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Text = "Probar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(67, 174)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(118, 17)
+        Me.Label3.TabIndex = 106
+        Me.Label3.Text = "Total de licencias"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(67, 113)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(63, 17)
+        Me.Label10.TabIndex = 107
+        Me.Label10.Text = "Volumen"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(208, 169)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox1.TabIndex = 108
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(208, 113)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox2.TabIndex = 109
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(208, 236)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox8.TabIndex = 110
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(208, 328)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox9.TabIndex = 112
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(67, 333)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(44, 17)
+        Me.Label12.TabIndex = 111
+        Me.Label12.Text = "#Caja"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1343, 707)
+        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel8)
@@ -557,7 +631,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label11)
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.Name = "Form1"
-        Me.Opacity = 0.5R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
@@ -623,4 +696,11 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label12 As Label
 End Class

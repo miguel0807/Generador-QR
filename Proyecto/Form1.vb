@@ -42,12 +42,20 @@ Public Class Form1
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        If cn.State = ConnectionState.Open Then
-            MsgBox("Conexion exitosa")
+        Dim TotalLicencias As Integer
+        Dim Volumen As Integer = 6
+        Dim resultado As Double
+        Dim caja As Integer
+        TotalLicencias = TextBox1.Text
 
-        End If
+        resultado = TotalLicencias / Volumen
 
+        caja = Math.Ceiling(resultado)
+        TextBox9.Text = caja
 
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class
