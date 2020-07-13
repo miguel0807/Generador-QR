@@ -11,8 +11,6 @@ Public Class Generar
 
 
 
-
-
     'Se declara variable cantidad de licencias
 
 
@@ -26,9 +24,6 @@ Public Class Generar
     End Sub
 
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-
-
-
 
 #Region "Impresion"
         Dim LAPIZ As New SolidBrush(TextBox3.ForeColor)
@@ -64,14 +59,7 @@ Public Class Generar
 
 #End Region
 
-
     End Sub
-
-
-
-
-
-
 
     Private Sub Generar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -217,17 +205,21 @@ Public Class Generar
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+#Region "Boton Generar"
         Try
             PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
             Dim licenciarestante As Integer = TextBox4.Text
             Dim cantidadlicencias As Integer = TextBox5.Text
+
+
+#Region "Condicional para solicitar licencias"
             'Condicional para verificar si hay licencias en tabla Temporal
             If licenciarestante <= 0 Or licenciarestante < cantidadlicencias Then
                 MsgBox("No hay licencias, favor cargar")
                 Exit Sub
             End If
-
-
+#End Region
+#Region "Configuracion Impresora"
             'Configuracion Impresora
             PrintDocument1.PrinterSettings = PrintDialog1.PrinterSettings
             PrintDialog1.PrinterSettings.PrinterName = impresora
@@ -244,7 +236,7 @@ Public Class Generar
             ' PrintDocument1.DefaultPageSettings.Margins =
             PrintDialog1.PrinterSettings.ToPage = 0
             'Configuracion Impresora
-
+#End Region
 
             u = TextBox5.Text
 
@@ -262,7 +254,7 @@ Public Class Generar
 
             For f = 1 To u
 
-
+#Region "Traer datos de temporal a texbox"
                 'Mover datos
                 'En el parentesis entre & & se coloca cual valor se usara para la busqueda
                 ' Dim adaptador As New SqlDataAdapter("select*from Temporal where Numero=" & "3961" & "", cn)
@@ -280,9 +272,9 @@ Public Class Generar
 
                 cn.Close()
 
-
-
-
+#End Region
+#Region "Condicionales por Volumen"
+#Region "125ml"
                 If VolumenDatos.Text = "125 ml" Then
 
                     PrintDocument1.Print()
@@ -292,7 +284,8 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+#End Region
+#Region "250 ml"
                 ElseIf VolumenDatos.Text = "250 ml" Then
                     PrintDocument1.Print()
                     cn.Open()
@@ -301,7 +294,8 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+#End Region
+#Region "500 ml"
                 ElseIf VolumenDatos.Text = "500 ml" Then
                     PrintDocument1.Print()
                     cn.Open()
@@ -310,13 +304,11 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+#End Region
+#Region "1 litro"
                 ElseIf VolumenDatos.Text = "1 litro" Then
 
-
-
                     PrintDocument1.Print()
-
                     cn.Open()
                     'Resta Conteo
                     Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
@@ -324,7 +316,8 @@ Public Class Generar
                     cn.Close()
                     'Resta Conteo
 
-
+#End Region
+#Region "4 litros"
                 ElseIf VolumenDatos.Text = "4 litros" Then
                     PrintDocument1.Print()
 
@@ -335,7 +328,8 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+#End Region
+#Region "5 Galones"
                 ElseIf VolumenDatos.Text = "19 litros (5 Galones)" Then
                     PrintDocument1.Print()
                     PrintDocument1.Print()
@@ -347,14 +341,14 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+#End Region
+#Region "209 litros(55 Galones)"
                 ElseIf VolumenDatos.Text = "209 litros (55 Galones)" Then
                     PrintDocument1.Print()
                     PrintDocument1.Print()
                     PrintDocument1.Print()
 
                     'Resta el conteo de Ribbon
-
                     cn.Open()
                     'Resta Conteo
                     Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 3", cn)
@@ -362,6 +356,8 @@ Public Class Generar
                     cn.Close()
                     'Resta Conteo
 
+#End Region
+#Region "1042 litros (275 Galones)"
                 ElseIf VolumenDatos.Text = "1042 litros (275 Galones)" Then
                     PrintDocument1.Print()
                     PrintDocument1.Print()
@@ -375,25 +371,19 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
                 End If
+#End Region
 
 
-
-
+#End Region
+#Region "Colocacion de fecha cuando se genera la licencia"
                 'Coloca fecha
                 FechaDatos.Text = DateTime.Now
                 Dim fechacreacion As Date
                 fechacreacion = FechaDatos.Text
                 FechaDatos.Text = Format(fechacreacion, "yyyy/MM/dd HH:mm:ss")
-
-
-
-
-
-
-
-
+#End Region
+#Region "Guardado de QR impreso en BaseDatosOficial"
 
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
                 Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "')", cn)
@@ -402,6 +392,8 @@ Public Class Generar
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
                 cn.Close()
 
+#End Region
+#Region "Eliminacion de QR impreso en TEMPORAL"
                 'Eliminar primera fila de la tabla 
                 Try
                     cn.Open()
@@ -413,9 +405,10 @@ Public Class Generar
                 'Eliminar primera fila de la tabla 
 
                 cn.Close()
-
+#End Region
+#Region "Actualizacion de Conteo de licencias en vivo"
                 cn.Open()
-                'Actualiza cantidad de licencias temporales
+                'Actualizar cantidad de licencias temporales
                 Dim count As Integer
                 Dim Query As String
                 Query = ("select COUNT (Numero) from Temporal")
@@ -424,7 +417,7 @@ Public Class Generar
                 TextBox4.Text = count
                 'Actualiza cantidad de licencias temporales
                 cn.Close()
-
+#End Region
 #Region "Modulo Carga Barra"
 
                 ProgressBar1.Maximum = u
@@ -448,7 +441,7 @@ Public Class Generar
 
 
 
-
+#Region "Condicional cuando se acaban las etiquetas"
             cn.Open()
             'Borra volumen cuando no hay etiquetas
             If TextBox4.Text = 0 Then
@@ -458,12 +451,16 @@ Public Class Generar
                 'Eliminar tabla
                 cn.Close()
 
+
+
                 cn.Open()
                 'Eliminar volumen y coloca  N/A
                 Dim registrar As New SqlCommand("insert into Datos values (" & "1" & ",'" & "N/A" & "')", cn)
                 registrar.ExecuteNonQuery()
                 'Eliminar volumen y coloca  N/A
                 cn.Close()
+
+
                 cn.Open()
                 'Actualiza textbox Volumen
                 Dim textboxvolumen As New SqlDataAdapter("select*from Datos", cn)
@@ -475,9 +472,12 @@ Public Class Generar
 
 
             End If
+
             'Borra volumen cuando no hay etiquetas
+#End Region
 
-
+#Region "Actualizacion de Datos"
+#Region "Conteo licencias temporales"
             'Actualiza conteo de licencias temporales
             Dim count1 As Integer
             Dim Query1 As String
@@ -489,7 +489,9 @@ Public Class Generar
             cn.Close()
             'Actualiza conteo de licencias temporales
             cn.Close()
+#End Region
 
+#Region "Lote y Numero de parte"
             'Actualiza lote y numero de parte
             If count1 <= 0 Then
                 ParteDatos.Text = "N/A"
@@ -505,11 +507,9 @@ Public Class Generar
                 LoteDatos.Text = vb.Mid(Cadena2, 23, 8)
             End If
             'Actualiza lote y numero de parte
+#End Region
 
-
-
-
-
+#Region "Conteo de Ribbon"
             'Actualiza Conteo de Ribbon
             Dim conteo2 As New SqlDataAdapter("select*from Conteo", cn)
             Dim dsconteo2 As New DataSet
@@ -518,7 +518,8 @@ Public Class Generar
             'Actualiza Conteo de Ribbon
 
             cn.Close()
-
+#End Region
+#Region "Conteo de ribbon 2"
             cn.Open()
             'Actualiza Conteo de Ribbon
             Dim conteo3 As New SqlDataAdapter("select*from Conteo", cn)
@@ -528,25 +529,17 @@ Public Class Generar
             'Actualiza Conteo de Ribbon
 
             cn.Close()
+#End Region
+
+#End Region
 
             MsgBox("Licencias generadas con exito")
-
-
 
 
         Catch ex As Exception
             MsgBox(vbCrLf & ex.Message)
         End Try
-
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Ribbon_Click(sender As Object, e As EventArgs) Handles Ribbon.Click
-
+#End Region
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
