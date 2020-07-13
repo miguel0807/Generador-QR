@@ -207,10 +207,16 @@ Public Class Generar
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 #Region "Boton Generar"
         Try
+#Region "Declaracion de variables y actualizacion ProgressBar1"
             PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
             Dim licenciarestante As Integer = TextBox4.Text
             Dim cantidadlicencias As Integer = TextBox5.Text
 
+            u = TextBox5.Text
+            conectar()
+            ProgressBar1.Refresh()
+            ProgressBar1.Value = 0
+#End Region
 
 #Region "Condicional para solicitar licencias"
             'Condicional para verificar si hay licencias en tabla Temporal
@@ -219,6 +225,7 @@ Public Class Generar
                 Exit Sub
             End If
 #End Region
+
 #Region "Configuracion Impresora"
             'Configuracion Impresora
             PrintDocument1.PrinterSettings = PrintDialog1.PrinterSettings
@@ -237,18 +244,6 @@ Public Class Generar
             PrintDialog1.PrinterSettings.ToPage = 0
             'Configuracion Impresora
 #End Region
-
-            u = TextBox5.Text
-
-
-            conectar()
-
-
-
-            ProgressBar1.Refresh()
-            ProgressBar1.Value = 0
-
-
 
 #Region "Bucle"
 
@@ -440,7 +435,6 @@ Public Class Generar
 #End Region
 
 
-
 #Region "Condicional cuando se acaban las etiquetas"
             cn.Open()
             'Borra volumen cuando no hay etiquetas
@@ -475,7 +469,6 @@ Public Class Generar
 
             'Borra volumen cuando no hay etiquetas
 #End Region
-
 #Region "Actualizacion de Datos"
 #Region "Conteo licencias temporales"
             'Actualiza conteo de licencias temporales
