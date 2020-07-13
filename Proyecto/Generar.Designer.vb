@@ -70,6 +70,14 @@ Partial Class Generar
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Porcentaje = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -78,6 +86,8 @@ Partial Class Generar
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label5
@@ -124,7 +134,7 @@ Partial Class Generar
         Me.TextBox3.Location = New System.Drawing.Point(320, -4)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(19, 12)
+        Me.TextBox3.Size = New System.Drawing.Size(248, 12)
         Me.TextBox3.TabIndex = 41
         Me.TextBox3.Visible = False
         '
@@ -170,7 +180,7 @@ Partial Class Generar
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Location = New System.Drawing.Point(345, -4)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(171, 22)
+        Me.TextBox6.Size = New System.Drawing.Size(400, 22)
         Me.TextBox6.TabIndex = 48
         Me.TextBox6.Visible = False
         '
@@ -178,7 +188,7 @@ Partial Class Generar
         '
         Me.VolumenDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.VolumenDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumenDatos.Location = New System.Drawing.Point(1085, 246)
+        Me.VolumenDatos.Location = New System.Drawing.Point(1314, 246)
         Me.VolumenDatos.Name = "VolumenDatos"
         Me.VolumenDatos.Size = New System.Drawing.Size(519, 30)
         Me.VolumenDatos.TabIndex = 51
@@ -189,7 +199,7 @@ Partial Class Generar
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(791, 241)
+        Me.Label6.Location = New System.Drawing.Point(1020, 241)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(120, 29)
         Me.Label6.TabIndex = 54
@@ -200,7 +210,7 @@ Partial Class Generar
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(791, 205)
+        Me.Label7.Location = New System.Drawing.Point(1020, 205)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(210, 29)
         Me.Label7.TabIndex = 53
@@ -211,7 +221,7 @@ Partial Class Generar
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(791, 160)
+        Me.Label8.Location = New System.Drawing.Point(1020, 160)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(195, 29)
         Me.Label8.TabIndex = 52
@@ -221,7 +231,7 @@ Partial Class Generar
         '
         Me.LoteDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LoteDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoteDatos.Location = New System.Drawing.Point(1085, 160)
+        Me.LoteDatos.Location = New System.Drawing.Point(1314, 160)
         Me.LoteDatos.Name = "LoteDatos"
         Me.LoteDatos.ReadOnly = True
         Me.LoteDatos.Size = New System.Drawing.Size(519, 30)
@@ -232,7 +242,7 @@ Partial Class Generar
         '
         Me.ParteDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ParteDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ParteDatos.Location = New System.Drawing.Point(1085, 204)
+        Me.ParteDatos.Location = New System.Drawing.Point(1314, 204)
         Me.ParteDatos.Name = "ParteDatos"
         Me.ParteDatos.ReadOnly = True
         Me.ParteDatos.Size = New System.Drawing.Size(519, 30)
@@ -355,7 +365,7 @@ Partial Class Generar
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(514, 513)
+        Me.Button1.Location = New System.Drawing.Point(685, 489)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(409, 98)
         Me.Button1.TabIndex = 68
@@ -368,7 +378,7 @@ Partial Class Generar
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.TextBox5)
-        Me.Panel3.Location = New System.Drawing.Point(10, 475)
+        Me.Panel3.Location = New System.Drawing.Point(181, 451)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(466, 178)
         Me.Panel3.TabIndex = 69
@@ -379,7 +389,7 @@ Partial Class Generar
         Me.Panel4.Controls.Add(Me.EtiquetaDatos)
         Me.Panel4.Controls.Add(Me.PictureBox1)
         Me.Panel4.Controls.Add(Me.LicenciaDatos)
-        Me.Panel4.Location = New System.Drawing.Point(1103, 513)
+        Me.Panel4.Location = New System.Drawing.Point(1209, 531)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(547, 421)
         Me.Panel4.TabIndex = 70
@@ -396,6 +406,7 @@ Partial Class Generar
         '
         Me.Panel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.Panel8)
         Me.Panel5.Controls.Add(Me.Button2)
         Me.Panel5.Controls.Add(Me.Label9)
         Me.Panel5.Controls.Add(Me.Ribbon)
@@ -464,7 +475,7 @@ Partial Class Generar
         '
         Me.OrdenDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OrdenDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OrdenDatos.Location = New System.Drawing.Point(1085, 85)
+        Me.OrdenDatos.Location = New System.Drawing.Point(1314, 85)
         Me.OrdenDatos.Name = "OrdenDatos"
         Me.OrdenDatos.ReadOnly = True
         Me.OrdenDatos.Size = New System.Drawing.Size(522, 30)
@@ -475,7 +486,7 @@ Partial Class Generar
         '
         Me.DescripcionDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DescripcionDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionDatos.Location = New System.Drawing.Point(1085, 124)
+        Me.DescripcionDatos.Location = New System.Drawing.Point(1314, 124)
         Me.DescripcionDatos.Name = "DescripcionDatos"
         Me.DescripcionDatos.ReadOnly = True
         Me.DescripcionDatos.Size = New System.Drawing.Size(519, 30)
@@ -487,7 +498,7 @@ Partial Class Generar
         Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(791, 124)
+        Me.Label11.Location = New System.Drawing.Point(1020, 124)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(157, 29)
         Me.Label11.TabIndex = 75
@@ -498,7 +509,7 @@ Partial Class Generar
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(791, 87)
+        Me.Label12.Location = New System.Drawing.Point(1020, 87)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(265, 29)
         Me.Label12.TabIndex = 74
@@ -511,7 +522,7 @@ Partial Class Generar
         Me.Panel7.Controls.Add(Me.ProgressBar1)
         Me.Panel7.Controls.Add(Me.Porcentaje)
         Me.Panel7.Controls.Add(Me.Label10)
-        Me.Panel7.Location = New System.Drawing.Point(1, 766)
+        Me.Panel7.Location = New System.Drawing.Point(47, 635)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(991, 125)
         Me.Panel7.TabIndex = 80
@@ -547,12 +558,118 @@ Partial Class Generar
         Me.Label10.Text = "Finalizado"
         Me.Label10.Visible = False
         '
+        'Panel8
+        '
+        Me.Panel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel8.Controls.Add(Me.Button3)
+        Me.Panel8.Controls.Add(Me.Label3)
+        Me.Panel8.Controls.Add(Me.Label13)
+        Me.Panel8.Location = New System.Drawing.Point(-1, -1)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(363, 55)
+        Me.Panel8.TabIndex = 72
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(285, 13)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 63
+        Me.Button3.Text = "Reiniciar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(3, 13)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 29)
+        Me.Label3.TabIndex = 62
+        Me.Label3.Text = "Ribbon:"
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = True
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(142, 13)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(67, 26)
+        Me.Label13.TabIndex = 60
+        Me.Label13.Tag = ""
+        Me.Label13.Text = "#1600"
+        '
+        'Panel9
+        '
+        Me.Panel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel9.Controls.Add(Me.Label16)
+        Me.Panel9.Controls.Add(Me.Label14)
+        Me.Panel9.Controls.Add(Me.Label15)
+        Me.Panel9.Location = New System.Drawing.Point(1, 836)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(363, 55)
+        Me.Panel9.TabIndex = 73
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(3, 13)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(96, 29)
+        Me.Label14.TabIndex = 62
+        Me.Label14.Text = "#Cajas:"
+        '
+        'Label15
+        '
+        Me.Label15.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label15.AutoSize = True
+        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(318, 13)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(23, 26)
+        Me.Label15.TabIndex = 60
+        Me.Label15.Tag = ""
+        Me.Label15.Text = "0"
+        Me.Label15.Visible = False
+        '
+        'Label16
+        '
+        Me.Label16.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label16.AutoSize = True
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label16.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(142, 16)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(23, 26)
+        Me.Label16.TabIndex = 63
+        Me.Label16.Tag = ""
+        Me.Label16.Text = "0"
+        '
         'Generar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1680, 1015)
+        Me.ClientSize = New System.Drawing.Size(1909, 1015)
+        Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.OrdenDatos)
         Me.Controls.Add(Me.DescripcionDatos)
@@ -595,6 +712,10 @@ Partial Class Generar
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -646,4 +767,12 @@ Partial Class Generar
     Friend WithEvents Label10 As Label
     Friend WithEvents Porcentaje As Label
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
 End Class

@@ -8,6 +8,7 @@ Public Class Generar
     Dim u As Long
     Dim f As Long
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
+    Dim cantidadCajas As Integer
 
 
 
@@ -151,6 +152,7 @@ Public Class Generar
         If ParteDatos.Text = "N/A" And LoteDatos.Text = "N/A" Then
             DescripcionDatos.Text = "N/A"
             OrdenDatos.Text = "N/A"
+            Label16.Text = "N/A"
         Else
 
             conectar()
@@ -164,9 +166,14 @@ Public Class Generar
 
                 DescripcionDatos.Text = ds1.Tables("datos").Rows(0).Item(3).ToString
                 OrdenDatos.Text = ds1.Tables("datos").Rows(0).Item(1).ToString 'Orden de produccion
+                Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
+                cantidadCajas = Label15.Text
+                Label16.Text = cantidadCajas
+
             End If
             desconectar()
         End If
+
 #End Region
 
     End Sub
