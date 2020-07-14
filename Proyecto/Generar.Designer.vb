@@ -640,7 +640,7 @@ Partial Class Generar
         Me.Label15.AutoSize = True
         Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(318, 13)
+        Me.Label15.Location = New System.Drawing.Point(179, 18)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(23, 26)
         Me.Label15.TabIndex = 60

@@ -60,6 +60,8 @@ Partial Class Verificador
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.CircularProgressBar2 = New CircularProgressBar.CircularProgressBar()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -79,8 +81,6 @@ Partial Class Verificador
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -105,9 +105,9 @@ Partial Class Verificador
         'Licencia
         '
         Me.Licencia.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Licencia.Location = New System.Drawing.Point(94, 115)
+        Me.Licencia.Location = New System.Drawing.Point(21, 195)
         Me.Licencia.Name = "Licencia"
-        Me.Licencia.Size = New System.Drawing.Size(10, 22)
+        Me.Licencia.Size = New System.Drawing.Size(172, 22)
         Me.Licencia.TabIndex = 3
         Me.Licencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -547,6 +547,28 @@ Partial Class Verificador
         Me.Panel6.Size = New System.Drawing.Size(1368, 275)
         Me.Panel6.TabIndex = 115
         '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(2, 30)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(159, 21)
+        Me.RadioButton2.TabIndex = 124
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Cargar Ultima Orden"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(2, 3)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(116, 21)
+        Me.RadioButton1.TabIndex = 123
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Cargar Orden"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'CircularProgressBar2
         '
         Me.CircularProgressBar2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner
@@ -697,7 +719,7 @@ Partial Class Verificador
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(21, 95)
+        Me.Button7.Location = New System.Drawing.Point(21, 48)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(157, 58)
         Me.Button7.TabIndex = 117
@@ -784,28 +806,6 @@ Partial Class Verificador
         '
         'Timer2
         '
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(2, 3)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(116, 21)
-        Me.RadioButton1.TabIndex = 123
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Cargar Orden"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(2, 30)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(159, 21)
-        Me.RadioButton2.TabIndex = 124
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Cargar Ultima Orden"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'Verificador
         '
