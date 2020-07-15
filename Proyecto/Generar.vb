@@ -9,6 +9,7 @@ Public Class Generar
     Dim f As Long
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
     Dim cantidadCajas As Integer
+    Dim cantidadbotella As Integer
 
 
 
@@ -169,7 +170,8 @@ Public Class Generar
                 Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
                 cantidadCajas = Label15.Text
                 Label16.Text = cantidadCajas
-
+                cantidadbotella = cantidadCajas * 6
+                MsgBox(cantidadbotella)
             End If
             desconectar()
         End If
@@ -388,7 +390,7 @@ Public Class Generar
 #Region "Guardado de QR impreso en BaseDatosOficial"
 
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "')", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & 2 & ")", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -413,7 +415,7 @@ Public Class Generar
                 'Actualizar cantidad de licencias temporales
                 Dim count As Integer
                 Dim Query As String
-                Query = ("select COUNT (Numero) from Temporal")
+                Query = ("Select COUNT (Numero) from Temporal")
                 Dim cmd As New SqlCommand(Query, cn)
                 count = cmd.ExecuteScalar
                 TextBox4.Text = count

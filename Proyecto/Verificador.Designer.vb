@@ -105,9 +105,9 @@ Partial Class Verificador
         'Licencia
         '
         Me.Licencia.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Licencia.Location = New System.Drawing.Point(21, 195)
+        Me.Licencia.Location = New System.Drawing.Point(94, 115)
         Me.Licencia.Name = "Licencia"
-        Me.Licencia.Size = New System.Drawing.Size(172, 22)
+        Me.Licencia.Size = New System.Drawing.Size(10, 22)
         Me.Licencia.TabIndex = 3
         Me.Licencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -719,7 +719,7 @@ Partial Class Verificador
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(21, 48)
+        Me.Button7.Location = New System.Drawing.Point(21, 95)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(157, 58)
         Me.Button7.TabIndex = 117

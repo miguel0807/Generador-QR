@@ -54,6 +54,10 @@ Partial Class Generar
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
@@ -70,23 +74,19 @@ Partial Class Generar
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Porcentaje = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -415,6 +415,55 @@ Partial Class Generar
         Me.Panel5.Size = New System.Drawing.Size(363, 55)
         Me.Panel5.TabIndex = 71
         '
+        'Panel8
+        '
+        Me.Panel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel8.Controls.Add(Me.Button3)
+        Me.Panel8.Controls.Add(Me.Label3)
+        Me.Panel8.Controls.Add(Me.Label13)
+        Me.Panel8.Location = New System.Drawing.Point(-1, -1)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(363, 55)
+        Me.Panel8.TabIndex = 72
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(285, 13)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 63
+        Me.Button3.Text = "Reiniciar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(3, 13)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 29)
+        Me.Label3.TabIndex = 62
+        Me.Label3.Text = "Ribbon:"
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = True
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(142, 13)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(67, 26)
+        Me.Label13.TabIndex = 60
+        Me.Label13.Tag = ""
+        Me.Label13.Text = "#1600"
+        '
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(1, 264)
@@ -558,55 +607,6 @@ Partial Class Generar
         Me.Label10.Text = "Finalizado"
         Me.Label10.Visible = False
         '
-        'Panel8
-        '
-        Me.Panel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel8.Controls.Add(Me.Button3)
-        Me.Panel8.Controls.Add(Me.Label3)
-        Me.Panel8.Controls.Add(Me.Label13)
-        Me.Panel8.Location = New System.Drawing.Point(-1, -1)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(363, 55)
-        Me.Panel8.TabIndex = 72
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(285, 13)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 63
-        Me.Button3.Text = "Reiniciar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(3, 13)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(104, 29)
-        Me.Label3.TabIndex = 62
-        Me.Label3.Text = "Ribbon:"
-        '
-        'Label13
-        '
-        Me.Label13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label13.AutoSize = True
-        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(142, 13)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(67, 26)
-        Me.Label13.TabIndex = 60
-        Me.Label13.Tag = ""
-        Me.Label13.Text = "#1600"
-        '
         'Panel9
         '
         Me.Panel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -618,6 +618,21 @@ Partial Class Generar
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(363, 55)
         Me.Panel9.TabIndex = 73
+        '
+        'Label16
+        '
+        Me.Label16.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label16.AutoSize = True
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label16.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(142, 16)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(23, 26)
+        Me.Label16.TabIndex = 63
+        Me.Label16.Tag = ""
+        Me.Label16.Text = "0"
         '
         'Label14
         '
@@ -646,22 +661,6 @@ Partial Class Generar
         Me.Label15.TabIndex = 60
         Me.Label15.Tag = ""
         Me.Label15.Text = "0"
-        Me.Label15.Visible = False
-        '
-        'Label16
-        '
-        Me.Label16.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label16.AutoSize = True
-        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label16.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(142, 16)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(23, 26)
-        Me.Label16.TabIndex = 63
-        Me.Label16.Tag = ""
-        Me.Label16.Text = "0"
         '
         'Generar
         '
@@ -707,13 +706,13 @@ Partial Class Generar
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.ResumeLayout(False)
