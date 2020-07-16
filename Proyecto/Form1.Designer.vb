@@ -552,11 +552,11 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(67, 113)
+        Me.Label10.Location = New System.Drawing.Point(215, 105)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(63, 17)
+        Me.Label10.Size = New System.Drawing.Size(50, 17)
         Me.Label10.TabIndex = 107
-        Me.Label10.Text = "Volumen"
+        Me.Label10.Text = "Entero"
         '
         'TextBox1
         '
@@ -567,7 +567,7 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(208, 113)
+        Me.TextBox2.Location = New System.Drawing.Point(323, 105)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(94, 22)
         Me.TextBox2.TabIndex = 109

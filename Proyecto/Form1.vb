@@ -46,12 +46,19 @@ Public Class Form1
         Dim Volumen As Integer = 6
         Dim resultado As Double
         Dim caja As Integer
+
+
         TotalLicencias = TextBox1.Text
 
         resultado = TotalLicencias / Volumen
-
+        TextBox8.Text = resultado
         caja = Math.Ceiling(resultado)
         TextBox9.Text = caja
+        If (TextBox8.Text Mod 1) = 0 Then
+            TextBox2.Text = "Aprobado"
+        Else
+            TextBox2.Text = "NO Aprobado"
+        End If
 
     End Sub
 

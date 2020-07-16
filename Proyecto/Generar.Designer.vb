@@ -488,7 +488,7 @@ Partial Class Generar
         Me.Panel6.Controls.Add(Me.TextBox12)
         Me.Panel6.Location = New System.Drawing.Point(425, 12)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(329, 258)
+        Me.Panel6.Size = New System.Drawing.Size(529, 433)
         Me.Panel6.TabIndex = 73
         Me.Panel6.Visible = False
         '

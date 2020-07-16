@@ -10,6 +10,7 @@ Public Class Generar
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
     Dim cantidadCajas As Integer
     Dim cantidadbotella As Integer
+    Dim caja As Integer
 
 
 
@@ -167,11 +168,8 @@ Public Class Generar
 
                 DescripcionDatos.Text = ds1.Tables("datos").Rows(0).Item(3).ToString
                 OrdenDatos.Text = ds1.Tables("datos").Rows(0).Item(1).ToString 'Orden de produccion
-                Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
-                cantidadCajas = Label15.Text
-                Label16.Text = cantidadCajas
-                cantidadbotella = cantidadCajas * 6
-                MsgBox(cantidadbotella)
+
+
             End If
             desconectar()
         End If
@@ -254,6 +252,22 @@ Public Class Generar
             'Configuracion Impresora
 #End Region
 
+#Region "Configuracion impresora 2"
+            'Configuracion Impresora
+            PrintDocument2.PrinterSettings = PrintDialog2.PrinterSettings
+            PrintDialog2.PrinterSettings.PrinterName = impresora
+            ' PrintDialog2.PrinterSettings.PrinterName = "SATO CG408"
+            ' PrintDialog2.PrinterSettings.PrinterName = "Send To OneNote 2016"
+            PrintDialog2.PrinterSettings.Copies = 1
+            PrintDialog2.PrinterSettings.Collate = False
+            PrintDialog2.PrinterSettings.Duplex = Printing.Duplex.Simplex
+            PrintDialog2.PrinterSettings.FromPage = 0
+            PrintDocument2.DefaultPageSettings.Color = False
+            PrintDocument2.DefaultPageSettings.Landscape = False
+            PrintDialog2.PrinterSettings.ToPage = 0
+            'Configuracion Impresora
+
+#End Region
 #Region "Bucle"
 
             For f = 1 To u
@@ -312,7 +326,60 @@ Public Class Generar
 #Region "1 litro"
                 ElseIf VolumenDatos.Text = "1 litro" Then
 
+
+#Region "Conectarse SAP Y determinar cantidad total de cajas en orden"
+                    conectar()
+
+                    Dim adaptador5 As New SqlDataAdapter("select*from SAP where Batch=" & "'" & LoteDatos.Text & "'" & "" & "And Material=" & ParteDatos.Text & "", cn) 'Funciona con lote y material
+
+                    Dim ds1 As New DataSet
+                    adaptador5.Fill(ds1, "datos")
+                    'El item selecciona de cual columna de la base de datos se conectara y row es la fila
+                    If ds1.Tables("datos").Rows.Count > 0 Then
+
+
+                        Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
+                        cantidadCajas = Label15.Text
+                        Label16.Text = cantidadCajas
+                        cantidadbotella = cantidadCajas * 6
+                    End If
+                    desconectar()
+
+#End Region
+
+
+#Region "Determinar # de caja para etiqueta"
+
+                    Dim TotalLicencias As Integer
+                    Dim Volumen As Integer = 6
+                    Dim resultado As Double
+
+
+                    TotalLicencias = TextBox4.Text
+
+                    resultado = TotalLicencias / Volumen
+
+                    caja = Math.Ceiling(resultado)
+
+
+                    If resultado Mod 1 Then
+
+
+                    Else
+                        TextBox7.Text = "Caja #" & caja
+                        PrintDocument2.Print()
+
+
+
+
+                    End If
+
+
+#End Region
+
                     PrintDocument1.Print()
+
+
                     cn.Open()
                     'Resta Conteo
                     Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
@@ -390,7 +457,7 @@ Public Class Generar
 #Region "Guardado de QR impreso en BaseDatosOficial"
 
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & 2 & ")", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & caja & ")", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -587,7 +654,7 @@ Public Class Generar
 
             'End If
 #End Region
-
+#Region "Configuracion impresora 2"
             'Configuracion Impresora
             PrintDocument2.PrinterSettings = PrintDialog2.PrinterSettings
             PrintDialog2.PrinterSettings.PrinterName = impresora
@@ -602,6 +669,7 @@ Public Class Generar
             PrintDialog2.PrinterSettings.ToPage = 0
             'Configuracion Impresora
 
+#End Region
             If ParteDatos.Text = "N/A" Then
                 MsgBox("No hay licencias cargadas")
             Else
@@ -610,7 +678,6 @@ Public Class Generar
                 PrintDocument2.Print()
                 MsgBox("Información Generada")
             End If
-
 
 
 
