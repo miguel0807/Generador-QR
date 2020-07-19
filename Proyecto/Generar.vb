@@ -348,7 +348,7 @@ Public Class Generar
 #End Region
 
 
-#Region "Determinar # de caja para etiqueta"
+#Region "Determinar # de caja para etiqueta e imprimir # de caja cada 6"
 
                     Dim TotalLicencias As Integer
                     Dim Volumen As Integer = 6
