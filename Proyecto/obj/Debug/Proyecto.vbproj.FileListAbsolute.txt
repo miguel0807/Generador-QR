@@ -149,3 +149,4 @@ C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\D
 C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.xml
 C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.pdb
 C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Common.xml
+C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Verificacion.resources

@@ -191,6 +191,12 @@
     <Compile Include="Presentacion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Verificacion.Designer.vb">
+      <DependentUpon>Verificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Verificador.Designer.vb">
       <DependentUpon>Verificador.vb</DependentUpon>
     </Compile>
@@ -240,6 +246,9 @@
     <EmbeddedResource Include="Presentacion.resx">
       <DependentUpon>Presentacion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Verificacion.resx">
+      <DependentUpon>Verificacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Verificador.resx">
       <DependentUpon>Verificador.vb</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +282,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Verificador.ico" />
     <None Include="Resources\settings_783521.ico" />
     <Content Include="Resources\qr_code_14100.ico" />
     <Content Include="Resources\folder_images_23255.ico" />

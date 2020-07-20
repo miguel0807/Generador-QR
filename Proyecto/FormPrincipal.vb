@@ -275,8 +275,20 @@ Public Class FormPrincipal
 
     End Sub
 
-    Private Sub PanelFormularios_Paint(sender As Object, e As PaintEventArgs) Handles PanelFormularios.Paint
 
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Formulario.Close()
+        AbrirFormEnPanel(Of Verificacion)()
+        My.Application.OpenForms.Cast(Of Form)()
+
+
+
+
+        Button5.BackColor = Color.FromArgb(12, 61, 92)
+        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
     End Sub
 
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load

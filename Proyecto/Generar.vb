@@ -11,6 +11,7 @@ Public Class Generar
     Dim cantidadCajas As Integer
     Dim cantidadbotella As Integer
     Dim caja As Integer
+    Dim sumacaja As Integer
 
 
 
@@ -354,23 +355,19 @@ Public Class Generar
                     Dim Volumen As Integer = 6
                     Dim resultado As Double
 
-
                     TotalLicencias = TextBox4.Text
-
                     resultado = TotalLicencias / Volumen
-
                     caja = Math.Ceiling(resultado)
-
-
+                    sumacaja = caja + 90000
                     If resultado Mod 1 Then
 
-
                     Else
+
+
+
+                        TextBox12.Text = OrdenDatos.Text + sumacaja
                         TextBox7.Text = "Caja #" & caja
                         PrintDocument2.Print()
-
-
-
 
                     End If
 
@@ -456,8 +453,9 @@ Public Class Generar
 #End Region
 #Region "Guardado de QR impreso en BaseDatosOficial"
 
+
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & caja & ")", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & 0 & ")", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -738,11 +736,5 @@ Public Class Generar
         End Try
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
-
-    End Sub
 End Class

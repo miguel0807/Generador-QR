@@ -96,18 +96,20 @@ Partial Class Verificador
         'Orden
         '
         Me.Orden.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Orden.Location = New System.Drawing.Point(93, 102)
+        Me.Orden.Location = New System.Drawing.Point(70, 83)
+        Me.Orden.Margin = New System.Windows.Forms.Padding(2)
         Me.Orden.Name = "Orden"
-        Me.Orden.Size = New System.Drawing.Size(10, 22)
+        Me.Orden.Size = New System.Drawing.Size(8, 19)
         Me.Orden.TabIndex = 0
         Me.Orden.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Licencia
         '
         Me.Licencia.Font = New System.Drawing.Font("Arial", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Licencia.Location = New System.Drawing.Point(94, 115)
+        Me.Licencia.Location = New System.Drawing.Point(70, 93)
+        Me.Licencia.Margin = New System.Windows.Forms.Padding(2)
         Me.Licencia.Name = "Licencia"
-        Me.Licencia.Size = New System.Drawing.Size(10, 22)
+        Me.Licencia.Size = New System.Drawing.Size(8, 19)
         Me.Licencia.TabIndex = 3
         Me.Licencia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -117,10 +119,11 @@ Partial Class Verificador
         Me.OrdenP.BackColor = System.Drawing.Color.White
         Me.OrdenP.Enabled = False
         Me.OrdenP.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OrdenP.Location = New System.Drawing.Point(306, 15)
+        Me.OrdenP.Location = New System.Drawing.Point(230, 12)
+        Me.OrdenP.Margin = New System.Windows.Forms.Padding(2)
         Me.OrdenP.Name = "OrdenP"
         Me.OrdenP.ReadOnly = True
-        Me.OrdenP.Size = New System.Drawing.Size(519, 30)
+        Me.OrdenP.Size = New System.Drawing.Size(390, 26)
         Me.OrdenP.TabIndex = 87
         Me.OrdenP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -130,10 +133,11 @@ Partial Class Verificador
         Me.DescripcionP.BackColor = System.Drawing.Color.White
         Me.DescripcionP.Enabled = False
         Me.DescripcionP.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionP.Location = New System.Drawing.Point(306, 54)
+        Me.DescripcionP.Location = New System.Drawing.Point(230, 44)
+        Me.DescripcionP.Margin = New System.Windows.Forms.Padding(2)
         Me.DescripcionP.Name = "DescripcionP"
         Me.DescripcionP.ReadOnly = True
-        Me.DescripcionP.Size = New System.Drawing.Size(519, 30)
+        Me.DescripcionP.Size = New System.Drawing.Size(390, 26)
         Me.DescripcionP.TabIndex = 86
         Me.DescripcionP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -142,9 +146,10 @@ Partial Class Verificador
         Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(12, 54)
+        Me.Label11.Location = New System.Drawing.Point(9, 44)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(157, 29)
+        Me.Label11.Size = New System.Drawing.Size(129, 22)
         Me.Label11.TabIndex = 85
         Me.Label11.Text = "Descripcion:"
         '
@@ -153,9 +158,10 @@ Partial Class Verificador
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(12, 17)
+        Me.Label12.Location = New System.Drawing.Point(9, 14)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(265, 29)
+        Me.Label12.Size = New System.Drawing.Size(216, 22)
         Me.Label12.TabIndex = 84
         Me.Label12.Text = "Orden de Produccion:"
         '
@@ -165,10 +171,11 @@ Partial Class Verificador
         Me.ParteP.BackColor = System.Drawing.Color.White
         Me.ParteP.Enabled = False
         Me.ParteP.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ParteP.Location = New System.Drawing.Point(306, 134)
+        Me.ParteP.Location = New System.Drawing.Point(230, 109)
+        Me.ParteP.Margin = New System.Windows.Forms.Padding(2)
         Me.ParteP.Name = "ParteP"
         Me.ParteP.ReadOnly = True
-        Me.ParteP.Size = New System.Drawing.Size(519, 30)
+        Me.ParteP.Size = New System.Drawing.Size(390, 26)
         Me.ParteP.TabIndex = 83
         Me.ParteP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -178,10 +185,11 @@ Partial Class Verificador
         Me.LoteP.BackColor = System.Drawing.Color.White
         Me.LoteP.Enabled = False
         Me.LoteP.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoteP.Location = New System.Drawing.Point(306, 90)
+        Me.LoteP.Location = New System.Drawing.Point(230, 73)
+        Me.LoteP.Margin = New System.Windows.Forms.Padding(2)
         Me.LoteP.Name = "LoteP"
         Me.LoteP.ReadOnly = True
-        Me.LoteP.Size = New System.Drawing.Size(519, 30)
+        Me.LoteP.Size = New System.Drawing.Size(390, 26)
         Me.LoteP.TabIndex = 82
         Me.LoteP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -190,9 +198,10 @@ Partial Class Verificador
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 171)
+        Me.Label6.Location = New System.Drawing.Point(9, 139)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(120, 29)
+        Me.Label6.Size = New System.Drawing.Size(98, 22)
         Me.Label6.TabIndex = 81
         Me.Label6.Text = "Volumen:"
         '
@@ -201,9 +210,10 @@ Partial Class Verificador
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 135)
+        Me.Label7.Location = New System.Drawing.Point(9, 110)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(210, 29)
+        Me.Label7.Size = New System.Drawing.Size(171, 22)
         Me.Label7.TabIndex = 80
         Me.Label7.Text = "Numero de parte:"
         '
@@ -212,9 +222,10 @@ Partial Class Verificador
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(12, 90)
+        Me.Label8.Location = New System.Drawing.Point(9, 73)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(195, 29)
+        Me.Label8.Size = New System.Drawing.Size(157, 22)
         Me.Label8.TabIndex = 79
         Me.Label8.Text = "Numero de lote:"
         '
@@ -224,18 +235,20 @@ Partial Class Verificador
         Me.VolumenP.BackColor = System.Drawing.Color.White
         Me.VolumenP.Enabled = False
         Me.VolumenP.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumenP.Location = New System.Drawing.Point(306, 176)
+        Me.VolumenP.Location = New System.Drawing.Point(230, 143)
+        Me.VolumenP.Margin = New System.Windows.Forms.Padding(2)
         Me.VolumenP.Name = "VolumenP"
-        Me.VolumenP.Size = New System.Drawing.Size(519, 30)
+        Me.VolumenP.Size = New System.Drawing.Size(390, 26)
         Me.VolumenP.TabIndex = 78
         Me.VolumenP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold)
-        Me.Button1.Location = New System.Drawing.Point(177, 763)
+        Me.Button1.Location = New System.Drawing.Point(133, 620)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(157, 58)
+        Me.Button1.Size = New System.Drawing.Size(118, 47)
         Me.Button1.TabIndex = 88
         Me.Button1.Text = "Comparar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -246,10 +259,11 @@ Partial Class Verificador
         Me.OrdenL.BackColor = System.Drawing.Color.White
         Me.OrdenL.Enabled = False
         Me.OrdenL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OrdenL.Location = New System.Drawing.Point(298, 16)
+        Me.OrdenL.Location = New System.Drawing.Point(224, 13)
+        Me.OrdenL.Margin = New System.Windows.Forms.Padding(2)
         Me.OrdenL.Name = "OrdenL"
         Me.OrdenL.ReadOnly = True
-        Me.OrdenL.Size = New System.Drawing.Size(519, 30)
+        Me.OrdenL.Size = New System.Drawing.Size(390, 26)
         Me.OrdenL.TabIndex = 99
         Me.OrdenL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -259,10 +273,11 @@ Partial Class Verificador
         Me.DescripcionL.BackColor = System.Drawing.Color.White
         Me.DescripcionL.Enabled = False
         Me.DescripcionL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionL.Location = New System.Drawing.Point(298, 55)
+        Me.DescripcionL.Location = New System.Drawing.Point(224, 45)
+        Me.DescripcionL.Margin = New System.Windows.Forms.Padding(2)
         Me.DescripcionL.Name = "DescripcionL"
         Me.DescripcionL.ReadOnly = True
-        Me.DescripcionL.Size = New System.Drawing.Size(519, 30)
+        Me.DescripcionL.Size = New System.Drawing.Size(390, 26)
         Me.DescripcionL.TabIndex = 98
         Me.DescripcionL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -271,9 +286,10 @@ Partial Class Verificador
         Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(4, 56)
+        Me.Label3.Location = New System.Drawing.Point(3, 46)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(157, 29)
+        Me.Label3.Size = New System.Drawing.Size(129, 22)
         Me.Label3.TabIndex = 97
         Me.Label3.Text = "Descripcion:"
         '
@@ -282,9 +298,10 @@ Partial Class Verificador
         Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(4, 17)
+        Me.Label4.Location = New System.Drawing.Point(3, 14)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(265, 29)
+        Me.Label4.Size = New System.Drawing.Size(216, 22)
         Me.Label4.TabIndex = 96
         Me.Label4.Text = "Orden de Produccion:"
         '
@@ -294,10 +311,11 @@ Partial Class Verificador
         Me.ParteL.BackColor = System.Drawing.Color.White
         Me.ParteL.Enabled = False
         Me.ParteL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ParteL.Location = New System.Drawing.Point(298, 127)
+        Me.ParteL.Location = New System.Drawing.Point(224, 103)
+        Me.ParteL.Margin = New System.Windows.Forms.Padding(2)
         Me.ParteL.Name = "ParteL"
         Me.ParteL.ReadOnly = True
-        Me.ParteL.Size = New System.Drawing.Size(519, 30)
+        Me.ParteL.Size = New System.Drawing.Size(390, 26)
         Me.ParteL.TabIndex = 95
         Me.ParteL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -307,10 +325,11 @@ Partial Class Verificador
         Me.LoteL.BackColor = System.Drawing.Color.White
         Me.LoteL.Enabled = False
         Me.LoteL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoteL.Location = New System.Drawing.Point(298, 91)
+        Me.LoteL.Location = New System.Drawing.Point(224, 74)
+        Me.LoteL.Margin = New System.Windows.Forms.Padding(2)
         Me.LoteL.Name = "LoteL"
         Me.LoteL.ReadOnly = True
-        Me.LoteL.Size = New System.Drawing.Size(519, 30)
+        Me.LoteL.Size = New System.Drawing.Size(390, 26)
         Me.LoteL.TabIndex = 94
         Me.LoteL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -319,9 +338,10 @@ Partial Class Verificador
         Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(4, 164)
+        Me.Label5.Location = New System.Drawing.Point(3, 133)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(120, 29)
+        Me.Label5.Size = New System.Drawing.Size(98, 22)
         Me.Label5.TabIndex = 93
         Me.Label5.Text = "Volumen:"
         '
@@ -330,9 +350,10 @@ Partial Class Verificador
         Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(4, 128)
+        Me.Label9.Location = New System.Drawing.Point(3, 104)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(210, 29)
+        Me.Label9.Size = New System.Drawing.Size(171, 22)
         Me.Label9.TabIndex = 92
         Me.Label9.Text = "Numero de parte:"
         '
@@ -341,9 +362,10 @@ Partial Class Verificador
         Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(4, 92)
+        Me.Label10.Location = New System.Drawing.Point(3, 75)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(195, 29)
+        Me.Label10.Size = New System.Drawing.Size(157, 22)
         Me.Label10.TabIndex = 91
         Me.Label10.Text = "Numero de lote:"
         '
@@ -353,10 +375,11 @@ Partial Class Verificador
         Me.VolumenL.BackColor = System.Drawing.Color.White
         Me.VolumenL.Enabled = False
         Me.VolumenL.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumenL.Location = New System.Drawing.Point(298, 163)
+        Me.VolumenL.Location = New System.Drawing.Point(224, 132)
+        Me.VolumenL.Margin = New System.Windows.Forms.Padding(2)
         Me.VolumenL.Name = "VolumenL"
         Me.VolumenL.ReadOnly = True
-        Me.VolumenL.Size = New System.Drawing.Size(519, 30)
+        Me.VolumenL.Size = New System.Drawing.Size(390, 26)
         Me.VolumenL.TabIndex = 90
         Me.VolumenL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -366,10 +389,11 @@ Partial Class Verificador
         Me.OrdenO.BackColor = System.Drawing.Color.White
         Me.OrdenO.Enabled = False
         Me.OrdenO.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OrdenO.Location = New System.Drawing.Point(297, 12)
+        Me.OrdenO.Location = New System.Drawing.Point(223, 10)
+        Me.OrdenO.Margin = New System.Windows.Forms.Padding(2)
         Me.OrdenO.Name = "OrdenO"
         Me.OrdenO.ReadOnly = True
-        Me.OrdenO.Size = New System.Drawing.Size(519, 30)
+        Me.OrdenO.Size = New System.Drawing.Size(390, 26)
         Me.OrdenO.TabIndex = 109
         Me.OrdenO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -379,10 +403,11 @@ Partial Class Verificador
         Me.DescripcionO.BackColor = System.Drawing.Color.White
         Me.DescripcionO.Enabled = False
         Me.DescripcionO.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescripcionO.Location = New System.Drawing.Point(297, 51)
+        Me.DescripcionO.Location = New System.Drawing.Point(223, 41)
+        Me.DescripcionO.Margin = New System.Windows.Forms.Padding(2)
         Me.DescripcionO.Name = "DescripcionO"
         Me.DescripcionO.ReadOnly = True
-        Me.DescripcionO.Size = New System.Drawing.Size(519, 30)
+        Me.DescripcionO.Size = New System.Drawing.Size(390, 26)
         Me.DescripcionO.TabIndex = 108
         Me.DescripcionO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -391,9 +416,10 @@ Partial Class Verificador
         Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(3, 51)
+        Me.Label13.Location = New System.Drawing.Point(2, 41)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(157, 29)
+        Me.Label13.Size = New System.Drawing.Size(129, 22)
         Me.Label13.TabIndex = 107
         Me.Label13.Text = "Descripcion:"
         '
@@ -402,9 +428,10 @@ Partial Class Verificador
         Me.Label14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(3, 14)
+        Me.Label14.Location = New System.Drawing.Point(2, 11)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(265, 29)
+        Me.Label14.Size = New System.Drawing.Size(216, 22)
         Me.Label14.TabIndex = 106
         Me.Label14.Text = "Orden de Produccion:"
         '
@@ -414,10 +441,11 @@ Partial Class Verificador
         Me.ParteO.BackColor = System.Drawing.Color.White
         Me.ParteO.Enabled = False
         Me.ParteO.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ParteO.Location = New System.Drawing.Point(297, 123)
+        Me.ParteO.Location = New System.Drawing.Point(223, 100)
+        Me.ParteO.Margin = New System.Windows.Forms.Padding(2)
         Me.ParteO.Name = "ParteO"
         Me.ParteO.ReadOnly = True
-        Me.ParteO.Size = New System.Drawing.Size(519, 30)
+        Me.ParteO.Size = New System.Drawing.Size(390, 26)
         Me.ParteO.TabIndex = 105
         Me.ParteO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -427,10 +455,11 @@ Partial Class Verificador
         Me.LoteO.BackColor = System.Drawing.Color.White
         Me.LoteO.Enabled = False
         Me.LoteO.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LoteO.Location = New System.Drawing.Point(297, 87)
+        Me.LoteO.Location = New System.Drawing.Point(223, 71)
+        Me.LoteO.Margin = New System.Windows.Forms.Padding(2)
         Me.LoteO.Name = "LoteO"
         Me.LoteO.ReadOnly = True
-        Me.LoteO.Size = New System.Drawing.Size(519, 30)
+        Me.LoteO.Size = New System.Drawing.Size(390, 26)
         Me.LoteO.TabIndex = 104
         Me.LoteO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -439,9 +468,10 @@ Partial Class Verificador
         Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(3, 160)
+        Me.Label15.Location = New System.Drawing.Point(2, 130)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(120, 29)
+        Me.Label15.Size = New System.Drawing.Size(98, 22)
         Me.Label15.TabIndex = 103
         Me.Label15.Text = "Volumen:"
         '
@@ -450,9 +480,10 @@ Partial Class Verificador
         Me.Label16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(3, 124)
+        Me.Label16.Location = New System.Drawing.Point(2, 101)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(210, 29)
+        Me.Label16.Size = New System.Drawing.Size(171, 22)
         Me.Label16.TabIndex = 102
         Me.Label16.Text = "Numero de parte:"
         '
@@ -461,9 +492,10 @@ Partial Class Verificador
         Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(3, 87)
+        Me.Label17.Location = New System.Drawing.Point(2, 71)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(195, 29)
+        Me.Label17.Size = New System.Drawing.Size(157, 22)
         Me.Label17.TabIndex = 101
         Me.Label17.Text = "Numero de lote:"
         '
@@ -473,10 +505,11 @@ Partial Class Verificador
         Me.VolumenO.BackColor = System.Drawing.Color.White
         Me.VolumenO.Enabled = False
         Me.VolumenO.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumenO.Location = New System.Drawing.Point(297, 159)
+        Me.VolumenO.Location = New System.Drawing.Point(223, 129)
+        Me.VolumenO.Margin = New System.Windows.Forms.Padding(2)
         Me.VolumenO.Name = "VolumenO"
         Me.VolumenO.ReadOnly = True
-        Me.VolumenO.Size = New System.Drawing.Size(519, 30)
+        Me.VolumenO.Size = New System.Drawing.Size(390, 26)
         Me.VolumenO.TabIndex = 100
         Me.VolumenO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -494,9 +527,10 @@ Partial Class Verificador
         Me.Panel1.Controls.Add(Me.Label16)
         Me.Panel1.Controls.Add(Me.Label17)
         Me.Panel1.Controls.Add(Me.VolumenO)
-        Me.Panel1.Location = New System.Drawing.Point(519, 30)
+        Me.Panel1.Location = New System.Drawing.Point(389, 24)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(833, 204)
+        Me.Panel1.Size = New System.Drawing.Size(625, 166)
         Me.Panel1.TabIndex = 110
         '
         'Panel2
@@ -513,9 +547,10 @@ Partial Class Verificador
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.VolumenL)
-        Me.Panel2.Location = New System.Drawing.Point(519, 31)
+        Me.Panel2.Location = New System.Drawing.Point(389, 25)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(833, 204)
+        Me.Panel2.Size = New System.Drawing.Size(625, 166)
         Me.Panel2.TabIndex = 111
         '
         'Panel4
@@ -523,9 +558,10 @@ Partial Class Verificador
         Me.Panel4.BackColor = System.Drawing.SystemColors.Control
         Me.Panel4.Controls.Add(Me.Panel6)
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(58, 30)
+        Me.Panel4.Location = New System.Drawing.Point(44, 24)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1368, 541)
+        Me.Panel4.Size = New System.Drawing.Size(1026, 440)
         Me.Panel4.TabIndex = 114
         '
         'Panel6
@@ -543,16 +579,18 @@ Partial Class Verificador
         Me.Panel6.Controls.Add(Me.Orden)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1368, 275)
+        Me.Panel6.Size = New System.Drawing.Size(1026, 224)
         Me.Panel6.TabIndex = 115
         '
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(2, 30)
+        Me.RadioButton2.Location = New System.Drawing.Point(2, 24)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(159, 21)
+        Me.RadioButton2.Size = New System.Drawing.Size(120, 17)
         Me.RadioButton2.TabIndex = 124
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Cargar Ultima Orden"
@@ -561,9 +599,10 @@ Partial Class Verificador
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(2, 3)
+        Me.RadioButton1.Location = New System.Drawing.Point(2, 2)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(116, 21)
+        Me.RadioButton1.Size = New System.Drawing.Size(88, 17)
         Me.RadioButton1.TabIndex = 123
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Cargar Orden"
@@ -579,7 +618,8 @@ Partial Class Verificador
         Me.CircularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar2.InnerMargin = 2
         Me.CircularProgressBar2.InnerWidth = -1
-        Me.CircularProgressBar2.Location = New System.Drawing.Point(184, 10)
+        Me.CircularProgressBar2.Location = New System.Drawing.Point(138, 8)
+        Me.CircularProgressBar2.Margin = New System.Windows.Forms.Padding(2)
         Me.CircularProgressBar2.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar2.Name = "CircularProgressBar2"
         Me.CircularProgressBar2.OuterColor = System.Drawing.Color.Gray
@@ -588,7 +628,7 @@ Partial Class Verificador
         Me.CircularProgressBar2.ProgressColor = System.Drawing.Color.Navy
         Me.CircularProgressBar2.ProgressWidth = 25
         Me.CircularProgressBar2.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 36.0!)
-        Me.CircularProgressBar2.Size = New System.Drawing.Size(329, 258)
+        Me.CircularProgressBar2.Size = New System.Drawing.Size(247, 210)
         Me.CircularProgressBar2.StartAngle = 270
         Me.CircularProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         Me.CircularProgressBar2.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
@@ -606,9 +646,10 @@ Partial Class Verificador
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(21, 82)
+        Me.Button6.Location = New System.Drawing.Point(16, 67)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(157, 58)
+        Me.Button6.Size = New System.Drawing.Size(118, 47)
         Me.Button6.TabIndex = 116
         Me.Button6.Text = "Orden De Produccion"
         Me.Button6.UseVisualStyleBackColor = True
@@ -616,9 +657,10 @@ Partial Class Verificador
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(283, 190)
+        Me.TextBox1.Location = New System.Drawing.Point(212, 154)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(138, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(104, 23)
         Me.TextBox1.TabIndex = 115
         Me.TextBox1.Text = "0"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -626,9 +668,10 @@ Partial Class Verificador
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(362, 230)
+        Me.Button5.Location = New System.Drawing.Point(272, 187)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(71, 26)
+        Me.Button5.Size = New System.Drawing.Size(53, 21)
         Me.Button5.TabIndex = 114
         Me.Button5.Text = "off"
         Me.Button5.UseVisualStyleBackColor = True
@@ -636,9 +679,10 @@ Partial Class Verificador
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(256, 230)
+        Me.Button4.Location = New System.Drawing.Point(192, 187)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(71, 26)
+        Me.Button4.Size = New System.Drawing.Size(53, 21)
         Me.Button4.TabIndex = 113
         Me.Button4.Text = "on"
         Me.Button4.UseVisualStyleBackColor = True
@@ -656,9 +700,10 @@ Partial Class Verificador
         Me.Panel5.Controls.Add(Me.Panel2)
         Me.Panel5.Controls.Add(Me.Licencia)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 275)
+        Me.Panel5.Location = New System.Drawing.Point(0, 224)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1368, 266)
+        Me.Panel5.Size = New System.Drawing.Size(1026, 216)
         Me.Panel5.TabIndex = 114
         '
         'CircularProgressBar1
@@ -671,7 +716,8 @@ Partial Class Verificador
         Me.CircularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar1.InnerMargin = 2
         Me.CircularProgressBar1.InnerWidth = -1
-        Me.CircularProgressBar1.Location = New System.Drawing.Point(196, 3)
+        Me.CircularProgressBar1.Location = New System.Drawing.Point(147, 2)
+        Me.CircularProgressBar1.Margin = New System.Windows.Forms.Padding(2)
         Me.CircularProgressBar1.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar1.Name = "CircularProgressBar1"
         Me.CircularProgressBar1.OuterColor = System.Drawing.Color.Gray
@@ -680,7 +726,7 @@ Partial Class Verificador
         Me.CircularProgressBar1.ProgressColor = System.Drawing.Color.Navy
         Me.CircularProgressBar1.ProgressWidth = 25
         Me.CircularProgressBar1.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 36.0!)
-        Me.CircularProgressBar1.Size = New System.Drawing.Size(317, 258)
+        Me.CircularProgressBar1.Size = New System.Drawing.Size(238, 210)
         Me.CircularProgressBar1.StartAngle = 270
         Me.CircularProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         Me.CircularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
@@ -698,9 +744,10 @@ Partial Class Verificador
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(295, 181)
+        Me.TextBox2.Location = New System.Drawing.Point(221, 147)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(138, 27)
+        Me.TextBox2.Size = New System.Drawing.Size(104, 23)
         Me.TextBox2.TabIndex = 119
         Me.TextBox2.Text = "0"
         Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -708,9 +755,10 @@ Partial Class Verificador
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(374, 221)
+        Me.Button8.Location = New System.Drawing.Point(280, 180)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(71, 26)
+        Me.Button8.Size = New System.Drawing.Size(53, 21)
         Me.Button8.TabIndex = 118
         Me.Button8.Text = "off"
         Me.Button8.UseVisualStyleBackColor = True
@@ -719,18 +767,20 @@ Partial Class Verificador
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(21, 95)
+        Me.Button7.Location = New System.Drawing.Point(16, 77)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(157, 58)
+        Me.Button7.Size = New System.Drawing.Size(118, 47)
         Me.Button7.TabIndex = 117
         Me.Button7.Text = "Etiqueta"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(268, 221)
+        Me.Button9.Location = New System.Drawing.Point(201, 180)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(71, 26)
+        Me.Button9.Size = New System.Drawing.Size(53, 21)
         Me.Button9.TabIndex = 117
         Me.Button9.Text = "on"
         Me.Button9.UseVisualStyleBackColor = True
@@ -750,26 +800,29 @@ Partial Class Verificador
         Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.Label8)
         Me.Panel3.Controls.Add(Me.VolumenP)
-        Me.Panel3.Location = New System.Drawing.Point(578, 676)
+        Me.Panel3.Location = New System.Drawing.Point(434, 549)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(878, 238)
+        Me.Panel3.Size = New System.Drawing.Size(659, 194)
         Me.Panel3.TabIndex = 115
         '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox1.Location = New System.Drawing.Point(30, 30)
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 24)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(253, 226)
+        Me.PictureBox1.Size = New System.Drawing.Size(190, 184)
         Me.PictureBox1.TabIndex = 116
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox2.Location = New System.Drawing.Point(30, 31)
+        Me.PictureBox2.Location = New System.Drawing.Point(22, 25)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(253, 226)
+        Me.PictureBox2.Size = New System.Drawing.Size(190, 184)
         Me.PictureBox2.TabIndex = 117
         Me.PictureBox2.TabStop = False
         '
@@ -778,27 +831,30 @@ Partial Class Verificador
         Me.Panel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.Panel8.Location = New System.Drawing.Point(0, 592)
+        Me.Panel8.Location = New System.Drawing.Point(0, 481)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(2177, 32)
+        Me.Panel8.Size = New System.Drawing.Size(1633, 26)
         Me.Panel8.TabIndex = 119
         '
         'Panel9
         '
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel9.Controls.Add(Me.PictureBox1)
-        Me.Panel9.Location = New System.Drawing.Point(1424, 30)
+        Me.Panel9.Location = New System.Drawing.Point(1068, 24)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(301, 275)
+        Me.Panel9.Size = New System.Drawing.Size(226, 224)
         Me.Panel9.TabIndex = 118
         '
         'Panel10
         '
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel10.Controls.Add(Me.PictureBox2)
-        Me.Panel10.Location = New System.Drawing.Point(1424, 305)
+        Me.Panel10.Location = New System.Drawing.Point(1068, 248)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(301, 266)
+        Me.Panel10.Size = New System.Drawing.Size(226, 216)
         Me.Panel10.TabIndex = 119
         '
         'Timer1
@@ -809,16 +865,17 @@ Partial Class Verificador
         '
         'Verificador
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1849, 1060)
+        Me.ClientSize = New System.Drawing.Size(1387, 861)
         Me.Controls.Add(Me.Panel10)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Verificador"
         Me.Text = "Verificador"
         Me.Panel1.ResumeLayout(False)
