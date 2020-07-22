@@ -365,7 +365,7 @@ Public Class Generar
 
 
 
-                        TextBox12.Text = OrdenDatos.Text + sumacaja
+                        TextBox12.Text = OrdenDatos.Text & sumacaja
                         TextBox7.Text = "Caja #" & caja
                         PrintDocument2.Print()
 
