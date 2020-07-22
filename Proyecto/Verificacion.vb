@@ -4,6 +4,21 @@ Imports vb = Microsoft.VisualBasic
 Public Class Verificacion
     Public tiempo As Integer = 0
     Public basedatos(5) As String
+    Public manual As Boolean = False
+    Dim caja As String
+
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
+        MaskedTextBox2.Text = ""
+        PictureBox8.Visible = False
+        PictureBox2.Visible = False
+        MaskedTextBox2.ReadOnly = False
+        MaskedTextBox2.Enabled = True
+        MaskedTextBox2.Focus()
+        PictureBox14.Visible = False
+        MaskedTextBox2.BackColor = Color.White
+        manual = True
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         textboxcaja.Text = ""
 
@@ -77,7 +92,7 @@ Public Class Verificacion
 
                     Dim extraccion As String = textboxcaja.Text
                     Dim orden As String
-                    Dim caja As String
+
                     orden = vb.Mid(extraccion, 1, 8)
                     caja = vb.Mid(extraccion, 9, 5)
                     Label1.Text = "Caja #" & (caja - 90000)
@@ -221,6 +236,8 @@ Public Class Verificacion
         TextBox11.BackColor = SystemColors.Control
         TextBox10.BackColor = SystemColors.Control
         TextBox9.BackColor = SystemColors.Control
+
+        manual = False
     End Sub
 
 
@@ -253,46 +270,55 @@ Public Class Verificacion
                 If MaskedTextBox1.Text = elemento Then
                     Dim ret As Integer = Array.IndexOf(basedatos, elemento)
                     ' devuelve posicion de array encontrado 
-                    Botella1.Enabled = True
-
-                    If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
+                    If manual = False Then
+                        Botella1.Enabled = True
                     End If
+                    PictureBox13.Visible = True
+                        If ret = 0 Then
+                            TextBox14.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
 
-                    If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
+                        If ret = 1 Then
+                            TextBox13.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
+
+                        If ret = 2 Then
+                            TextBox12.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
+
+                        If ret = 3 Then
+                            TextBox11.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
+
+                        If ret = 4 Then
+                            TextBox10.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
+
+                        If ret = 5 Then
+                            TextBox9.BackColor = Color.ForestGreen
+                            PictureBox7.Visible = True
+                            PictureBox13.Visible = False
+                        End If
+
+
+
+                        If MaskedTextBox1.Text = MaskedTextBox2.Text Or MaskedTextBox1.Text = MaskedTextBox3.Text Or MaskedTextBox1.Text = MaskedTextBox4.Text Or MaskedTextBox1.Text = MaskedTextBox5.Text Or MaskedTextBox1.Text = MaskedTextBox6.Text Then
+                            MaskedTextBox1.BackColor = Color.LightSlateGray
+                            PictureBox7.Visible = False
+                            PictureBox1.Visible = True
+                            PictureBox13.Visible = True
+                        End If
                     End If
-
-                    If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
-                    End If
-
-                    If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
-                    End If
-
-                    If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
-                    End If
-
-                    If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox7.Visible = True
-                    End If
-
-
-
-                    If MaskedTextBox1.Text = MaskedTextBox2.Text Or MaskedTextBox1.Text = MaskedTextBox3.Text Or MaskedTextBox1.Text = MaskedTextBox4.Text Or MaskedTextBox1.Text = MaskedTextBox5.Text Or MaskedTextBox1.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox1.BackColor = Color.LightSlateGray
-                        PictureBox7.Visible = False
-                        PictureBox1.Visible = True
-                    End If
-                End If
             Next
         End If
 
@@ -316,13 +342,16 @@ Public Class Verificacion
     Private Sub MaskedTextBox2_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox2.GotFocus
 
         CircularProgressBar3.Visible = True
-        MaskedTextBox2.Clear()
+
+            MaskedTextBox2.Clear()
     End Sub
 
 
 
     Private Sub MaskedTextBox3_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox3.GotFocus
-        CircularProgressBar4.Visible = True
+        If manual = False Then
+            CircularProgressBar4.Visible = True
+        End If
         MaskedTextBox3.Clear()
     End Sub
 
@@ -345,8 +374,12 @@ Public Class Verificacion
         entrada1 = MaskedTextBox2.Text
         contador2 = Len(entrada1)
 
+
         If contador2 = 14 Then
+
             Botella2.Enabled = True
+
+
 
 
             For Each elemento As String In basedatos
@@ -358,31 +391,38 @@ Public Class Verificacion
                     If ret = 0 Then
                         TextBox14.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
+
                     End If
 
                     If ret = 1 Then
                         TextBox13.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
                     End If
 
                     If ret = 2 Then
                         TextBox12.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
                     End If
 
                     If ret = 3 Then
                         TextBox11.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
                     End If
 
                     If ret = 4 Then
                         TextBox10.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
                     End If
 
                     If ret = 5 Then
                         TextBox9.BackColor = Color.ForestGreen
                         PictureBox8.Visible = True
+                        PictureBox14.Visible = False
                     End If
 
 
@@ -390,6 +430,7 @@ Public Class Verificacion
                         MaskedTextBox2.BackColor = Color.LightSlateGray
                         PictureBox8.Visible = False
                         PictureBox2.Visible = True
+                        PictureBox14.Visible = True
 
 
                     End If
@@ -409,7 +450,9 @@ Public Class Verificacion
         contador2 = Len(entrada1)
 
         If contador2 = 14 Then
+
             Botella3.Enabled = True
+
 
 
             For Each elemento As String In basedatos
@@ -421,11 +464,13 @@ Public Class Verificacion
                     If ret = 0 Then
                         TextBox14.BackColor = Color.ForestGreen
                         PictureBox9.Visible = True
+                        PictureBox15.Visible = False
                     End If
 
                     If ret = 1 Then
                         TextBox13.BackColor = Color.ForestGreen
                         PictureBox9.Visible = True
+                        PictureBox15.Visible = False
                     End If
 
                     If ret = 2 Then
@@ -436,21 +481,25 @@ Public Class Verificacion
                     If ret = 3 Then
                         TextBox11.BackColor = Color.ForestGreen
                         PictureBox9.Visible = True
+                        PictureBox15.Visible = False
                     End If
 
                     If ret = 4 Then
                         TextBox10.BackColor = Color.ForestGreen
                         PictureBox9.Visible = True
+                        PictureBox15.Visible = False
                     End If
 
                     If ret = 5 Then
                         TextBox9.BackColor = Color.ForestGreen
                         PictureBox9.Visible = True
+                        PictureBox15.Visible = False
                     End If
                     If MaskedTextBox3.Text = MaskedTextBox1.Text Or MaskedTextBox3.Text = MaskedTextBox2.Text Or MaskedTextBox3.Text = MaskedTextBox4.Text Or MaskedTextBox3.Text = MaskedTextBox5.Text Or MaskedTextBox3.Text = MaskedTextBox6.Text Then
                         MaskedTextBox3.BackColor = Color.LightSlateGray
                         PictureBox9.Visible = False
                         PictureBox3.Visible = True
+                        PictureBox15.Visible = True
 
 
 
@@ -474,9 +523,24 @@ Public Class Verificacion
 
     Private Sub Botella3_Tick(sender As Object, e As EventArgs) Handles Botella3.Tick
         Botella3.Interval = 500
-        If tiempo = 1 Then
-            MaskedTextBox4.Enabled = True
-            MaskedTextBox4.Focus()
+        If manual = False Then
+            If tiempo = 1 Then
+                MaskedTextBox4.Enabled = True
+                MaskedTextBox4.Focus()
+            End If
+        Else
+            Automatico.Focus()
+        End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
         End If
         tiempo = tiempo + 1
 
@@ -489,15 +553,43 @@ Public Class Verificacion
             MaskedTextBox2.Enabled = True
             MaskedTextBox2.Focus()
         End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
+        End If
         tiempo = tiempo + 1
     End Sub
 
     Private Sub Botella2_Tick(sender As Object, e As EventArgs) Handles Botella2.Tick
+
         Botella2.Interval = 500
-        If tiempo = 1 Then
-            MaskedTextBox3.Enabled = True
-            MaskedTextBox3.Focus()
+        If manual = False Then
+            If tiempo = 1 Then
+                MaskedTextBox3.Enabled = True
+                MaskedTextBox3.Focus()
+            End If
+        Else
+            Automatico.Focus()
         End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
+        End If
+
         tiempo = tiempo + 1
     End Sub
 
@@ -506,7 +598,9 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox4_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox4.GotFocus
-        CircularProgressBar5.Visible = True
+        If manual = False Then
+            CircularProgressBar5.Visible = True
+        End If
         MaskedTextBox4.Clear()
     End Sub
 
@@ -520,9 +614,24 @@ Public Class Verificacion
 
     Private Sub Botella4_Tick(sender As Object, e As EventArgs) Handles Botella4.Tick
         Botella4.Interval = 500
-        If tiempo = 1 Then
-            MaskedTextBox5.Enabled = True
-            MaskedTextBox5.Focus()
+        If manual = False Then
+            If tiempo = 1 Then
+                MaskedTextBox5.Enabled = True
+                MaskedTextBox5.Focus()
+            End If
+        Else
+            Automatico.Focus()
+        End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
         End If
         tiempo = tiempo + 1
 
@@ -535,7 +644,9 @@ Public Class Verificacion
         contador2 = Len(entrada1)
 
         If contador2 = 14 Then
+
             Botella4.Enabled = True
+
 
             For Each elemento As String In basedatos
                 If MaskedTextBox4.Text = elemento Then
@@ -546,37 +657,43 @@ Public Class Verificacion
                     If ret = 0 Then
                         TextBox14.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
 
                     If ret = 1 Then
                         TextBox13.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
 
                     If ret = 2 Then
                         TextBox12.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
 
                     If ret = 3 Then
                         TextBox11.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
 
                     If ret = 4 Then
                         TextBox10.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
 
                     If ret = 5 Then
                         TextBox9.BackColor = Color.ForestGreen
                         PictureBox10.Visible = True
+                        PictureBox16.Visible = False
                     End If
                     If MaskedTextBox4.Text = MaskedTextBox1.Text Or MaskedTextBox4.Text = MaskedTextBox2.Text Or MaskedTextBox4.Text = MaskedTextBox3.Text Or MaskedTextBox4.Text = MaskedTextBox5.Text Or MaskedTextBox4.Text = MaskedTextBox6.Text Then
                         MaskedTextBox4.BackColor = Color.LightSlateGray
                         PictureBox10.Visible = False
                         PictureBox4.Visible = True
-
+                        PictureBox16.Visible = True
 
 
                     End If
@@ -596,7 +713,9 @@ Public Class Verificacion
         contador2 = Len(entrada1)
 
         If contador2 = 14 Then
+
             Botella5.Enabled = True
+
 
             For Each elemento As String In basedatos
                 If MaskedTextBox5.Text = elemento Then
@@ -607,36 +726,43 @@ Public Class Verificacion
                     If ret = 0 Then
                         TextBox14.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
 
                     If ret = 1 Then
                         TextBox13.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
 
                     If ret = 2 Then
                         TextBox12.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
 
                     If ret = 3 Then
                         TextBox11.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
 
                     If ret = 4 Then
                         TextBox10.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
 
                     If ret = 5 Then
                         TextBox9.BackColor = Color.ForestGreen
                         PictureBox11.Visible = True
+                        PictureBox17.Visible = False
                     End If
                     If MaskedTextBox5.Text = MaskedTextBox1.Text Or MaskedTextBox5.Text = MaskedTextBox2.Text Or MaskedTextBox5.Text = MaskedTextBox3.Text Or MaskedTextBox5.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
                         MaskedTextBox5.BackColor = Color.LightSlateGray
                         PictureBox11.Visible = False
                         PictureBox5.Visible = True
+                        PictureBox17.Visible = True
 
 
                     End If
@@ -647,9 +773,24 @@ Public Class Verificacion
 
     Private Sub Botella5_Tick(sender As Object, e As EventArgs) Handles Botella5.Tick
         Botella5.Interval = 500
-        If tiempo = 1 Then
-            MaskedTextBox6.Enabled = True
-            MaskedTextBox6.Focus()
+        If manual = False Then
+            If tiempo = 1 Then
+                MaskedTextBox6.Enabled = True
+                MaskedTextBox6.Focus()
+            End If
+        Else
+            Automatico.Focus()
+        End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
         End If
         tiempo = tiempo + 1
 
@@ -664,7 +805,9 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox5_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox5.GotFocus
-        CircularProgressBar6.Visible = True
+        If manual = False Then
+            CircularProgressBar6.Visible = True
+        End If
         MaskedTextBox5.Clear()
     End Sub
 
@@ -673,7 +816,9 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox6_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox6.GotFocus
-        CircularProgressBar7.Visible = True
+        If manual = False Then
+            CircularProgressBar7.Visible = True
+        End If
         MaskedTextBox6.Clear()
     End Sub
 
@@ -687,8 +832,23 @@ Public Class Verificacion
 
     Private Sub Botella6_Tick(sender As Object, e As EventArgs) Handles Botella6.Tick
         Botella6.Interval = 500
-        If tiempo = 1 Then
+        If manual = False Then
+            If tiempo = 1 Then
+                Automatico.Focus()
+            End If
+        Else
             Automatico.Focus()
+        End If
+        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+            cn.Open()
+            registrarVerificado.ExecuteNonQuery()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+            MsgBox("TODO COMPLETO")
         End If
         tiempo = tiempo + 1
     End Sub
@@ -700,7 +860,9 @@ Public Class Verificacion
         contador2 = Len(entrada1)
 
         If contador2 = 14 Then
+
             Botella6.Enabled = True
+
 
             For Each elemento As String In basedatos
                 If MaskedTextBox6.Text = elemento Then
@@ -711,36 +873,43 @@ Public Class Verificacion
                     If ret = 0 Then
                         TextBox14.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
 
                     If ret = 1 Then
                         TextBox13.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
 
                     If ret = 2 Then
                         TextBox12.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
 
                     If ret = 3 Then
                         TextBox11.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
 
                     If ret = 4 Then
                         TextBox10.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
 
                     If ret = 5 Then
                         TextBox9.BackColor = Color.ForestGreen
                         PictureBox12.Visible = True
+                        PictureBox18.Visible = False
                     End If
                     If MaskedTextBox6.Text = MaskedTextBox1.Text Or MaskedTextBox6.Text = MaskedTextBox2.Text Or MaskedTextBox6.Text = MaskedTextBox3.Text Or MaskedTextBox6.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
                         MaskedTextBox6.BackColor = Color.LightSlateGray
                         PictureBox12.Visible = False
                         PictureBox6.Visible = True
+                        PictureBox18.Visible = True
 
 
                     End If
@@ -750,8 +919,11 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox1_GotFocus(sender As Object, e As EventArgs) Handles MaskedTextBox1.GotFocus
+        If manual = False Then
+            CircularProgressBar2.Visible = True
+        End If
         MaskedTextBox1.Clear()
-        CircularProgressBar2.Visible = True
+
 
     End Sub
 
@@ -784,6 +956,83 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox1_RightToLeftChanged(sender As Object, e As EventArgs) Handles MaskedTextBox1.RightToLeftChanged
+
+    End Sub
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        MaskedTextBox1.Text = ""
+        PictureBox7.Visible = False
+        PictureBox1.Visible = False
+        MaskedTextBox1.ReadOnly = False
+        MaskedTextBox1.Focus()
+
+    End Sub
+
+    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+        MaskedTextBox3.Text = ""
+        PictureBox9.Visible = False
+        PictureBox3.Visible = False
+        MaskedTextBox3.ReadOnly = False
+        MaskedTextBox3.Enabled = True
+        MaskedTextBox3.Focus()
+        PictureBox15.Visible = False
+        MaskedTextBox3.BackColor = Color.White
+        manual = True
+    End Sub
+
+    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
+        MaskedTextBox4.Text = ""
+        PictureBox10.Visible = False
+        PictureBox4.Visible = False
+        MaskedTextBox4.ReadOnly = False
+        MaskedTextBox4.Enabled = True
+        MaskedTextBox4.Focus()
+        PictureBox16.Visible = False
+        MaskedTextBox4.BackColor = Color.White
+        manual = True
+    End Sub
+
+    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
+        MaskedTextBox5.Text = ""
+        PictureBox11.Visible = False
+        PictureBox5.Visible = False
+        MaskedTextBox5.ReadOnly = False
+        MaskedTextBox5.Enabled = True
+        MaskedTextBox5.Focus()
+        PictureBox17.Visible = False
+        MaskedTextBox5.BackColor = Color.White
+        manual = True
+    End Sub
+
+    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
+        MaskedTextBox6.Text = ""
+        PictureBox12.Visible = False
+        PictureBox6.Visible = False
+        MaskedTextBox6.ReadOnly = False
+        MaskedTextBox6.Enabled = True
+        MaskedTextBox6.Focus()
+        PictureBox18.Visible = False
+        MaskedTextBox6.BackColor = Color.White
+        manual = True
+    End Sub
+
+    Private Sub Verificacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
+
+        'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+        Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+
+
+        cn.Open()
+        registrarVerificado.ExecuteNonQuery()
+        'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+        cn.Close()
+
+
+
 
     End Sub
 End Class

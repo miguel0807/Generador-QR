@@ -283,6 +283,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\reload.png" />
     <None Include="Resources\Verificador.ico" />
     <None Include="Resources\settings_783521.ico" />
     <None Include="Resources\igual.png" />

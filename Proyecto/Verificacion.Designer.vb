@@ -64,6 +64,12 @@ Partial Class Verificacion
         Me.Botella4 = New System.Windows.Forms.Timer(Me.components)
         Me.Botella5 = New System.Windows.Forms.Timer(Me.components)
         Me.Botella6 = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -71,11 +77,18 @@ Partial Class Verificacion
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,11 +96,11 @@ Partial Class Verificacion
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -654,6 +667,66 @@ Partial Class Verificacion
         'Botella6
         '
         '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox13.Location = New System.Drawing.Point(622, 135)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox13.TabIndex = 153
+        Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Visible = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.PictureBox12.Location = New System.Drawing.Point(945, 458)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox12.TabIndex = 152
+        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Visible = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.PictureBox11.Location = New System.Drawing.Point(945, 390)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox11.TabIndex = 151
+        Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Visible = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.PictureBox10.Location = New System.Drawing.Point(945, 330)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox10.TabIndex = 150
+        Me.PictureBox10.TabStop = False
+        Me.PictureBox10.Visible = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.PictureBox9.Location = New System.Drawing.Point(945, 262)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox9.TabIndex = 149
+        Me.PictureBox9.TabStop = False
+        Me.PictureBox9.Visible = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.PictureBox8.Location = New System.Drawing.Point(945, 198)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox8.TabIndex = 148
+        Me.PictureBox8.TabStop = False
+        Me.PictureBox8.Visible = False
+        '
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.Proyecto.My.Resources.Resources.checkbueno
@@ -724,61 +797,77 @@ Partial Class Verificacion
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
-        'PictureBox8
+        'PictureBox14
         '
-        Me.PictureBox8.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox8.Location = New System.Drawing.Point(945, 198)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox8.TabIndex = 148
-        Me.PictureBox8.TabStop = False
-        Me.PictureBox8.Visible = False
+        Me.PictureBox14.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox14.Location = New System.Drawing.Point(622, 198)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox14.TabIndex = 154
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
         '
-        'PictureBox9
+        'PictureBox15
         '
-        Me.PictureBox9.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox9.Location = New System.Drawing.Point(945, 262)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox9.TabIndex = 149
-        Me.PictureBox9.TabStop = False
-        Me.PictureBox9.Visible = False
+        Me.PictureBox15.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox15.Location = New System.Drawing.Point(622, 262)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox15.TabIndex = 155
+        Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Visible = False
         '
-        'PictureBox10
+        'PictureBox16
         '
-        Me.PictureBox10.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox10.Location = New System.Drawing.Point(945, 330)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox10.TabIndex = 150
-        Me.PictureBox10.TabStop = False
-        Me.PictureBox10.Visible = False
+        Me.PictureBox16.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox16.Location = New System.Drawing.Point(622, 330)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox16.TabIndex = 156
+        Me.PictureBox16.TabStop = False
+        Me.PictureBox16.Visible = False
         '
-        'PictureBox11
+        'PictureBox17
         '
-        Me.PictureBox11.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox11.Location = New System.Drawing.Point(945, 390)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox11.TabIndex = 151
-        Me.PictureBox11.TabStop = False
-        Me.PictureBox11.Visible = False
+        Me.PictureBox17.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox17.Location = New System.Drawing.Point(622, 396)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox17.TabIndex = 157
+        Me.PictureBox17.TabStop = False
+        Me.PictureBox17.Visible = False
         '
-        'PictureBox12
+        'PictureBox18
         '
-        Me.PictureBox12.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox12.Location = New System.Drawing.Point(945, 458)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox12.TabIndex = 152
-        Me.PictureBox12.TabStop = False
-        Me.PictureBox12.Visible = False
+        Me.PictureBox18.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.PictureBox18.Location = New System.Drawing.Point(622, 458)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(60, 47)
+        Me.PictureBox18.TabIndex = 158
+        Me.PictureBox18.TabStop = False
+        Me.PictureBox18.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(418, 531)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(91, 57)
+        Me.Button1.TabIndex = 159
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Verificacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1688, 700)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PictureBox18)
+        Me.Controls.Add(Me.PictureBox17)
+        Me.Controls.Add(Me.PictureBox16)
+        Me.Controls.Add(Me.PictureBox15)
+        Me.Controls.Add(Me.PictureBox14)
+        Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.PictureBox10)
@@ -828,6 +917,12 @@ Partial Class Verificacion
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Verificacion"
         Me.Text = "Verificacion"
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -835,11 +930,11 @@ Partial Class Verificacion
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -897,4 +992,11 @@ Partial Class Verificacion
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents PictureBox16 As PictureBox
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents PictureBox18 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class
