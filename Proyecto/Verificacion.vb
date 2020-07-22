@@ -62,6 +62,7 @@ Public Class Verificacion
         TextBox11.BackColor = SystemColors.Control
         TextBox10.BackColor = SystemColors.Control
         TextBox9.BackColor = SystemColors.Control
+        Label1.Text = "Caja # "
 
     End Sub
 
@@ -101,7 +102,7 @@ Public Class Verificacion
 #Region "Conectarse a SAP"
 
                     'En el parentesis entre & & se coloca cual valor se usara para la busqueda
-                    Dim adaptador As New SqlDataAdapter("select * from BaseDatosOficial where [Order]=" & orden & " and [Caja]=" & caja & "", cn) 'Funciona con lote y material
+                    Dim adaptador As New SqlDataAdapter("select * from BaseDatosOficial where [Order]=" & orden & " and [Verificado]=" & 0 & " and [Caja]=" & caja & "", cn) 'Funciona con lote y material
 
 
 
@@ -133,7 +134,11 @@ Public Class Verificacion
 
                     Else
 
-                        MsgBox(orden)
+                        MsgBox("La caja ya se encuentra registrada")
+                        Button2.Focus()
+                        Automatico.Enabled = False
+                        Label1.Text = "Caja # "
+                        Exit Sub
                     End If
 #End Region
 #End Region
@@ -540,7 +545,8 @@ Public Class Verificacion
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -562,7 +568,8 @@ Public Class Verificacion
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
         tiempo = tiempo + 1
     End Sub
@@ -587,7 +594,8 @@ Public Class Verificacion
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
 
         tiempo = tiempo + 1
@@ -631,7 +639,8 @@ Public Class Verificacion
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -790,7 +799,8 @@ Public Class Verificacion
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -842,13 +852,14 @@ Public Class Verificacion
         If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
-
+            cn.Close()
 
             cn.Open()
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
-            MsgBox("TODO COMPLETO")
+            MsgBox("Etiquetas Verificadas con exito")
+            Button2.Focus()
         End If
         tiempo = tiempo + 1
     End Sub
@@ -1020,19 +1031,73 @@ Public Class Verificacion
 
     End Sub
 
-    Private Sub Button1_Click_2(sender As Object, e As EventArgs) Handles Button1.Click
-
-        'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-        Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
-
-
-        cn.Open()
-        registrarVerificado.ExecuteNonQuery()
-        'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-        cn.Close()
+    Private Sub OrdenVerificacion_Click(sender As Object, e As EventArgs) Handles OrdenVerificacion.Click
+        MaskedTextBox7.Enabled = True
+        MaskedTextBox7.Clear()
+        MaskedTextBox7.Focus()
+        DataGridView1.Visible = False
+        Label10.Visible = False
+    End Sub
 
 
 
+    Private Sub MaskedTextBox7_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox7.MaskInputRejected
 
+    End Sub
+
+    Private Sub MaskedTextBox7_TextChanged(sender As Object, e As EventArgs) Handles MaskedTextBox7.TextChanged
+        'Try
+        Dim entrada As String
+        Dim contador As Integer
+        entrada = MaskedTextBox7.Text
+        contador = Len(entrada)
+
+
+        If contador = 8 Then
+
+            DataGridView1.Visible = True
+            Label10.Visible = True
+
+            conectar()
+
+
+
+            Dim tabla As DataGridView = DataGridView1
+            Dim adaptador As New SqlDataAdapter("select * from BaseDatosOficial where [Order]=" & MaskedTextBox7.Text & " and [Verificado]=" & 0 & "", cn) 'Funciona con lote y material
+
+            Dim dataS As New DataSet
+            adaptador.Fill(dataS, "BaseDatosOficial")
+
+            tabla.DataSource = dataS.Tables("BaseDatosOficial")
+            tabla.RowHeadersVisible = False
+            tabla.Columns.Item(0).Visible = False
+            tabla.Columns.Item(2).Visible = False
+            tabla.Columns.Item(3).Visible = False
+            tabla.Columns.Item(4).Visible = False
+            tabla.Columns.Item(5).Visible = False
+            tabla.Columns.Item(6).Visible = False
+            tabla.Columns.Item(7).Visible = False
+            tabla.Columns.Item(8).Visible = False
+            tabla.Columns.Item(9).Visible = False
+            tabla.Columns(1).Width = 130
+            tabla.Columns(10).Width = 130
+
+
+            'Habilita conteo de filas en datagridview
+            Label10.Visible = True
+            ' Label8.Text = tabla.DisplayedRowCount(0) - 1
+            Label10.Text = tabla.RowCount - 1
+
+            OrdenVerificacion.Focus()
+            MaskedTextBox7.Enabled = False
+        End If
+
+        'Catch ex As Exception
+        'MsgBox(ex.Message)
+        'End Try
+    End Sub
+
+    Private Sub MaskedTextBox7_LostFocus(sender As Object, e As EventArgs) Handles MaskedTextBox7.LostFocus
+        MaskedTextBox7.Enabled = False
     End Sub
 End Class

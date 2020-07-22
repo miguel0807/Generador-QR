@@ -29,7 +29,6 @@ Partial Class Verificacion
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.textboxcaja = New System.Windows.Forms.TextBox()
         Me.Automatico = New System.Windows.Forms.Button()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
@@ -82,7 +81,11 @@ Partial Class Verificacion
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.textboxcaja = New System.Windows.Forms.TextBox()
+        Me.OrdenVerificacion = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,6 +104,7 @@ Partial Class Verificacion
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -168,16 +172,6 @@ Partial Class Verificacion
         Me.Label7.Size = New System.Drawing.Size(123, 29)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Botella 6:"
-        '
-        'textboxcaja
-        '
-        Me.textboxcaja.Enabled = False
-        Me.textboxcaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.textboxcaja.Location = New System.Drawing.Point(171, 25)
-        Me.textboxcaja.Margin = New System.Windows.Forms.Padding(4)
-        Me.textboxcaja.Name = "textboxcaja"
-        Me.textboxcaja.Size = New System.Drawing.Size(263, 34)
-        Me.textboxcaja.TabIndex = 13
         '
         'Automatico
         '
@@ -271,7 +265,7 @@ Partial Class Verificacion
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(4, 17)
+        Me.Button2.Location = New System.Drawing.Point(31, 17)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(124, 52)
@@ -289,7 +283,7 @@ Partial Class Verificacion
         Me.CircularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar1.InnerMargin = 2
         Me.CircularProgressBar1.InnerWidth = -1
-        Me.CircularProgressBar1.Location = New System.Drawing.Point(463, 17)
+        Me.CircularProgressBar1.Location = New System.Drawing.Point(172, 19)
         Me.CircularProgressBar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar1.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar1.Name = "CircularProgressBar1"
@@ -847,21 +841,69 @@ Partial Class Verificacion
         Me.PictureBox18.TabStop = False
         Me.PictureBox18.Visible = False
         '
-        'Button1
+        'textboxcaja
         '
-        Me.Button1.Location = New System.Drawing.Point(418, 531)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(91, 57)
-        Me.Button1.TabIndex = 159
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.textboxcaja.Enabled = False
+        Me.textboxcaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.textboxcaja.Location = New System.Drawing.Point(77, 25)
+        Me.textboxcaja.Margin = New System.Windows.Forms.Padding(4)
+        Me.textboxcaja.Name = "textboxcaja"
+        Me.textboxcaja.Size = New System.Drawing.Size(10, 34)
+        Me.textboxcaja.TabIndex = 13
+        '
+        'OrdenVerificacion
+        '
+        Me.OrdenVerificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.OrdenVerificacion.Location = New System.Drawing.Point(1, 665)
+        Me.OrdenVerificacion.Name = "OrdenVerificacion"
+        Me.OrdenVerificacion.Size = New System.Drawing.Size(182, 72)
+        Me.OrdenVerificacion.TabIndex = 159
+        Me.OrdenVerificacion.Text = "Verificacion de Orden"
+        Me.OrdenVerificacion.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(549, 557)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(506, 327)
+        Me.DataGridView1.TabIndex = 162
+        Me.DataGridView1.Visible = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Label10.Location = New System.Drawing.Point(1061, 557)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(106, 29)
+        Me.Label10.TabIndex = 163
+        Me.Label10.Text = "Label10"
+        Me.Label10.Visible = False
+        '
+        'MaskedTextBox7
+        '
+        Me.MaskedTextBox7.Enabled = False
+        Me.MaskedTextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaskedTextBox7.Location = New System.Drawing.Point(199, 684)
+        Me.MaskedTextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaskedTextBox7.Mask = ">CCCCCCCC"
+        Me.MaskedTextBox7.Name = "MaskedTextBox7"
+        Me.MaskedTextBox7.Size = New System.Drawing.Size(251, 34)
+        Me.MaskedTextBox7.TabIndex = 164
+        Me.MaskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Verificacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1688, 700)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(1688, 896)
+        Me.Controls.Add(Me.MaskedTextBox7)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.OrdenVerificacion)
         Me.Controls.Add(Me.PictureBox18)
         Me.Controls.Add(Me.PictureBox17)
         Me.Controls.Add(Me.PictureBox16)
@@ -935,6 +977,7 @@ Partial Class Verificacion
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -945,7 +988,6 @@ Partial Class Verificacion
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents textboxcaja As TextBox
     Friend WithEvents Automatico As Button
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox10 As TextBox
@@ -998,5 +1040,9 @@ Partial Class Verificacion
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents PictureBox17 As PictureBox
     Friend WithEvents PictureBox18 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents textboxcaja As TextBox
+    Friend WithEvents OrdenVerificacion As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label10 As Label
+    Friend WithEvents MaskedTextBox7 As MaskedTextBox
 End Class
