@@ -318,12 +318,28 @@ Public Class FormPrincipal
         Label3.Text = ActiveUser.position
 
         If Label3.Text = "Quality Inspector" Then
-            Button1.Enabled = False
-            Button2.Enabled = False
-            Button3.Enabled = False
-            Button6.Enabled = False
+            Button5.Enabled = True
+
+        ElseIf Label3.Text = "Administrador" Then
+            Button1.Enabled = True
+            Button2.Enabled = True
+            Button5.Enabled = True
+            Button3.Enabled = True
+            Button7.Enabled = True
+            Button6.Enabled = True
         ElseIf Label3.Text = "Machine Operator" Then
-            Button6.Enabled = False
+            Button1.Enabled = True
+            Button2.Enabled = True
+            Button5.Enabled = True
+            Button3.Enabled = True
+
+
+        ElseIf Label3.Text = "Filler Operator" Then
+            Button7.Enabled = True
+
+        ElseIf Label3.Text = "Production Supervisor" Then
+            Button7.Enabled = True
+
         ElseIf Label3.Text = "" Then
             MsgBox("El usuario no tiene autorizacion para usar el programa")
             Button1.Enabled = False
@@ -332,6 +348,7 @@ Public Class FormPrincipal
             Button5.Enabled = False
             Button6.Enabled = False
         End If
+
 
 
 

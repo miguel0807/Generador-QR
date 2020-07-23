@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oha0aX86/xzvP8tihNa7Eml5B+IyPF1ZQCsx3/ciAtc=</dsig:DigestValue>
+        <dsig:DigestValue>fErcePa8rWtOG9U6Spm1LYkkV2t6zukFaHumZKRzeIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Generador QR.exe" size="629176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Generador QR.exe" size="629688">
       <assemblyIdentity name="Generador QR" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Hj1yXyGXLyEHw/TDVd+cFn6YHao3AjF0DFlzrIExRSU=</dsig:DigestValue>
+        <dsig:DigestValue>DaUMWfCkJWKYJSJ4s7OHLqrEwZoqT0NtjtlraXOJRLI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
