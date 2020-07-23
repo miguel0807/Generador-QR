@@ -1046,55 +1046,55 @@ Public Class Verificacion
     End Sub
 
     Private Sub MaskedTextBox7_TextChanged(sender As Object, e As EventArgs) Handles MaskedTextBox7.TextChanged
-        'Try
-        Dim entrada As String
-        Dim contador As Integer
-        entrada = MaskedTextBox7.Text
-        contador = Len(entrada)
+        Try
+            Dim entrada As String
+            Dim contador As Integer
+            entrada = MaskedTextBox7.Text
+            contador = Len(entrada)
 
 
-        If contador = 8 Then
+            If contador = 8 Then
 
-            DataGridView1.Visible = True
-            Label10.Visible = True
+                DataGridView1.Visible = True
+                Label10.Visible = True
 
-            conectar()
-
-
-
-            Dim tabla As DataGridView = DataGridView1
-            Dim adaptador As New SqlDataAdapter("select * from BaseDatosOficial where [Order]=" & MaskedTextBox7.Text & " and [Verificado]=" & 0 & "", cn) 'Funciona con lote y material
-
-            Dim dataS As New DataSet
-            adaptador.Fill(dataS, "BaseDatosOficial")
-
-            tabla.DataSource = dataS.Tables("BaseDatosOficial")
-            tabla.RowHeadersVisible = False
-            tabla.Columns.Item(0).Visible = False
-            tabla.Columns.Item(2).Visible = False
-            tabla.Columns.Item(3).Visible = False
-            tabla.Columns.Item(4).Visible = False
-            tabla.Columns.Item(5).Visible = False
-            tabla.Columns.Item(6).Visible = False
-            tabla.Columns.Item(7).Visible = False
-            tabla.Columns.Item(8).Visible = False
-            tabla.Columns.Item(9).Visible = False
-            tabla.Columns(1).Width = 130
-            tabla.Columns(10).Width = 130
+                conectar()
 
 
-            'Habilita conteo de filas en datagridview
-            Label10.Visible = True
-            ' Label8.Text = tabla.DisplayedRowCount(0) - 1
-            Label10.Text = tabla.RowCount - 1
 
-            OrdenVerificacion.Focus()
-            MaskedTextBox7.Enabled = False
-        End If
+                Dim tabla As DataGridView = DataGridView1
+                Dim adaptador As New SqlDataAdapter("select * from BaseDatosOficial where [Order]=" & MaskedTextBox7.Text & " and [Verificado]=" & 0 & "", cn) 'Funciona con lote y material
 
-        'Catch ex As Exception
-        'MsgBox(ex.Message)
-        'End Try
+                Dim dataS As New DataSet
+                adaptador.Fill(dataS, "BaseDatosOficial")
+
+                tabla.DataSource = dataS.Tables("BaseDatosOficial")
+                tabla.RowHeadersVisible = False
+                tabla.Columns.Item(0).Visible = False
+                tabla.Columns.Item(2).Visible = False
+                tabla.Columns.Item(3).Visible = False
+                tabla.Columns.Item(4).Visible = False
+                tabla.Columns.Item(5).Visible = False
+                tabla.Columns.Item(6).Visible = False
+                tabla.Columns.Item(7).Visible = False
+                tabla.Columns.Item(8).Visible = False
+                tabla.Columns.Item(9).Visible = False
+                tabla.Columns(1).Width = 130
+                tabla.Columns(10).Width = 130
+
+
+                'Habilita conteo de filas en datagridview
+                Label10.Visible = True
+                ' Label8.Text = tabla.DisplayedRowCount(0) - 1
+                Label10.Text = tabla.RowCount - 1
+
+                OrdenVerificacion.Focus()
+                MaskedTextBox7.Enabled = False
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub MaskedTextBox7_LostFocus(sender As Object, e As EventArgs) Handles MaskedTextBox7.LostFocus

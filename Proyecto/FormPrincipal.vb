@@ -152,6 +152,8 @@ Public Class FormPrincipal
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button6.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button7.BackColor = Color.FromArgb(4, 41, 68) 'original
 
 
     End Sub
@@ -179,6 +181,8 @@ Public Class FormPrincipal
         Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button6.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button7.BackColor = Color.FromArgb(4, 41, 68) 'original
     End Sub
 
 
@@ -229,6 +233,8 @@ Public Class FormPrincipal
         Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+        Button7.BackColor = Color.FromArgb(4, 41, 68)
     End Sub
 
 
@@ -258,6 +264,8 @@ Public Class FormPrincipal
         Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+        Button7.BackColor = Color.FromArgb(4, 41, 68)
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -267,11 +275,14 @@ Public Class FormPrincipal
 
 
 
+        Button6.BackColor = Color.FromArgb(12, 61, 92)
 
-        Button5.BackColor = Color.FromArgb(12, 61, 92)
+
         Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button7.BackColor = Color.FromArgb(4, 41, 68)
 
     End Sub
 
@@ -285,10 +296,13 @@ Public Class FormPrincipal
 
 
 
-        Button5.BackColor = Color.FromArgb(12, 61, 92)
+        Button7.BackColor = Color.FromArgb(12, 61, 92)
         Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68)
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+
     End Sub
 
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
