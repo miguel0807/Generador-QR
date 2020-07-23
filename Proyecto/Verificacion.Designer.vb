@@ -29,22 +29,22 @@ Partial Class Verificacion
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Automatico = New System.Windows.Forms.Button()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.botonAutomatico = New System.Windows.Forms.Button()
+        Me.txtBasedatos6 = New System.Windows.Forms.TextBox()
+        Me.txtBasedatos5 = New System.Windows.Forms.TextBox()
+        Me.txtBasedatos4 = New System.Windows.Forms.TextBox()
+        Me.txtBasedatos3 = New System.Windows.Forms.TextBox()
+        Me.txtBasedatos2 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.botoncaja = New System.Windows.Forms.Button()
         Me.CircularProgressBar1 = New CircularProgressBar.CircularProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.controlTimer = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.txtBasedatos1 = New System.Windows.Forms.TextBox()
         Me.CircularProgressBar2 = New CircularProgressBar.CircularProgressBar()
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
@@ -63,48 +63,60 @@ Partial Class Verificacion
         Me.Botella4 = New System.Windows.Forms.Timer(Me.components)
         Me.Botella5 = New System.Windows.Forms.Timer(Me.components)
         Me.Botella6 = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.textboxcaja = New System.Windows.Forms.TextBox()
-        Me.OrdenVerificacion = New System.Windows.Forms.Button()
+        Me.botonVerificacionOrden = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.equis1 = New System.Windows.Forms.PictureBox()
+        Me.refrescar6 = New System.Windows.Forms.PictureBox()
+        Me.refrescar5 = New System.Windows.Forms.PictureBox()
+        Me.refrescar4 = New System.Windows.Forms.PictureBox()
+        Me.refrescar3 = New System.Windows.Forms.PictureBox()
+        Me.refrescar2 = New System.Windows.Forms.PictureBox()
+        Me.refrescar1 = New System.Windows.Forms.PictureBox()
+        Me.bueno6 = New System.Windows.Forms.PictureBox()
+        Me.bueno5 = New System.Windows.Forms.PictureBox()
+        Me.bueno4 = New System.Windows.Forms.PictureBox()
+        Me.bueno3 = New System.Windows.Forms.PictureBox()
+        Me.bueno2 = New System.Windows.Forms.PictureBox()
+        Me.bueno1 = New System.Windows.Forms.PictureBox()
+        Me.igual6 = New System.Windows.Forms.PictureBox()
+        Me.igual5 = New System.Windows.Forms.PictureBox()
+        Me.igual4 = New System.Windows.Forms.PictureBox()
+        Me.igual3 = New System.Windows.Forms.PictureBox()
+        Me.igual2 = New System.Windows.Forms.PictureBox()
+        Me.igual1 = New System.Windows.Forms.PictureBox()
+        Me.equis2 = New System.Windows.Forms.PictureBox()
+        Me.equis3 = New System.Windows.Forms.PictureBox()
+        Me.equis4 = New System.Windows.Forms.PictureBox()
+        Me.equis5 = New System.Windows.Forms.PictureBox()
+        Me.equis6 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.refrescar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.bueno1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.igual1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.equis6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -173,72 +185,72 @@ Partial Class Verificacion
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Botella 6:"
         '
-        'Automatico
+        'botonAutomatico
         '
-        Me.Automatico.Enabled = False
-        Me.Automatico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Automatico.Location = New System.Drawing.Point(16, 252)
-        Me.Automatico.Margin = New System.Windows.Forms.Padding(4)
-        Me.Automatico.Name = "Automatico"
-        Me.Automatico.Size = New System.Drawing.Size(177, 100)
-        Me.Automatico.TabIndex = 14
-        Me.Automatico.Text = "Automatico"
-        Me.Automatico.UseVisualStyleBackColor = True
+        Me.botonAutomatico.Enabled = False
+        Me.botonAutomatico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.botonAutomatico.Location = New System.Drawing.Point(16, 252)
+        Me.botonAutomatico.Margin = New System.Windows.Forms.Padding(4)
+        Me.botonAutomatico.Name = "botonAutomatico"
+        Me.botonAutomatico.Size = New System.Drawing.Size(177, 100)
+        Me.botonAutomatico.TabIndex = 14
+        Me.botonAutomatico.Text = "Automatico"
+        Me.botonAutomatico.UseVisualStyleBackColor = True
         '
-        'TextBox9
+        'txtBasedatos6
         '
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox9.Location = New System.Drawing.Point(1217, 373)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox9.TabIndex = 19
-        Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos6.Location = New System.Drawing.Point(1217, 373)
+        Me.txtBasedatos6.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos6.Name = "txtBasedatos6"
+        Me.txtBasedatos6.ReadOnly = True
+        Me.txtBasedatos6.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos6.TabIndex = 19
+        Me.txtBasedatos6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox10
+        'txtBasedatos5
         '
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox10.Location = New System.Drawing.Point(1217, 330)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox10.TabIndex = 18
-        Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos5.Location = New System.Drawing.Point(1217, 330)
+        Me.txtBasedatos5.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos5.Name = "txtBasedatos5"
+        Me.txtBasedatos5.ReadOnly = True
+        Me.txtBasedatos5.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos5.TabIndex = 18
+        Me.txtBasedatos5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox11
+        'txtBasedatos4
         '
-        Me.TextBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox11.Location = New System.Drawing.Point(1217, 287)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox11.TabIndex = 17
-        Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos4.Location = New System.Drawing.Point(1217, 287)
+        Me.txtBasedatos4.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos4.Name = "txtBasedatos4"
+        Me.txtBasedatos4.ReadOnly = True
+        Me.txtBasedatos4.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos4.TabIndex = 17
+        Me.txtBasedatos4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox12
+        'txtBasedatos3
         '
-        Me.TextBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox12.Location = New System.Drawing.Point(1217, 244)
-        Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox12.TabIndex = 16
-        Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos3.Location = New System.Drawing.Point(1217, 244)
+        Me.txtBasedatos3.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos3.Name = "txtBasedatos3"
+        Me.txtBasedatos3.ReadOnly = True
+        Me.txtBasedatos3.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos3.TabIndex = 16
+        Me.txtBasedatos3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox13
+        'txtBasedatos2
         '
-        Me.TextBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox13.Location = New System.Drawing.Point(1217, 198)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox13.TabIndex = 15
-        Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos2.Location = New System.Drawing.Point(1217, 198)
+        Me.txtBasedatos2.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos2.Name = "txtBasedatos2"
+        Me.txtBasedatos2.ReadOnly = True
+        Me.txtBasedatos2.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos2.TabIndex = 15
+        Me.txtBasedatos2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label8
         '
@@ -262,16 +274,16 @@ Partial Class Verificacion
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "BaseDatos"
         '
-        'Button2
+        'botoncaja
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Button2.Location = New System.Drawing.Point(31, 17)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 52)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "# Caja"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.botoncaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.botoncaja.Location = New System.Drawing.Point(31, 17)
+        Me.botoncaja.Margin = New System.Windows.Forms.Padding(4)
+        Me.botoncaja.Name = "botoncaja"
+        Me.botoncaja.Size = New System.Drawing.Size(124, 52)
+        Me.botoncaja.TabIndex = 23
+        Me.botoncaja.Text = "# Caja"
+        Me.botoncaja.UseVisualStyleBackColor = True
         '
         'CircularProgressBar1
         '
@@ -355,17 +367,17 @@ Partial Class Verificacion
         Me.Button4.UseVisualStyleBackColor = True
         Me.Button4.Visible = False
         '
-        'TextBox14
+        'txtBasedatos1
         '
-        Me.TextBox14.BackColor = System.Drawing.SystemColors.Control
-        Me.TextBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.TextBox14.Location = New System.Drawing.Point(1217, 155)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(301, 34)
-        Me.TextBox14.TabIndex = 128
-        Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtBasedatos1.BackColor = System.Drawing.SystemColors.Control
+        Me.txtBasedatos1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.txtBasedatos1.Location = New System.Drawing.Point(1217, 155)
+        Me.txtBasedatos1.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtBasedatos1.Name = "txtBasedatos1"
+        Me.txtBasedatos1.ReadOnly = True
+        Me.txtBasedatos1.Size = New System.Drawing.Size(301, 34)
+        Me.txtBasedatos1.TabIndex = 128
+        Me.txtBasedatos1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'CircularProgressBar2
         '
@@ -661,186 +673,6 @@ Partial Class Verificacion
         'Botella6
         '
         '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox13.Location = New System.Drawing.Point(622, 135)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox13.TabIndex = 153
-        Me.PictureBox13.TabStop = False
-        Me.PictureBox13.Visible = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox12.Location = New System.Drawing.Point(945, 458)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox12.TabIndex = 152
-        Me.PictureBox12.TabStop = False
-        Me.PictureBox12.Visible = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox11.Location = New System.Drawing.Point(945, 390)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox11.TabIndex = 151
-        Me.PictureBox11.TabStop = False
-        Me.PictureBox11.Visible = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox10.Location = New System.Drawing.Point(945, 330)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox10.TabIndex = 150
-        Me.PictureBox10.TabStop = False
-        Me.PictureBox10.Visible = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox9.Location = New System.Drawing.Point(945, 262)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox9.TabIndex = 149
-        Me.PictureBox9.TabStop = False
-        Me.PictureBox9.Visible = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox8.Location = New System.Drawing.Point(945, 198)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox8.TabIndex = 148
-        Me.PictureBox8.TabStop = False
-        Me.PictureBox8.Visible = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.PictureBox7.Location = New System.Drawing.Point(945, 135)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox7.TabIndex = 147
-        Me.PictureBox7.TabStop = False
-        Me.PictureBox7.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox6.Location = New System.Drawing.Point(945, 458)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox6.TabIndex = 146
-        Me.PictureBox6.TabStop = False
-        Me.PictureBox6.Visible = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox5.Location = New System.Drawing.Point(945, 390)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox5.TabIndex = 145
-        Me.PictureBox5.TabStop = False
-        Me.PictureBox5.Visible = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox4.Location = New System.Drawing.Point(945, 330)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox4.TabIndex = 144
-        Me.PictureBox4.TabStop = False
-        Me.PictureBox4.Visible = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox3.Location = New System.Drawing.Point(945, 262)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox3.TabIndex = 143
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox2.Location = New System.Drawing.Point(945, 198)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox2.TabIndex = 142
-        Me.PictureBox2.TabStop = False
-        Me.PictureBox2.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.PictureBox1.Location = New System.Drawing.Point(945, 135)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox1.TabIndex = 141
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox14.Location = New System.Drawing.Point(622, 198)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox14.TabIndex = 154
-        Me.PictureBox14.TabStop = False
-        Me.PictureBox14.Visible = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox15.Location = New System.Drawing.Point(622, 262)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox15.TabIndex = 155
-        Me.PictureBox15.TabStop = False
-        Me.PictureBox15.Visible = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox16.Location = New System.Drawing.Point(622, 330)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox16.TabIndex = 156
-        Me.PictureBox16.TabStop = False
-        Me.PictureBox16.Visible = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox17.Location = New System.Drawing.Point(622, 396)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox17.TabIndex = 157
-        Me.PictureBox17.TabStop = False
-        Me.PictureBox17.Visible = False
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.PictureBox18.Location = New System.Drawing.Point(622, 458)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(60, 47)
-        Me.PictureBox18.TabIndex = 158
-        Me.PictureBox18.TabStop = False
-        Me.PictureBox18.Visible = False
-        '
         'textboxcaja
         '
         Me.textboxcaja.Enabled = False
@@ -851,15 +683,15 @@ Partial Class Verificacion
         Me.textboxcaja.Size = New System.Drawing.Size(10, 34)
         Me.textboxcaja.TabIndex = 13
         '
-        'OrdenVerificacion
+        'botonVerificacionOrden
         '
-        Me.OrdenVerificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.OrdenVerificacion.Location = New System.Drawing.Point(1, 665)
-        Me.OrdenVerificacion.Name = "OrdenVerificacion"
-        Me.OrdenVerificacion.Size = New System.Drawing.Size(182, 72)
-        Me.OrdenVerificacion.TabIndex = 159
-        Me.OrdenVerificacion.Text = "Verificacion de Orden"
-        Me.OrdenVerificacion.UseVisualStyleBackColor = True
+        Me.botonVerificacionOrden.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.botonVerificacionOrden.Location = New System.Drawing.Point(1, 665)
+        Me.botonVerificacionOrden.Name = "botonVerificacionOrden"
+        Me.botonVerificacionOrden.Size = New System.Drawing.Size(182, 72)
+        Me.botonVerificacionOrden.TabIndex = 159
+        Me.botonVerificacionOrden.Text = "Verificacion de Orden"
+        Me.botonVerificacionOrden.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -895,33 +727,279 @@ Partial Class Verificacion
         Me.MaskedTextBox7.TabIndex = 164
         Me.MaskedTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'equis1
+        '
+        Me.equis1.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis1.Location = New System.Drawing.Point(945, 135)
+        Me.equis1.Name = "equis1"
+        Me.equis1.Size = New System.Drawing.Size(60, 47)
+        Me.equis1.TabIndex = 165
+        Me.equis1.TabStop = False
+        Me.equis1.Visible = False
+        '
+        'refrescar6
+        '
+        Me.refrescar6.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar6.Location = New System.Drawing.Point(622, 458)
+        Me.refrescar6.Name = "refrescar6"
+        Me.refrescar6.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar6.TabIndex = 158
+        Me.refrescar6.TabStop = False
+        Me.refrescar6.Visible = False
+        '
+        'refrescar5
+        '
+        Me.refrescar5.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar5.Location = New System.Drawing.Point(622, 396)
+        Me.refrescar5.Name = "refrescar5"
+        Me.refrescar5.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar5.TabIndex = 157
+        Me.refrescar5.TabStop = False
+        Me.refrescar5.Visible = False
+        '
+        'refrescar4
+        '
+        Me.refrescar4.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar4.Location = New System.Drawing.Point(622, 330)
+        Me.refrescar4.Name = "refrescar4"
+        Me.refrescar4.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar4.TabIndex = 156
+        Me.refrescar4.TabStop = False
+        Me.refrescar4.Visible = False
+        '
+        'refrescar3
+        '
+        Me.refrescar3.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar3.Location = New System.Drawing.Point(622, 262)
+        Me.refrescar3.Name = "refrescar3"
+        Me.refrescar3.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar3.TabIndex = 155
+        Me.refrescar3.TabStop = False
+        Me.refrescar3.Visible = False
+        '
+        'refrescar2
+        '
+        Me.refrescar2.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar2.Location = New System.Drawing.Point(622, 198)
+        Me.refrescar2.Name = "refrescar2"
+        Me.refrescar2.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar2.TabIndex = 154
+        Me.refrescar2.TabStop = False
+        Me.refrescar2.Visible = False
+        '
+        'refrescar1
+        '
+        Me.refrescar1.Image = Global.Proyecto.My.Resources.Resources.reload
+        Me.refrescar1.Location = New System.Drawing.Point(622, 135)
+        Me.refrescar1.Name = "refrescar1"
+        Me.refrescar1.Size = New System.Drawing.Size(60, 47)
+        Me.refrescar1.TabIndex = 153
+        Me.refrescar1.TabStop = False
+        Me.refrescar1.Visible = False
+        '
+        'bueno6
+        '
+        Me.bueno6.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno6.Location = New System.Drawing.Point(945, 458)
+        Me.bueno6.Name = "bueno6"
+        Me.bueno6.Size = New System.Drawing.Size(60, 47)
+        Me.bueno6.TabIndex = 152
+        Me.bueno6.TabStop = False
+        Me.bueno6.Visible = False
+        '
+        'bueno5
+        '
+        Me.bueno5.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno5.Location = New System.Drawing.Point(945, 390)
+        Me.bueno5.Name = "bueno5"
+        Me.bueno5.Size = New System.Drawing.Size(60, 47)
+        Me.bueno5.TabIndex = 151
+        Me.bueno5.TabStop = False
+        Me.bueno5.Visible = False
+        '
+        'bueno4
+        '
+        Me.bueno4.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno4.Location = New System.Drawing.Point(945, 330)
+        Me.bueno4.Name = "bueno4"
+        Me.bueno4.Size = New System.Drawing.Size(60, 47)
+        Me.bueno4.TabIndex = 150
+        Me.bueno4.TabStop = False
+        Me.bueno4.Visible = False
+        '
+        'bueno3
+        '
+        Me.bueno3.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno3.Location = New System.Drawing.Point(945, 262)
+        Me.bueno3.Name = "bueno3"
+        Me.bueno3.Size = New System.Drawing.Size(60, 47)
+        Me.bueno3.TabIndex = 149
+        Me.bueno3.TabStop = False
+        Me.bueno3.Visible = False
+        '
+        'bueno2
+        '
+        Me.bueno2.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno2.Location = New System.Drawing.Point(945, 198)
+        Me.bueno2.Name = "bueno2"
+        Me.bueno2.Size = New System.Drawing.Size(60, 47)
+        Me.bueno2.TabIndex = 148
+        Me.bueno2.TabStop = False
+        Me.bueno2.Visible = False
+        '
+        'bueno1
+        '
+        Me.bueno1.Image = Global.Proyecto.My.Resources.Resources.checkbueno
+        Me.bueno1.Location = New System.Drawing.Point(945, 135)
+        Me.bueno1.Name = "bueno1"
+        Me.bueno1.Size = New System.Drawing.Size(60, 47)
+        Me.bueno1.TabIndex = 147
+        Me.bueno1.TabStop = False
+        Me.bueno1.Visible = False
+        '
+        'igual6
+        '
+        Me.igual6.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual6.Location = New System.Drawing.Point(945, 458)
+        Me.igual6.Name = "igual6"
+        Me.igual6.Size = New System.Drawing.Size(60, 47)
+        Me.igual6.TabIndex = 146
+        Me.igual6.TabStop = False
+        Me.igual6.Visible = False
+        '
+        'igual5
+        '
+        Me.igual5.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual5.Location = New System.Drawing.Point(945, 390)
+        Me.igual5.Name = "igual5"
+        Me.igual5.Size = New System.Drawing.Size(60, 47)
+        Me.igual5.TabIndex = 145
+        Me.igual5.TabStop = False
+        Me.igual5.Visible = False
+        '
+        'igual4
+        '
+        Me.igual4.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual4.Location = New System.Drawing.Point(945, 330)
+        Me.igual4.Name = "igual4"
+        Me.igual4.Size = New System.Drawing.Size(60, 47)
+        Me.igual4.TabIndex = 144
+        Me.igual4.TabStop = False
+        Me.igual4.Visible = False
+        '
+        'igual3
+        '
+        Me.igual3.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual3.Location = New System.Drawing.Point(945, 262)
+        Me.igual3.Name = "igual3"
+        Me.igual3.Size = New System.Drawing.Size(60, 47)
+        Me.igual3.TabIndex = 143
+        Me.igual3.TabStop = False
+        Me.igual3.Visible = False
+        '
+        'igual2
+        '
+        Me.igual2.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual2.Location = New System.Drawing.Point(945, 198)
+        Me.igual2.Name = "igual2"
+        Me.igual2.Size = New System.Drawing.Size(60, 47)
+        Me.igual2.TabIndex = 142
+        Me.igual2.TabStop = False
+        Me.igual2.Visible = False
+        '
+        'igual1
+        '
+        Me.igual1.Image = Global.Proyecto.My.Resources.Resources.igual
+        Me.igual1.Location = New System.Drawing.Point(945, 135)
+        Me.igual1.Name = "igual1"
+        Me.igual1.Size = New System.Drawing.Size(60, 47)
+        Me.igual1.TabIndex = 141
+        Me.igual1.TabStop = False
+        Me.igual1.Visible = False
+        '
+        'equis2
+        '
+        Me.equis2.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis2.Location = New System.Drawing.Point(945, 198)
+        Me.equis2.Name = "equis2"
+        Me.equis2.Size = New System.Drawing.Size(60, 47)
+        Me.equis2.TabIndex = 166
+        Me.equis2.TabStop = False
+        Me.equis2.Visible = False
+        '
+        'equis3
+        '
+        Me.equis3.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis3.Location = New System.Drawing.Point(945, 262)
+        Me.equis3.Name = "equis3"
+        Me.equis3.Size = New System.Drawing.Size(60, 47)
+        Me.equis3.TabIndex = 167
+        Me.equis3.TabStop = False
+        Me.equis3.Visible = False
+        '
+        'equis4
+        '
+        Me.equis4.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis4.Location = New System.Drawing.Point(945, 330)
+        Me.equis4.Name = "equis4"
+        Me.equis4.Size = New System.Drawing.Size(60, 47)
+        Me.equis4.TabIndex = 168
+        Me.equis4.TabStop = False
+        Me.equis4.Visible = False
+        '
+        'equis5
+        '
+        Me.equis5.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis5.Location = New System.Drawing.Point(945, 390)
+        Me.equis5.Name = "equis5"
+        Me.equis5.Size = New System.Drawing.Size(60, 47)
+        Me.equis5.TabIndex = 169
+        Me.equis5.TabStop = False
+        Me.equis5.Visible = False
+        '
+        'equis6
+        '
+        Me.equis6.Image = Global.Proyecto.My.Resources.Resources.equis
+        Me.equis6.Location = New System.Drawing.Point(945, 458)
+        Me.equis6.Name = "equis6"
+        Me.equis6.Size = New System.Drawing.Size(60, 47)
+        Me.equis6.TabIndex = 170
+        Me.equis6.TabStop = False
+        Me.equis6.Visible = False
+        '
         'Verificacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1688, 896)
+        Me.Controls.Add(Me.equis6)
+        Me.Controls.Add(Me.equis5)
+        Me.Controls.Add(Me.equis4)
+        Me.Controls.Add(Me.equis3)
+        Me.Controls.Add(Me.equis2)
+        Me.Controls.Add(Me.equis1)
         Me.Controls.Add(Me.MaskedTextBox7)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.OrdenVerificacion)
-        Me.Controls.Add(Me.PictureBox18)
-        Me.Controls.Add(Me.PictureBox17)
-        Me.Controls.Add(Me.PictureBox16)
-        Me.Controls.Add(Me.PictureBox15)
-        Me.Controls.Add(Me.PictureBox14)
-        Me.Controls.Add(Me.PictureBox13)
-        Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.botonVerificacionOrden)
+        Me.Controls.Add(Me.refrescar6)
+        Me.Controls.Add(Me.refrescar5)
+        Me.Controls.Add(Me.refrescar4)
+        Me.Controls.Add(Me.refrescar3)
+        Me.Controls.Add(Me.refrescar2)
+        Me.Controls.Add(Me.refrescar1)
+        Me.Controls.Add(Me.bueno6)
+        Me.Controls.Add(Me.bueno5)
+        Me.Controls.Add(Me.bueno4)
+        Me.Controls.Add(Me.bueno3)
+        Me.Controls.Add(Me.bueno2)
+        Me.Controls.Add(Me.bueno1)
+        Me.Controls.Add(Me.igual6)
+        Me.Controls.Add(Me.igual5)
+        Me.Controls.Add(Me.igual4)
+        Me.Controls.Add(Me.igual3)
+        Me.Controls.Add(Me.igual2)
+        Me.Controls.Add(Me.igual1)
         Me.Controls.Add(Me.CircularProgressBar7)
         Me.Controls.Add(Me.CircularProgressBar6)
         Me.Controls.Add(Me.CircularProgressBar5)
@@ -934,21 +1012,21 @@ Partial Class Verificacion
         Me.Controls.Add(Me.MaskedTextBox2)
         Me.Controls.Add(Me.MaskedTextBox1)
         Me.Controls.Add(Me.CircularProgressBar2)
-        Me.Controls.Add(Me.TextBox14)
+        Me.Controls.Add(Me.txtBasedatos1)
         Me.Controls.Add(Me.controlTimer)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CircularProgressBar1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.botoncaja)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.Automatico)
+        Me.Controls.Add(Me.txtBasedatos6)
+        Me.Controls.Add(Me.txtBasedatos5)
+        Me.Controls.Add(Me.txtBasedatos4)
+        Me.Controls.Add(Me.txtBasedatos3)
+        Me.Controls.Add(Me.txtBasedatos2)
+        Me.Controls.Add(Me.botonAutomatico)
         Me.Controls.Add(Me.textboxcaja)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -959,25 +1037,31 @@ Partial Class Verificacion
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Verificacion"
         Me.Text = "Verificacion"
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.refrescar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.bueno1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.igual1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.equis6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -988,22 +1072,22 @@ Partial Class Verificacion
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Automatico As Button
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents botonAutomatico As Button
+    Friend WithEvents txtBasedatos6 As TextBox
+    Friend WithEvents txtBasedatos5 As TextBox
+    Friend WithEvents txtBasedatos4 As TextBox
+    Friend WithEvents txtBasedatos3 As TextBox
+    Friend WithEvents txtBasedatos2 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents botoncaja As Button
     Friend WithEvents CircularProgressBar1 As CircularProgressBar.CircularProgressBar
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents controlTimer As TextBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents txtBasedatos1 As TextBox
     Friend WithEvents CircularProgressBar2 As CircularProgressBar.CircularProgressBar
     Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents MaskedTextBox2 As MaskedTextBox
@@ -1022,27 +1106,33 @@ Partial Class Verificacion
     Friend WithEvents Botella4 As Timer
     Friend WithEvents Botella5 As Timer
     Friend WithEvents Botella6 As Timer
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox13 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents PictureBox15 As PictureBox
-    Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents PictureBox17 As PictureBox
-    Friend WithEvents PictureBox18 As PictureBox
+    Friend WithEvents igual1 As PictureBox
+    Friend WithEvents igual2 As PictureBox
+    Friend WithEvents igual3 As PictureBox
+    Friend WithEvents igual4 As PictureBox
+    Friend WithEvents igual5 As PictureBox
+    Friend WithEvents igual6 As PictureBox
+    Friend WithEvents bueno1 As PictureBox
+    Friend WithEvents bueno2 As PictureBox
+    Friend WithEvents bueno3 As PictureBox
+    Friend WithEvents bueno4 As PictureBox
+    Friend WithEvents bueno5 As PictureBox
+    Friend WithEvents bueno6 As PictureBox
+    Friend WithEvents refrescar1 As PictureBox
+    Friend WithEvents refrescar2 As PictureBox
+    Friend WithEvents refrescar3 As PictureBox
+    Friend WithEvents refrescar4 As PictureBox
+    Friend WithEvents refrescar5 As PictureBox
+    Friend WithEvents refrescar6 As PictureBox
     Friend WithEvents textboxcaja As TextBox
-    Friend WithEvents OrdenVerificacion As Button
+    Friend WithEvents botonVerificacionOrden As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label10 As Label
     Friend WithEvents MaskedTextBox7 As MaskedTextBox
+    Friend WithEvents equis1 As PictureBox
+    Friend WithEvents equis2 As PictureBox
+    Friend WithEvents equis3 As PictureBox
+    Friend WithEvents equis4 As PictureBox
+    Friend WithEvents equis5 As PictureBox
+    Friend WithEvents equis6 As PictureBox
 End Class

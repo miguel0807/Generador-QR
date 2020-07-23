@@ -11,20 +11,20 @@ Module Procesos
     Sub compararInvisible(sender As Object, e As EventArgs)
 
 
-        Verificacion.PictureBox1.Visible = False
-        Verificacion.PictureBox2.Visible = False
-        Verificacion.PictureBox3.Visible = False
-        Verificacion.PictureBox4.Visible = False
-        Verificacion.PictureBox5.Visible = False
-        Verificacion.PictureBox6.Visible = False
+        Verificacion.igual1.Visible = False
+        Verificacion.igual2.Visible = False
+        Verificacion.igual3.Visible = False
+        Verificacion.igual4.Visible = False
+        Verificacion.igual5.Visible = False
+        Verificacion.igual6.Visible = False
     End Sub
 
     Sub compararVisible(sender As Object, e As EventArgs)
-        Proyecto.Verificacion.PictureBox1.Visible = True
-        Proyecto.Verificacion.PictureBox2.Visible = True
-        Proyecto.Verificacion.PictureBox3.Visible = True
-        Proyecto.Verificacion.PictureBox4.Visible = True
-        Proyecto.Verificacion.PictureBox5.Visible = True
-        Proyecto.Verificacion.PictureBox6.Visible = True
+        Proyecto.Verificacion.igual1.Visible = True
+        Proyecto.Verificacion.igual2.Visible = True
+        Proyecto.Verificacion.igual3.Visible = True
+        Proyecto.Verificacion.igual4.Visible = True
+        Proyecto.Verificacion.igual5.Visible = True
+        Proyecto.Verificacion.igual6.Visible = True
     End Sub
 End Module

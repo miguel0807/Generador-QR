@@ -288,6 +288,7 @@
     <None Include="Resources\settings_783521.ico" />
     <None Include="Resources\igual.png" />
     <None Include="Resources\checkbueno.png" />
+    <None Include="Resources\equis.png" />
     <Content Include="Resources\qr_code_14100.ico" />
     <Content Include="Resources\folder_images_23255.ico" />
     <None Include="Resources\packages.config" />

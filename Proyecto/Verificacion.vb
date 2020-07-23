@@ -7,61 +7,67 @@ Public Class Verificacion
     Public manual As Boolean = False
     Dim caja As String
 
-    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
         MaskedTextBox2.Text = ""
-        PictureBox8.Visible = False
-        PictureBox2.Visible = False
+        bueno2.Visible = False
+        igual2.Visible = False
+        equis2.Visible = False
+        refrescar2.Visible = False
+
         MaskedTextBox2.ReadOnly = False
         MaskedTextBox2.Enabled = True
         MaskedTextBox2.Focus()
-        PictureBox14.Visible = False
+
         MaskedTextBox2.BackColor = Color.White
         manual = True
+
+
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles botoncaja.Click
         textboxcaja.Text = ""
 
 
 
-        Automatico.Enabled = False
+        botonAutomatico.Enabled = False
         MaskedTextBox1.Clear()
         MaskedTextBox2.Clear()
         MaskedTextBox3.Clear()
         MaskedTextBox4.Clear()
         MaskedTextBox5.Clear()
         MaskedTextBox6.Clear()
-        TextBox9.Clear()
-        TextBox10.Clear()
-        TextBox11.Clear()
-        TextBox12.Clear()
-        TextBox13.Clear()
-        TextBox14.Clear()
+        txtBasedatos6.Clear()
+        txtBasedatos5.Clear()
+        txtBasedatos4.Clear()
+        txtBasedatos3.Clear()
+        txtBasedatos2.Clear()
+        txtBasedatos1.Clear()
         textboxcaja.Enabled = True
         textboxcaja.Focus()
 
 
-        PictureBox1.Visible = False
-        PictureBox2.Visible = False
-        PictureBox3.Visible = False
-        PictureBox4.Visible = False
-        PictureBox5.Visible = False
-        PictureBox6.Visible = False
+        igual1.Visible = False
+        igual2.Visible = False
+        igual3.Visible = False
+        igual4.Visible = False
+        igual5.Visible = False
+        igual6.Visible = False
 
 
-        PictureBox7.Visible = False
-        PictureBox8.Visible = False
-        PictureBox9.Visible = False
-        PictureBox10.Visible = False
-        PictureBox11.Visible = False
-        PictureBox12.Visible = False
+        bueno1.Visible = False
+        bueno2.Visible = False
+        bueno3.Visible = False
+        bueno4.Visible = False
+        bueno5.Visible = False
+        bueno6.Visible = False
 
-        TextBox14.BackColor = SystemColors.Control
-        TextBox13.BackColor = SystemColors.Control
-        TextBox12.BackColor = SystemColors.Control
-        TextBox11.BackColor = SystemColors.Control
-        TextBox10.BackColor = SystemColors.Control
-        TextBox9.BackColor = SystemColors.Control
+        txtBasedatos1.BackColor = SystemColors.Control
+        txtBasedatos2.BackColor = SystemColors.Control
+        txtBasedatos3.BackColor = SystemColors.Control
+        txtBasedatos4.BackColor = SystemColors.Control
+        txtBasedatos5.BackColor = SystemColors.Control
+        txtBasedatos6.BackColor = SystemColors.Control
         Label1.Text = "Caja # "
 
     End Sub
@@ -89,7 +95,7 @@ Public Class Verificacion
             If contador = 13 Then
                 If IsNumeric(textboxcaja.Text) Then
 
-                    Automatico.Enabled = True
+                    botonAutomatico.Enabled = True
 
                     Dim extraccion As String = textboxcaja.Text
                     Dim orden As String
@@ -115,28 +121,28 @@ Public Class Verificacion
 #Region "Pregunta"
                     'El item selecciona de cual columna de la base de datos se conectara y row es la fila
                     If ds.Tables("datos").Rows.Count > 0 Then
-                        TextBox14.Text = ds.Tables("datos").Rows(0).Item(1).ToString
-                        TextBox13.Text = ds.Tables("datos").Rows(1).Item(1).ToString
-                        TextBox12.Text = ds.Tables("datos").Rows(2).Item(1).ToString
-                        TextBox11.Text = ds.Tables("datos").Rows(3).Item(1).ToString
-                        TextBox10.Text = ds.Tables("datos").Rows(4).Item(1).ToString
-                        TextBox9.Text = ds.Tables("datos").Rows(5).Item(1).ToString
+                        txtBasedatos1.Text = ds.Tables("datos").Rows(0).Item(1).ToString
+                        txtBasedatos2.Text = ds.Tables("datos").Rows(1).Item(1).ToString
+                        txtBasedatos3.Text = ds.Tables("datos").Rows(2).Item(1).ToString
+                        txtBasedatos4.Text = ds.Tables("datos").Rows(3).Item(1).ToString
+                        txtBasedatos5.Text = ds.Tables("datos").Rows(4).Item(1).ToString
+                        txtBasedatos6.Text = ds.Tables("datos").Rows(5).Item(1).ToString
 
 
 
-                        basedatos(0) = TextBox14.Text
-                        basedatos(1) = TextBox13.Text
-                        basedatos(2) = TextBox12.Text
-                        basedatos(3) = TextBox11.Text
-                        basedatos(4) = TextBox10.Text
-                        basedatos(5) = TextBox9.Text
+                        basedatos(0) = txtBasedatos1.Text
+                        basedatos(1) = txtBasedatos2.Text
+                        basedatos(2) = txtBasedatos3.Text
+                        basedatos(3) = txtBasedatos4.Text
+                        basedatos(4) = txtBasedatos5.Text
+                        basedatos(5) = txtBasedatos6.Text
 
 
                     Else
 
                         MsgBox("La caja ya se encuentra registrada")
-                        Button2.Focus()
-                        Automatico.Enabled = False
+                        botoncaja.Focus()
+                        botonAutomatico.Enabled = False
                         Label1.Text = "Caja # "
                         Exit Sub
                     End If
@@ -146,11 +152,11 @@ Public Class Verificacion
                 Else
                     MsgBox("QR Invalido")
                     textboxcaja.Text = ""
-                    Button2.Focus()
+                    botoncaja.Focus()
                 End If
             End If
             CircularProgressBar1.Visible = False
-            Automatico.Focus()
+            botonAutomatico.Focus()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -174,7 +180,7 @@ Public Class Verificacion
                 controlTimer.Text = 0
                 textboxcaja.Text = ""
                 Timer1.Stop()
-                Button2.Focus()
+                botoncaja.Focus()
             End If
             If contador >= 14 Then
                 MsgBox("Favor utilizar el scaner")
@@ -182,7 +188,7 @@ Public Class Verificacion
                 controlTimer.Text = 0
                 textboxcaja.Text = ""
                 Timer1.Stop()
-                Button2.Focus()
+                botoncaja.Focus()
             End If
 
 
@@ -196,7 +202,7 @@ Public Class Verificacion
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Automatico.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles botonAutomatico.Click
 
 
 
@@ -221,26 +227,40 @@ Public Class Verificacion
         tiempo = 0
 
 
-        PictureBox1.Visible = False
-        PictureBox2.Visible = False
-        PictureBox3.Visible = False
-        PictureBox4.Visible = False
-        PictureBox5.Visible = False
-        PictureBox6.Visible = False
+        igual1.Visible = False
+        igual2.Visible = False
+        igual3.Visible = False
+        igual4.Visible = False
+        igual5.Visible = False
+        igual6.Visible = False
 
-        PictureBox7.Visible = False
-        PictureBox8.Visible = False
-        PictureBox9.Visible = False
-        PictureBox10.Visible = False
-        PictureBox11.Visible = False
-        PictureBox12.Visible = False
+        bueno1.Visible = False
+        bueno2.Visible = False
+        bueno3.Visible = False
+        bueno4.Visible = False
+        bueno5.Visible = False
+        bueno6.Visible = False
 
-        TextBox14.BackColor = SystemColors.Control
-        TextBox13.BackColor = SystemColors.Control
-        TextBox12.BackColor = SystemColors.Control
-        TextBox11.BackColor = SystemColors.Control
-        TextBox10.BackColor = SystemColors.Control
-        TextBox9.BackColor = SystemColors.Control
+        refrescar1.Visible = False
+        refrescar2.Visible = False
+        refrescar3.Visible = False
+        refrescar4.Visible = False
+        refrescar5.Visible = False
+        refrescar6.Visible = False
+
+        equis1.Visible = False
+        equis2.Visible = False
+        equis3.Visible = False
+        equis4.Visible = False
+        equis5.Visible = False
+        equis6.Visible = False
+
+        txtBasedatos1.BackColor = SystemColors.Control
+        txtBasedatos2.BackColor = SystemColors.Control
+        txtBasedatos3.BackColor = SystemColors.Control
+        txtBasedatos4.BackColor = SystemColors.Control
+        txtBasedatos5.BackColor = SystemColors.Control
+        txtBasedatos6.BackColor = SystemColors.Control
 
         manual = False
     End Sub
@@ -271,61 +291,91 @@ Public Class Verificacion
         If contador2 = 14 Then
 
 
+            Botella1.Enabled = True
             For Each elemento As String In basedatos
                 If MaskedTextBox1.Text = elemento Then
                     Dim ret As Integer = Array.IndexOf(basedatos, elemento)
                     ' devuelve posicion de array encontrado 
-                    If manual = False Then
-                        Botella1.Enabled = True
+
+
+
+                    If ret = 0 Then
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
+
                     End If
-                    PictureBox13.Visible = True
-                        If ret = 0 Then
-                            TextBox14.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
 
-                        If ret = 1 Then
-                            TextBox13.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
-
-                        If ret = 2 Then
-                            TextBox12.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
-
-                        If ret = 3 Then
-                            TextBox11.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
-
-                        If ret = 4 Then
-                            TextBox10.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
-
-                        If ret = 5 Then
-                            TextBox9.BackColor = Color.ForestGreen
-                            PictureBox7.Visible = True
-                            PictureBox13.Visible = False
-                        End If
-
-
-
-                        If MaskedTextBox1.Text = MaskedTextBox2.Text Or MaskedTextBox1.Text = MaskedTextBox3.Text Or MaskedTextBox1.Text = MaskedTextBox4.Text Or MaskedTextBox1.Text = MaskedTextBox5.Text Or MaskedTextBox1.Text = MaskedTextBox6.Text Then
-                            MaskedTextBox1.BackColor = Color.LightSlateGray
-                            PictureBox7.Visible = False
-                            PictureBox1.Visible = True
-                            PictureBox13.Visible = True
-                        End If
+                    If ret = 1 Then
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
                     End If
+
+                    If ret = 2 Then
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
+                    End If
+
+                    If ret = 3 Then
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
+                    End If
+
+                    If ret = 4 Then
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
+                    End If
+
+                    If ret = 5 Then
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno1.Visible = True
+                        refrescar1.Visible = False
+                        igual1.Visible = False
+                        equis1.Visible = False
+                    End If
+
+
+                End If
+                If MaskedTextBox1.Text = MaskedTextBox2.Text Or MaskedTextBox1.Text = MaskedTextBox3.Text Or MaskedTextBox1.Text = MaskedTextBox4.Text Or MaskedTextBox1.Text = MaskedTextBox5.Text Or MaskedTextBox1.Text = MaskedTextBox6.Text Then
+                        MaskedTextBox1.BackColor = Color.LightSlateGray
+                        bueno1.Visible = False
+                        equis1.Visible = False
+                        igual1.Visible = True
+                        refrescar1.Visible = True
+                    End If
+
+
+
+                If MaskedTextBox1.Text = MaskedTextBox2.Text Or MaskedTextBox1.Text = MaskedTextBox3.Text Or MaskedTextBox1.Text = MaskedTextBox4.Text Or MaskedTextBox1.Text = MaskedTextBox5.Text Or MaskedTextBox1.Text = MaskedTextBox6.Text Or MaskedTextBox1.Text = txtBasedatos1.Text Or MaskedTextBox1.Text = txtBasedatos2.Text Or MaskedTextBox1.Text = txtBasedatos3.Text Or MaskedTextBox1.Text = txtBasedatos4.Text Or MaskedTextBox1.Text = txtBasedatos5.Text Or MaskedTextBox1.Text = txtBasedatos6.Text Then
+
+                Else
+                    MaskedTextBox1.BackColor = Color.LightSlateGray
+                    igual1.Visible = False
+                    bueno1.Visible = False
+                    equis1.Visible = True
+                    refrescar1.Visible = True
+
+                End If
+
             Next
         End If
+
+
+
 
     End Sub
 
@@ -348,7 +398,7 @@ Public Class Verificacion
 
         CircularProgressBar3.Visible = True
 
-            MaskedTextBox2.Clear()
+        MaskedTextBox2.Clear()
     End Sub
 
 
@@ -394,53 +444,85 @@ Public Class Verificacion
 
 
                     If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
+
 
                     End If
 
                     If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
                     End If
 
                     If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
                     End If
 
                     If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
                     End If
 
                     If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
                     End If
 
                     If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox8.Visible = True
-                        PictureBox14.Visible = False
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno2.Visible = True
+                        refrescar2.Visible = False
+                        igual2.Visible = False
+                        equis2.Visible = False
                     End If
 
 
-                    If MaskedTextBox2.Text = MaskedTextBox1.Text Or MaskedTextBox2.Text = MaskedTextBox3.Text Or MaskedTextBox2.Text = MaskedTextBox4.Text Or MaskedTextBox2.Text = MaskedTextBox5.Text Or MaskedTextBox2.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox2.BackColor = Color.LightSlateGray
-                        PictureBox8.Visible = False
-                        PictureBox2.Visible = True
-                        PictureBox14.Visible = True
 
 
-                    End If
+
+                End If
+
+                If MaskedTextBox2.Text = MaskedTextBox1.Text Or MaskedTextBox2.Text = MaskedTextBox3.Text Or MaskedTextBox2.Text = MaskedTextBox4.Text Or MaskedTextBox2.Text = MaskedTextBox5.Text Or MaskedTextBox2.Text = MaskedTextBox6.Text Then
+                    MaskedTextBox2.BackColor = Color.LightSlateGray
+                    bueno2.Visible = False
+                    equis2.Visible = False
+                    igual2.Visible = True
+                    refrescar2.Visible = True
+
+
+                End If
+                If MaskedTextBox2.Text = MaskedTextBox1.Text Or MaskedTextBox2.Text = MaskedTextBox3.Text Or MaskedTextBox2.Text = MaskedTextBox4.Text Or MaskedTextBox2.Text = MaskedTextBox5.Text Or MaskedTextBox2.Text = MaskedTextBox6.Text Or MaskedTextBox2.Text = txtBasedatos1.Text Or MaskedTextBox2.Text = txtBasedatos2.Text Or MaskedTextBox2.Text = txtBasedatos3.Text Or MaskedTextBox2.Text = txtBasedatos4.Text Or MaskedTextBox2.Text = txtBasedatos5.Text Or MaskedTextBox2.Text = txtBasedatos6.Text Then
+
+                Else
+                    MaskedTextBox2.BackColor = Color.LightSlateGray
+                    igual2.Visible = False
+                    bueno2.Visible = False
+                    equis2.Visible = True
+                    refrescar2.Visible = True
+
                 End If
             Next
+
+
+
         End If
     End Sub
 
@@ -467,50 +549,80 @@ Public Class Verificacion
 
 
                     If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
-                        PictureBox15.Visible = False
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
 
                     If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
-                        PictureBox15.Visible = False
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
 
                     If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
 
                     If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
-                        PictureBox15.Visible = False
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
 
                     If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
-                        PictureBox15.Visible = False
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
 
                     If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox9.Visible = True
-                        PictureBox15.Visible = False
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno3.Visible = True
+                        refrescar3.Visible = False
+                        igual3.Visible = False
+                        equis3.Visible = False
                     End If
-                    If MaskedTextBox3.Text = MaskedTextBox1.Text Or MaskedTextBox3.Text = MaskedTextBox2.Text Or MaskedTextBox3.Text = MaskedTextBox4.Text Or MaskedTextBox3.Text = MaskedTextBox5.Text Or MaskedTextBox3.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox3.BackColor = Color.LightSlateGray
-                        PictureBox9.Visible = False
-                        PictureBox3.Visible = True
-                        PictureBox15.Visible = True
 
 
 
-                    End If
+                End If
+
+                If MaskedTextBox3.Text = MaskedTextBox1.Text Or MaskedTextBox3.Text = MaskedTextBox2.Text Or MaskedTextBox3.Text = MaskedTextBox4.Text Or MaskedTextBox3.Text = MaskedTextBox5.Text Or MaskedTextBox3.Text = MaskedTextBox6.Text Then
+                    MaskedTextBox3.BackColor = Color.LightSlateGray
+                    bueno3.Visible = False
+                    igual3.Visible = True
+                    equis3.Visible = False
+                    refrescar3.Visible = True
+
+                End If
+
+
+                If MaskedTextBox3.Text = MaskedTextBox1.Text Or MaskedTextBox3.Text = MaskedTextBox2.Text Or MaskedTextBox3.Text = MaskedTextBox4.Text Or MaskedTextBox3.Text = MaskedTextBox5.Text Or MaskedTextBox3.Text = MaskedTextBox6.Text Or MaskedTextBox3.Text = txtBasedatos1.Text Or MaskedTextBox3.Text = txtBasedatos2.Text Or MaskedTextBox3.Text = txtBasedatos3.Text Or MaskedTextBox3.Text = txtBasedatos4.Text Or MaskedTextBox3.Text = txtBasedatos5.Text Or MaskedTextBox3.Text = txtBasedatos6.Text Then
+
+                Else
+                    MaskedTextBox3.BackColor = Color.LightSlateGray
+                    igual3.Visible = False
+                    bueno3.Visible = False
+                    equis3.Visible = True
+                    refrescar3.Visible = True
+
                 End If
             Next
+
+
         End If
     End Sub
 
@@ -534,19 +646,17 @@ Public Class Verificacion
                 MaskedTextBox4.Focus()
             End If
         Else
-            Automatico.Focus()
+            botonAutomatico.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
-
-
             cn.Open()
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -554,12 +664,20 @@ Public Class Verificacion
 
     Private Sub Botella1_Tick(sender As Object, e As EventArgs) Handles Botella1.Tick
 
-        Botella1.Interval = 300
-        If tiempo = 1 Then
+        Botella1.Interval = 500
+
+        If manual = False Then
+            If tiempo = 1 Then
             MaskedTextBox2.Enabled = True
             MaskedTextBox2.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+
+        Else
+            botonAutomatico.Focus()
+        End If
+
+
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
 
@@ -569,7 +687,7 @@ Public Class Verificacion
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
         tiempo = tiempo + 1
     End Sub
@@ -583,9 +701,11 @@ Public Class Verificacion
                 MaskedTextBox3.Focus()
             End If
         Else
-            Automatico.Focus()
+            botonAutomatico.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+
+
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
 
@@ -595,7 +715,7 @@ Public Class Verificacion
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
 
         tiempo = tiempo + 1
@@ -628,9 +748,9 @@ Public Class Verificacion
                 MaskedTextBox5.Focus()
             End If
         Else
-            Automatico.Focus()
+            botonAutomatico.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
 
@@ -640,7 +760,7 @@ Public Class Verificacion
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -664,48 +784,71 @@ Public Class Verificacion
 
 
                     If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
 
                     If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
 
                     If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
 
                     If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
 
                     If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
 
                     If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox10.Visible = True
-                        PictureBox16.Visible = False
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno4.Visible = True
+                        refrescar4.Visible = False
+                        equis4.Visible = False
+                        igual4.Visible = False
                     End If
-                    If MaskedTextBox4.Text = MaskedTextBox1.Text Or MaskedTextBox4.Text = MaskedTextBox2.Text Or MaskedTextBox4.Text = MaskedTextBox3.Text Or MaskedTextBox4.Text = MaskedTextBox5.Text Or MaskedTextBox4.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox4.BackColor = Color.LightSlateGray
-                        PictureBox10.Visible = False
-                        PictureBox4.Visible = True
-                        PictureBox16.Visible = True
+
+                End If
+                If MaskedTextBox4.Text = MaskedTextBox1.Text Or MaskedTextBox4.Text = MaskedTextBox2.Text Or MaskedTextBox4.Text = MaskedTextBox3.Text Or MaskedTextBox4.Text = MaskedTextBox5.Text Or MaskedTextBox4.Text = MaskedTextBox6.Text Then
+                    MaskedTextBox4.BackColor = Color.LightSlateGray
+                    bueno4.Visible = False
+                    igual4.Visible = True
+                    equis4.Visible = False
+                    refrescar4.Visible = True
 
 
-                    End If
+                End If
+
+                If MaskedTextBox4.Text = MaskedTextBox1.Text Or MaskedTextBox4.Text = MaskedTextBox2.Text Or MaskedTextBox4.Text = MaskedTextBox3.Text Or MaskedTextBox4.Text = MaskedTextBox5.Text Or MaskedTextBox4.Text = MaskedTextBox6.Text Or MaskedTextBox4.Text = txtBasedatos1.Text Or MaskedTextBox4.Text = txtBasedatos2.Text Or MaskedTextBox4.Text = txtBasedatos3.Text Or MaskedTextBox4.Text = txtBasedatos4.Text Or MaskedTextBox4.Text = txtBasedatos5.Text Or MaskedTextBox4.Text = txtBasedatos6.Text Then
+                Else
+                    MaskedTextBox4.BackColor = Color.LightSlateGray
+                    igual4.Visible = False
+                    bueno4.Visible = False
+                    equis4.Visible = True
+                    refrescar4.Visible = True
                 End If
             Next
         End If
@@ -733,48 +876,71 @@ Public Class Verificacion
 
 
                     If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
 
                     If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
 
                     If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
 
                     If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
 
                     If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
 
                     If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox11.Visible = True
-                        PictureBox17.Visible = False
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno5.Visible = True
+                        refrescar5.Visible = False
+                        igual5.Visible = False
+                        equis5.Visible = False
                     End If
-                    If MaskedTextBox5.Text = MaskedTextBox1.Text Or MaskedTextBox5.Text = MaskedTextBox2.Text Or MaskedTextBox5.Text = MaskedTextBox3.Text Or MaskedTextBox5.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox5.BackColor = Color.LightSlateGray
-                        PictureBox11.Visible = False
-                        PictureBox5.Visible = True
-                        PictureBox17.Visible = True
+
+                End If
+                If MaskedTextBox5.Text = MaskedTextBox1.Text Or MaskedTextBox5.Text = MaskedTextBox2.Text Or MaskedTextBox5.Text = MaskedTextBox3.Text Or MaskedTextBox5.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
+                    MaskedTextBox5.BackColor = Color.LightSlateGray
+                    bueno5.Visible = False
+                    igual5.Visible = True
+                    equis5.Visible = False
+                    refrescar5.Visible = True
 
 
-                    End If
+                End If
+                If MaskedTextBox5.Text = MaskedTextBox1.Text Or MaskedTextBox5.Text = MaskedTextBox2.Text Or MaskedTextBox5.Text = MaskedTextBox3.Text Or MaskedTextBox5.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Or MaskedTextBox5.Text = txtBasedatos1.Text Or MaskedTextBox5.Text = txtBasedatos2.Text Or MaskedTextBox5.Text = txtBasedatos3.Text Or MaskedTextBox5.Text = txtBasedatos4.Text Or MaskedTextBox5.Text = txtBasedatos5.Text Or MaskedTextBox5.Text = txtBasedatos6.Text Then
+
+                Else
+                    MaskedTextBox5.BackColor = Color.LightSlateGray
+                    igual5.Visible = False
+                    bueno5.Visible = False
+                    equis5.Visible = True
+                    refrescar5.Visible = True
                 End If
             Next
         End If
@@ -788,9 +954,9 @@ Public Class Verificacion
                 MaskedTextBox6.Focus()
             End If
         Else
-            Automatico.Focus()
+            botonAutomatico.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
 
@@ -800,7 +966,7 @@ Public Class Verificacion
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
         tiempo = tiempo + 1
 
@@ -844,12 +1010,12 @@ Public Class Verificacion
         Botella6.Interval = 500
         If manual = False Then
             If tiempo = 1 Then
-                Automatico.Focus()
+                botonAutomatico.Focus()
             End If
         Else
-            Automatico.Focus()
+            botonAutomatico.Focus()
         End If
-        If PictureBox7.Visible = True And PictureBox8.Visible = True And PictureBox9.Visible = True And PictureBox10.Visible = True And PictureBox11.Visible = True And PictureBox12.Visible = True Then
+        If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
             cn.Close()
@@ -859,7 +1025,7 @@ Public Class Verificacion
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
             MsgBox("Etiquetas Verificadas con exito")
-            Button2.Focus()
+            botoncaja.Focus()
         End If
         tiempo = tiempo + 1
     End Sub
@@ -882,48 +1048,74 @@ Public Class Verificacion
 
 
                     If ret = 0 Then
-                        TextBox14.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos1.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
 
                     If ret = 1 Then
-                        TextBox13.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos2.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
 
                     If ret = 2 Then
-                        TextBox12.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos3.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
 
                     If ret = 3 Then
-                        TextBox11.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos4.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
 
                     If ret = 4 Then
-                        TextBox10.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos5.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
 
                     If ret = 5 Then
-                        TextBox9.BackColor = Color.ForestGreen
-                        PictureBox12.Visible = True
-                        PictureBox18.Visible = False
+                        txtBasedatos6.BackColor = Color.ForestGreen
+                        bueno6.Visible = True
+                        refrescar6.Visible = False
+                        equis6.Visible = False
+                        igual6.Visible = False
                     End If
-                    If MaskedTextBox6.Text = MaskedTextBox1.Text Or MaskedTextBox6.Text = MaskedTextBox2.Text Or MaskedTextBox6.Text = MaskedTextBox3.Text Or MaskedTextBox6.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
-                        MaskedTextBox6.BackColor = Color.LightSlateGray
-                        PictureBox12.Visible = False
-                        PictureBox6.Visible = True
-                        PictureBox18.Visible = True
 
 
-                    End If
+
+                End If
+
+                If MaskedTextBox6.Text = MaskedTextBox1.Text Or MaskedTextBox6.Text = MaskedTextBox2.Text Or MaskedTextBox6.Text = MaskedTextBox3.Text Or MaskedTextBox6.Text = MaskedTextBox4.Text Or MaskedTextBox5.Text = MaskedTextBox6.Text Then
+                    MaskedTextBox6.BackColor = Color.LightSlateGray
+                    bueno6.Visible = False
+                    igual6.Visible = True
+                    equis6.Visible = False
+                    refrescar6.Visible = True
+
+
+                End If
+
+                If MaskedTextBox6.Text = MaskedTextBox1.Text Or MaskedTextBox6.Text = MaskedTextBox2.Text Or MaskedTextBox6.Text = MaskedTextBox3.Text Or MaskedTextBox6.Text = MaskedTextBox4.Text Or MaskedTextBox6.Text = MaskedTextBox5.Text Or MaskedTextBox6.Text = txtBasedatos1.Text Or MaskedTextBox6.Text = txtBasedatos2.Text Or MaskedTextBox6.Text = txtBasedatos3.Text Or MaskedTextBox6.Text = txtBasedatos4.Text Or MaskedTextBox6.Text = txtBasedatos5.Text Or MaskedTextBox6.Text = txtBasedatos6.Text Then
+                Else
+                    MaskedTextBox6.BackColor = Color.LightSlateGray
+                    igual6.Visible = False
+                    bueno6.Visible = False
+                    equis6.Visible = True
+                    refrescar6.Visible = True
                 End If
             Next
         End If
@@ -942,7 +1134,7 @@ Public Class Verificacion
         CircularProgressBar1.Visible = True
     End Sub
 
-    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles TextBox13.TextChanged
+    Private Sub TextBox13_TextChanged(sender As Object, e As EventArgs) Handles txtBasedatos2.TextChanged
 
     End Sub
 
@@ -970,59 +1162,85 @@ Public Class Verificacion
 
     End Sub
 
-    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles refrescar1.Click
         MaskedTextBox1.Text = ""
-        PictureBox7.Visible = False
-        PictureBox1.Visible = False
+        bueno1.Visible = False
+        igual1.Visible = False
+        equis1.Visible = False
+        refrescar1.Visible = False
+
         MaskedTextBox1.ReadOnly = False
+        MaskedTextBox1.Enabled = True
         MaskedTextBox1.Focus()
+        MaskedTextBox1.BackColor = Color.White
+        manual = True
+
+
+
 
     End Sub
 
-    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles refrescar3.Click
         MaskedTextBox3.Text = ""
-        PictureBox9.Visible = False
-        PictureBox3.Visible = False
+        bueno3.Visible = False
+        igual3.Visible = False
+        equis3.Visible = False
         MaskedTextBox3.ReadOnly = False
         MaskedTextBox3.Enabled = True
         MaskedTextBox3.Focus()
-        PictureBox15.Visible = False
+        refrescar3.Visible = False
         MaskedTextBox3.BackColor = Color.White
         manual = True
     End Sub
 
-    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
+    Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles refrescar4.Click
+
+
         MaskedTextBox4.Text = ""
-        PictureBox10.Visible = False
-        PictureBox4.Visible = False
+        bueno4.Visible = False
+        igual4.Visible = False
+        equis4.Visible = False
+        refrescar4.Visible = False
+
         MaskedTextBox4.ReadOnly = False
         MaskedTextBox4.Enabled = True
         MaskedTextBox4.Focus()
-        PictureBox16.Visible = False
+
         MaskedTextBox4.BackColor = Color.White
         manual = True
+
+
+
     End Sub
 
-    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
+    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles refrescar5.Click
+
         MaskedTextBox5.Text = ""
-        PictureBox11.Visible = False
-        PictureBox5.Visible = False
+        bueno5.Visible = False
+        igual5.Visible = False
+        equis5.Visible = False
+        refrescar5.Visible = False
+
         MaskedTextBox5.ReadOnly = False
         MaskedTextBox5.Enabled = True
         MaskedTextBox5.Focus()
-        PictureBox17.Visible = False
+
         MaskedTextBox5.BackColor = Color.White
         manual = True
     End Sub
 
-    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
+    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles refrescar6.Click
+
         MaskedTextBox6.Text = ""
-        PictureBox12.Visible = False
-        PictureBox6.Visible = False
+        bueno6.Visible = False
+        igual6.Visible = False
+        equis6.Visible = False
+        refrescar6.Visible = False
+
         MaskedTextBox6.ReadOnly = False
         MaskedTextBox6.Enabled = True
         MaskedTextBox6.Focus()
-        PictureBox18.Visible = False
+
         MaskedTextBox6.BackColor = Color.White
         manual = True
     End Sub
@@ -1031,7 +1249,7 @@ Public Class Verificacion
 
     End Sub
 
-    Private Sub OrdenVerificacion_Click(sender As Object, e As EventArgs) Handles OrdenVerificacion.Click
+    Private Sub OrdenVerificacion_Click(sender As Object, e As EventArgs) Handles botonVerificacionOrden.Click
         MaskedTextBox7.Enabled = True
         MaskedTextBox7.Clear()
         MaskedTextBox7.Focus()
@@ -1088,7 +1306,7 @@ Public Class Verificacion
                 ' Label8.Text = tabla.DisplayedRowCount(0) - 1
                 Label10.Text = tabla.RowCount - 1
 
-                OrdenVerificacion.Focus()
+                botonVerificacionOrden.Focus()
                 MaskedTextBox7.Enabled = False
             End If
 
@@ -1100,4 +1318,6 @@ Public Class Verificacion
     Private Sub MaskedTextBox7_LostFocus(sender As Object, e As EventArgs) Handles MaskedTextBox7.LostFocus
         MaskedTextBox7.Enabled = False
     End Sub
+
+
 End Class
