@@ -12,6 +12,8 @@ Public Class Generar
     Dim cantidadbotella As Integer
     Dim caja As Integer
     Dim sumacaja As Integer
+    Dim verificado As Integer = 3
+    Dim tipoCaja As Integer = 0
 
 
 
@@ -269,7 +271,28 @@ Public Class Generar
             'Configuracion Impresora
 
 #End Region
+
+#Region "Escribir tipo de orden 4 LITROS"
+            If VolumenDatos.Text = "4 litros" Then
+                Dim input As String
+Bucle:
+                input = InputBox("Escriba que tipo de orden de 4 litros es (4X4 o 2X4)")
+
+                If input = "2X4" Then
+                    tipoCaja = 2
+
+                ElseIf input = "4X4" Then
+                    tipoCaja = 4
+
+                Else
+                    GoTo Bucle
+                End If
+            End If
+#End Region
 #Region "Bucle"
+
+
+
 
             For f = 1 To u
 
@@ -303,6 +326,8 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+
+                    verificado = 3
 #End Region
 #Region "250 ml"
                 ElseIf VolumenDatos.Text = "250 ml" Then
@@ -312,6 +337,7 @@ Public Class Generar
                     Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
                     conteo1.ExecuteNonQuery()
                     cn.Close()
+                    verificado = 3
                     'Resta Conteo
 #End Region
 #Region "500 ml"
@@ -383,10 +409,64 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+                    verificado = 0
 #End Region
 #Region "4 litros"
                 ElseIf VolumenDatos.Text = "4 litros" Then
+
+
+
+#Region "Conectarse SAP Y determinar cantidad total de cajas en orden"
+                    conectar()
+
+                    Dim adaptador5 As New SqlDataAdapter("select*from SAP where Batch=" & "'" & LoteDatos.Text & "'" & "" & "And Material=" & ParteDatos.Text & "", cn) 'Funciona con lote y material
+
+                    Dim ds1 As New DataSet
+                    adaptador5.Fill(ds1, "datos")
+                    'El item selecciona de cual columna de la base de datos se conectara y row es la fila
+                    If ds1.Tables("datos").Rows.Count > 0 Then
+
+
+                        Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
+                        cantidadCajas = Label15.Text
+                        Label16.Text = cantidadCajas
+
+
+
+                        cantidadbotella = cantidadCajas * tipoCaja
+                    End If
+                    desconectar()
+
+#End Region
+
+
+#Region "Determinar # de caja para etiqueta"
+
+                    Dim TotalLicencias As Integer
+                    Dim Volumen As Integer = tipoCaja
+                    Dim resultado As Double
+
+                    TotalLicencias = TextBox4.Text
+                    resultado = TotalLicencias / Volumen
+                    caja = Math.Ceiling(resultado)
+                    sumacaja = caja + 90000
+                    If resultado Mod 1 Then
+
+                    Else
+
+
+
+                        TextBox12.Text = OrdenDatos.Text & sumacaja
+                        TextBox7.Text = "Caja #" & caja
+                        PrintDocument2.Print()
+
+                    End If
+
+
+#End Region
+
+
+
                     PrintDocument1.Print()
 
 
@@ -396,6 +476,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 0
 #End Region
 #Region "5 Galones"
                 ElseIf VolumenDatos.Text = "19 litros (5 Galones)" Then
@@ -409,6 +490,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
 #End Region
 #Region "209 litros(55 Galones)"
                 ElseIf VolumenDatos.Text = "209 litros (55 Galones)" Then
@@ -423,6 +505,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
 
 #End Region
 #Region "1042 litros (275 Galones)"
@@ -439,6 +522,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
                 End If
 #End Region
 
@@ -455,7 +539,7 @@ Public Class Generar
 
 
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & 0 & ",'" & "Por Asignar" & "')", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & verificado & ",'" & "Por Asignar" & "')", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -736,7 +820,6 @@ Public Class Generar
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
 
-    End Sub
+
 End Class
