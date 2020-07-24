@@ -455,7 +455,7 @@ Public Class Generar
 
 
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & 0 & ")", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & 0 & ",'" & "Por Asignar" & "')", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -736,5 +736,7 @@ Public Class Generar
         End Try
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
 
+    End Sub
 End Class
