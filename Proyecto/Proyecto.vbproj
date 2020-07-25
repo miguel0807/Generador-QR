@@ -192,6 +192,12 @@
     <Compile Include="Presentacion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReimpresionBox.Designer.vb">
+      <DependentUpon>ReimpresionBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReimpresionBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Verificacion.Designer.vb">
       <DependentUpon>Verificacion.vb</DependentUpon>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion.resx">
       <DependentUpon>Presentacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReimpresionBox.resx">
+      <DependentUpon>ReimpresionBox.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verificacion.resx">
       <DependentUpon>Verificacion.vb</DependentUpon>
