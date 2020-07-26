@@ -104,10 +104,10 @@ Partial Class FormPrincipal
         Me.Button7.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button7.Image = Global.Proyecto.My.Resources.Resources.Verificador
         Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.Location = New System.Drawing.Point(3, 672)
+        Me.Button7.Location = New System.Drawing.Point(3, 599)
         Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(268, 105)
+        Me.Button7.Size = New System.Drawing.Size(272, 105)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "Comprobación"
         Me.Button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -124,10 +124,10 @@ Partial Class FormPrincipal
         Me.Button6.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button6.Image = Global.Proyecto.My.Resources.Resources.settings_783521
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(3, 807)
+        Me.Button6.Location = New System.Drawing.Point(3, 708)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(257, 105)
+        Me.Button6.Size = New System.Drawing.Size(272, 105)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "Configuración "
         Me.Button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -144,10 +144,10 @@ Partial Class FormPrincipal
         Me.Button5.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button5.Image = Global.Proyecto.My.Resources.Resources.qrscanner_6999
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.Location = New System.Drawing.Point(-3, 452)
+        Me.Button5.Location = New System.Drawing.Point(-3, 379)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(244, 105)
+        Me.Button5.Size = New System.Drawing.Size(260, 105)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "  Verificador"
         Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -163,7 +163,7 @@ Partial Class FormPrincipal
         Me.Panel1.Location = New System.Drawing.Point(0, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(244, 202)
+        Me.Panel1.Size = New System.Drawing.Size(257, 151)
         Me.Panel1.TabIndex = 5
         '
         'Label1
@@ -230,10 +230,10 @@ Partial Class FormPrincipal
         Me.Button3.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button3.Image = Global.Proyecto.My.Resources.Resources.BusquedaBaseDatos
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(-3, 562)
+        Me.Button3.Location = New System.Drawing.Point(-3, 489)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(244, 105)
+        Me.Button3.Size = New System.Drawing.Size(260, 105)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "      Reimpresión    QR"
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -250,10 +250,10 @@ Partial Class FormPrincipal
         Me.Button2.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button2.Image = Global.Proyecto.My.Resources.Resources.qr_code_14100__1_
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(-3, 341)
+        Me.Button2.Location = New System.Drawing.Point(-3, 268)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(244, 105)
+        Me.Button2.Size = New System.Drawing.Size(260, 105)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "    Generar QR"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -270,10 +270,10 @@ Partial Class FormPrincipal
         Me.Button1.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button1.Image = Global.Proyecto.My.Resources.Resources.Cargar_licencias
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button1.Location = New System.Drawing.Point(0, 230)
+        Me.Button1.Location = New System.Drawing.Point(0, 157)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(241, 105)
+        Me.Button1.Size = New System.Drawing.Size(257, 105)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "   Cargar      Licencias"
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText

@@ -80,7 +80,7 @@ Partial Class Cargar
         '
         Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(1085, 247)
+        Me.TextBox4.Location = New System.Drawing.Point(939, 247)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(522, 30)
@@ -92,7 +92,7 @@ Partial Class Cargar
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(791, 248)
+        Me.Label4.Location = New System.Drawing.Point(645, 248)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(120, 29)
         Me.Label4.TabIndex = 19
@@ -103,7 +103,7 @@ Partial Class Cargar
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(791, 211)
+        Me.Label3.Location = New System.Drawing.Point(645, 211)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(210, 29)
         Me.Label3.TabIndex = 18
@@ -114,7 +114,7 @@ Partial Class Cargar
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(791, 170)
+        Me.Label2.Location = New System.Drawing.Point(645, 170)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(195, 29)
         Me.Label2.TabIndex = 17
@@ -134,7 +134,7 @@ Partial Class Cargar
         Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.Location = New System.Drawing.Point(776, 555)
+        Me.Button3.Location = New System.Drawing.Point(890, 555)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(206, 130)
         Me.Button3.TabIndex = 26
@@ -145,7 +145,7 @@ Partial Class Cargar
         '
         Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(1085, 210)
+        Me.TextBox1.Location = New System.Drawing.Point(939, 210)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(522, 30)
@@ -156,7 +156,7 @@ Partial Class Cargar
         '
         Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(1085, 168)
+        Me.TextBox2.Location = New System.Drawing.Point(939, 168)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(522, 30)
@@ -196,7 +196,7 @@ Partial Class Cargar
         Me.Comparacion_SAP_DATOS.Controls.Add(Me.Label1)
         Me.Comparacion_SAP_DATOS.Controls.Add(Me.Lote)
         Me.Comparacion_SAP_DATOS.Controls.Add(Me.Original)
-        Me.Comparacion_SAP_DATOS.Location = New System.Drawing.Point(230, 12)
+        Me.Comparacion_SAP_DATOS.Location = New System.Drawing.Point(-2, 230)
         Me.Comparacion_SAP_DATOS.Name = "Comparacion_SAP_DATOS"
         Me.Comparacion_SAP_DATOS.Size = New System.Drawing.Size(544, 264)
         Me.Comparacion_SAP_DATOS.TabIndex = 31
@@ -308,7 +308,7 @@ Partial Class Cargar
         Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(455, 555)
+        Me.Button6.Location = New System.Drawing.Point(569, 555)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(206, 130)
         Me.Button6.TabIndex = 32
@@ -319,7 +319,7 @@ Partial Class Cargar
         '
         Me.TextBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(1085, 85)
+        Me.TextBox6.Location = New System.Drawing.Point(939, 85)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(522, 30)
@@ -330,7 +330,7 @@ Partial Class Cargar
         '
         Me.TextBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(1085, 127)
+        Me.TextBox7.Location = New System.Drawing.Point(939, 127)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(522, 30)
@@ -342,7 +342,7 @@ Partial Class Cargar
         Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(791, 128)
+        Me.Label11.Location = New System.Drawing.Point(645, 128)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(157, 29)
         Me.Label11.TabIndex = 34
@@ -353,7 +353,7 @@ Partial Class Cargar
         Me.Label12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(791, 87)
+        Me.Label12.Location = New System.Drawing.Point(645, 87)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(265, 29)
         Me.Label12.TabIndex = 33
@@ -374,7 +374,7 @@ Partial Class Cargar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1680, 1015)
+        Me.ClientSize = New System.Drawing.Size(1909, 1015)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox7)

@@ -30,7 +30,7 @@ Partial Class Presentacion
         '
         Me.LOGO.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LOGO.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
-        Me.LOGO.Location = New System.Drawing.Point(425, 323)
+        Me.LOGO.Location = New System.Drawing.Point(272, 152)
         Me.LOGO.Name = "LOGO"
         Me.LOGO.Size = New System.Drawing.Size(995, 599)
         Me.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
