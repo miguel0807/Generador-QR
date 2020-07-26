@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ReimpresionBox
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ReimpresionBox
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -30,24 +30,28 @@ Partial Class ReimpresionBox
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtcaja = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtorden = New System.Windows.Forms.TextBox()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(581, 213)
+        Me.Button1.Location = New System.Drawing.Point(590, 257)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 61)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Generar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Panel6
         '
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.TextBox7)
+        Me.Panel6.Controls.Add(Me.TextBox3)
         Me.Panel6.Controls.Add(Me.PictureBox2)
         Me.Panel6.Controls.Add(Me.TextBox12)
         Me.Panel6.Location = New System.Drawing.Point(12, 11)
@@ -94,7 +98,7 @@ Partial Class ReimpresionBox
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox3.Font = New System.Drawing.Font("Arial", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.TextBox3.Location = New System.Drawing.Point(547, 25)
+        Me.TextBox3.Location = New System.Drawing.Point(160, 12)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
@@ -109,20 +113,50 @@ Partial Class ReimpresionBox
         '
         Me.PrintDialog2.UseEXDialog = True
         '
-        'TextBox1
+        'txtcaja
         '
-        Me.TextBox1.Location = New System.Drawing.Point(644, 112)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(66, 22)
-        Me.TextBox1.TabIndex = 76
+        Me.txtcaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcaja.Location = New System.Drawing.Point(736, 149)
+        Me.txtcaja.Name = "txtcaja"
+        Me.txtcaja.Size = New System.Drawing.Size(117, 27)
+        Me.txtcaja.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold)
+        Me.Label1.Location = New System.Drawing.Point(586, 151)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 20)
+        Me.Label1.TabIndex = 77
+        Me.Label1.Text = "Caja:"
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(562, 60)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(133, 44)
+        Me.Label2.TabIndex = 79
+        Me.Label2.Text = "Orden de produccion:"
+        '
+        'txtorden
+        '
+        Me.txtorden.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtorden.Location = New System.Drawing.Point(736, 82)
+        Me.txtorden.Name = "txtorden"
+        Me.txtorden.Size = New System.Drawing.Size(117, 27)
+        Me.txtorden.TabIndex = 1
         '
         'ReimpresionBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.ClientSize = New System.Drawing.Size(865, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtorden)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtcaja)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Button1)
         Me.Name = "ReimpresionBox"
@@ -142,5 +176,8 @@ Partial Class ReimpresionBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents PrintDocument2 As Drawing.Printing.PrintDocument
     Friend WithEvents PrintDialog2 As PrintDialog
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtcaja As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtorden As TextBox
 End Class

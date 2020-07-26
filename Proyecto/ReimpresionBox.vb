@@ -1,28 +1,39 @@
 ﻿Public Class ReimpresionBox
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
+    Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        PrintDocument2.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
+
+        Try
 #Region "Configuracion impresora 2"
-        'Configuracion Impresora
-        PrintDocument2.PrinterSettings = PrintDialog2.PrinterSettings
-        PrintDialog2.PrinterSettings.PrinterName = impresora
-        ' PrintDialog2.PrinterSettings.PrinterName = "SATO CG408"
-        ' PrintDialog2.PrinterSettings.PrinterName = "Send To OneNote 2016"
-        PrintDialog2.PrinterSettings.Copies = 1
-        PrintDialog2.PrinterSettings.Collate = False
-        PrintDialog2.PrinterSettings.Duplex = Printing.Duplex.Simplex
-        PrintDialog2.PrinterSettings.FromPage = 0
-        PrintDocument2.DefaultPageSettings.Color = False
-        PrintDocument2.DefaultPageSettings.Landscape = False
-        PrintDialog2.PrinterSettings.ToPage = 0
-        'Configuracion Impresora
+            'Configuracion Impresora
+            PrintDocument2.PrinterSettings = PrintDialog2.PrinterSettings
+            PrintDialog2.PrinterSettings.PrinterName = impresora
+            ' PrintDialog2.PrinterSettings.PrinterName = "SATO CG408"
+            ' PrintDialog2.PrinterSettings.PrinterName = "Send To OneNote 2016"
+            PrintDialog2.PrinterSettings.Copies = 1
+            PrintDialog2.PrinterSettings.Collate = False
+            PrintDialog2.PrinterSettings.Duplex = Printing.Duplex.Simplex
+            PrintDialog2.PrinterSettings.FromPage = 0
+            PrintDocument2.DefaultPageSettings.Color = False
+            PrintDocument2.DefaultPageSettings.Landscape = False
+            PrintDialog2.PrinterSettings.ToPage = 0
+            'Configuracion Impresora
 
 #End Region
 
-        TextBox7.Text = "Box #" & TextBox1.Text
-        PrintDocument2.Print()
 
+            TextBox12.Text = txtorden.Text & 90000 + txtcaja.Text
+
+
+            TextBox7.Text = "Box #" & txtcaja.Text
+            PrintDocument2.Print()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
     End Sub
 
@@ -50,20 +61,23 @@
         'Calcula la posicion para ser impresa en picturebox1
 
 
-        maximoE = TextBox7.Width - 12
+        maximoE = 167 - 12
         medioE = maximoE / 2
         maximoQR = 65
         medioQR = maximoQR / 2
 
-        If TextBox1.Text <= 9 Then
+        If txtcaja.Text <= 9 Then
             extra = 5
         End If
 
-        If TextBox1.Text >= 100 Then
+        If txtcaja.Text >= 10 Then
+            extra = -1
+        End If
+        If txtcaja.Text >= 100 Then
             extra = -5
         End If
 
-        If TextBox1.Text >= 1000 Then
+        If txtcaja.Text >= 1000 Then
             extra = -15
         End If
         POSICION = New Point(distanciaqr - medioE + extra, 105) 'Pruebas
