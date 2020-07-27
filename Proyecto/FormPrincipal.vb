@@ -290,18 +290,11 @@ Public Class FormPrincipal
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Formulario.Close()
-        AbrirFormEnPanel(Of Verificacion)()
-        My.Application.OpenForms.Cast(Of Form)()
-
-
-
-
-        Button7.BackColor = Color.FromArgb(12, 61, 92)
-        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button5.BackColor = Color.FromArgb(4, 41, 68)
-        Button6.BackColor = Color.FromArgb(4, 41, 68)
+        If Panel2.Visible = True Then
+            Panel2.Visible = False
+        Else
+            Panel2.Visible = True
+        End If
 
     End Sub
 
