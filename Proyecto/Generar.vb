@@ -8,6 +8,7 @@ Public Class Generar
     Dim u As Long
     Dim f As Long
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
+    Dim printController2 As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia  
     Dim cantidadCajas As Integer
     Dim cantidadbotella As Integer
     Dim caja As Integer
@@ -219,6 +220,7 @@ Public Class Generar
         Try
 #Region "Declaracion de variables y actualizacion ProgressBar1"
             PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
+            PrintDocument2.PrintController = printController2 'Se declara la variable para quitar cuadro de impresion 
             Dim licenciarestante As Integer = TextBox4.Text
             Dim cantidadlicencias As Integer = TextBox5.Text
 

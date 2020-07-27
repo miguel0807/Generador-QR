@@ -125,10 +125,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="V2x4.Designer.vb">
-      <DependentUpon>V2x4.vb</DependentUpon>
+    <Compile Include="V2X4.Designer.vb">
+      <DependentUpon>V2X4.vb</DependentUpon>
     </Compile>
-    <Compile Include="V2x4.vb">
+    <Compile Include="V2X4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V2x41.Designer.vb">
+      <DependentUpon>V2x41.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V2x41.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\ApplicationEvents.vb" />
@@ -236,8 +242,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="V2x4.resx">
-      <DependentUpon>V2x4.vb</DependentUpon>
+    <EmbeddedResource Include="V2X4.resx">
+      <DependentUpon>V2X4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V2x41.resx">
+      <DependentUpon>V2x41.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cargar.resx">
       <DependentUpon>Cargar.vb</DependentUpon>

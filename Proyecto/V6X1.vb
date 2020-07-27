@@ -1247,7 +1247,7 @@ Public Class V6X1
     End Sub
 
     Private Sub Verificacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        CenterToScreen()
     End Sub
 
     Private Sub OrdenVerificacion_Click(sender As Object, e As EventArgs) Handles botonVerificacionOrden.Click

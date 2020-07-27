@@ -305,6 +305,58 @@ Public Class FormPrincipal
 
     End Sub
 
+    Private Sub PanelBarraTitulo_Paint(sender As Object, e As PaintEventArgs) Handles PanelBarraTitulo.Paint
+
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Formulario.Close()
+        AbrirFormEnPanel(Of V6X1)()
+        My.Application.OpenForms.Cast(Of Form)()
+
+
+
+
+        Button7.BackColor = Color.FromArgb(12, 61, 92)
+        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68)
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Formulario.Close()
+        AbrirFormEnPanel(Of V2X4)()
+        My.Application.OpenForms.Cast(Of Form)()
+
+
+
+
+        Button7.BackColor = Color.FromArgb(12, 61, 92)
+        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68)
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Formulario.Close()
+        AbrirFormEnPanel(Of V4X4)()
+        My.Application.OpenForms.Cast(Of Form)()
+
+
+
+
+        Button7.BackColor = Color.FromArgb(12, 61, 92)
+        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68)
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+    End Sub
+
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
 
 

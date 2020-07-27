@@ -914,5 +914,7 @@ Public Class V4X4
         MaskedTextBox7.Enabled = False
     End Sub
 
-
+    Private Sub V4X4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CenterToScreen()
+    End Sub
 End Class
