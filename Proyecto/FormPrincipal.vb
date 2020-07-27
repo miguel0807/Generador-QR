@@ -128,52 +128,16 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Formulario.Close()
-        'AbrirFormEnPanel(Of Cargar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Generar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Modulo_de_reimpresion)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Verificador)()
-        'Formulario.Close()
 
 
-        My.Application.OpenForms.Cast(Of Form)()
-
-
-
-
-
-
-
-        AbrirFormEnPanel(Of Cargar)()
-        Button1.BackColor = Color.FromArgb(12, 61, 92)
-        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button6.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button7.BackColor = Color.FromArgb(4, 41, 68) 'original
-
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'AbrirFormEnPanel(Of Cargar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Generar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Modulo_de_reimpresion)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Verificador)()
-        'Formulario.Close()
+#Region "Generar"
 
         Formulario.Close()
 
         My.Application.OpenForms.Cast(Of Form)() _
            .Except({Me}) _
-           .ToList() _
-        ' .ForEach(Sub(form) form.Close())
+           .ToList()
+
 
         AbrirFormEnPanel(Of Generar)()
         Button2.BackColor = Color.FromArgb(12, 61, 92)
@@ -183,6 +147,34 @@ Public Class FormPrincipal
         Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button6.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button7.BackColor = Color.FromArgb(4, 41, 68) 'original
+
+#End Region
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+
+#Region "Reimpresion"
+        Formulario.Close()
+
+        My.Application.OpenForms.Cast(Of Form)() _
+           .Except({Me}) _
+           .ToList() _
+        '   .ForEach(Sub(form) form.Close())
+
+
+        AbrirFormEnPanel(Of Modulo_de_reimpresion)()
+        Button3.BackColor = Color.FromArgb(12, 61, 92)
+
+        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button6.BackColor = Color.FromArgb(4, 41, 68)
+        Button7.BackColor = Color.FromArgb(4, 41, 68)
+
+#End Region
+
     End Sub
 
 
@@ -210,31 +202,29 @@ Public Class FormPrincipal
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        'AbrirFormEnPanel(Of Cargar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Generar)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Modulo_de_reimpresion)()
-        'Formulario.Close()
-        'AbrirFormEnPanel(Of Verificador)()
-        'Formulario.Close()
 
+
+#Region "Cargar"
         Formulario.Close()
 
-        My.Application.OpenForms.Cast(Of Form)() _
-           .Except({Me}) _
-           .ToList() _
-        '   .ForEach(Sub(form) form.Close())
 
 
-        AbrirFormEnPanel(Of Modulo_de_reimpresion)()
-        Button3.BackColor = Color.FromArgb(12, 61, 92)
+        My.Application.OpenForms.Cast(Of Form)()
 
-        Button1.BackColor = Color.FromArgb(4, 41, 68) 'original
+
+
+
+
+
+
+        AbrirFormEnPanel(Of Cargar)()
+        Button1.BackColor = Color.FromArgb(12, 61, 92)
         Button2.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button5.BackColor = Color.FromArgb(4, 41, 68) 'original
-        Button6.BackColor = Color.FromArgb(4, 41, 68)
-        Button7.BackColor = Color.FromArgb(4, 41, 68)
+        Button6.BackColor = Color.FromArgb(4, 41, 68) 'original
+        Button7.BackColor = Color.FromArgb(4, 41, 68) 'original
+#End Region
     End Sub
 
 
@@ -253,6 +243,7 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+#Region "Verificador"
         Formulario.Close()
         AbrirFormEnPanel(Of Verificador)()
         My.Application.OpenForms.Cast(Of Form)()
@@ -266,6 +257,7 @@ Public Class FormPrincipal
         Button3.BackColor = Color.FromArgb(4, 41, 68) 'original
         Button6.BackColor = Color.FromArgb(4, 41, 68)
         Button7.BackColor = Color.FromArgb(4, 41, 68)
+#End Region
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -289,18 +281,17 @@ Public Class FormPrincipal
 
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+#Region "Comprobacion"
         Formulario.Close()
         If Panel2.Visible = True Then
             Panel2.Visible = False
         Else
             Panel2.Visible = True
         End If
-
+#End Region
     End Sub
 
-    Private Sub PanelBarraTitulo_Paint(sender As Object, e As PaintEventArgs) Handles PanelBarraTitulo.Paint
 
-    End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Formulario.Close()
