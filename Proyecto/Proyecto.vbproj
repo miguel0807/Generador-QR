@@ -125,10 +125,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="4 litros.Designer.vb">
-      <DependentUpon>4 litros.vb</DependentUpon>
+    <Compile Include="V2X4.Designer.vb">
+      <DependentUpon>V2X4.vb</DependentUpon>
     </Compile>
-    <Compile Include="4 litros.vb">
+    <Compile Include="V2X4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\ApplicationEvents.vb" />
@@ -204,10 +204,10 @@
     <Compile Include="ReimpresionBox.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Verificacion.Designer.vb">
-      <DependentUpon>Verificacion.vb</DependentUpon>
+    <Compile Include="V6X1.Designer.vb">
+      <DependentUpon>V6X1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Verificacion.vb">
+    <Compile Include="V6X1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Verificador.Designer.vb">
@@ -224,8 +224,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="4 litros.resx">
-      <DependentUpon>4 litros.vb</DependentUpon>
+    <EmbeddedResource Include="V2X4.resx">
+      <DependentUpon>V2X4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cargar.resx">
       <DependentUpon>Cargar.vb</DependentUpon>
@@ -265,8 +265,8 @@
     <EmbeddedResource Include="ReimpresionBox.resx">
       <DependentUpon>ReimpresionBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Verificacion.resx">
-      <DependentUpon>Verificacion.vb</DependentUpon>
+    <EmbeddedResource Include="V6X1.resx">
+      <DependentUpon>V6X1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verificador.resx">
       <DependentUpon>Verificador.vb</DependentUpon>

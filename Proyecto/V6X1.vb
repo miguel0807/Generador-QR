@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports vb = Microsoft.VisualBasic
 
-Public Class Verificacion
+Public Class V6X1
     Public tiempo As Integer = 0
     Public basedatos(5) As String
     Public manual As Boolean = False
