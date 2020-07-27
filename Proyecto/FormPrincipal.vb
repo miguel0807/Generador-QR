@@ -402,7 +402,7 @@ Public Class FormPrincipal
 
         AbrirFormEnPanel(Of Presentacion)()
         ' Me.WindowState = FormWindowState.Maximized
-        Me.Size = My.Computer.Screen.WorkingArea.Size
+        ' Me.Size = My.Computer.Screen.WorkingArea.Size
         Me.Location = New System.Drawing.Point(0, 0)
 
         Label1.Text = ActiveUser.firstName + " " + ActiveUser.lastName
@@ -445,6 +445,10 @@ Public Class FormPrincipal
 
 
 
+
+    End Sub
+
+    Private Sub PanelFormularios_Paint(sender As Object, e As PaintEventArgs) Handles PanelFormularios.Paint
 
     End Sub
 

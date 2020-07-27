@@ -72,7 +72,7 @@ Partial Class FormPrincipal
         Me.PanelContenedor.Location = New System.Drawing.Point(0, 0)
         Me.PanelContenedor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelContenedor.Name = "PanelContenedor"
-        Me.PanelContenedor.Size = New System.Drawing.Size(1940, 1100)
+        Me.PanelContenedor.Size = New System.Drawing.Size(1366, 768)
         Me.PanelContenedor.TabIndex = 0
         '
         'PanelFormularios
@@ -83,7 +83,7 @@ Partial Class FormPrincipal
         Me.PanelFormularios.Location = New System.Drawing.Point(257, 39)
         Me.PanelFormularios.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelFormularios.Name = "PanelFormularios"
-        Me.PanelFormularios.Size = New System.Drawing.Size(1683, 1061)
+        Me.PanelFormularios.Size = New System.Drawing.Size(1109, 729)
         Me.PanelFormularios.TabIndex = 2
         '
         'PanelMenu
@@ -95,7 +95,7 @@ Partial Class FormPrincipal
         Me.PanelMenu.Location = New System.Drawing.Point(0, 39)
         Me.PanelMenu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelMenu.Name = "PanelMenu"
-        Me.PanelMenu.Size = New System.Drawing.Size(257, 1061)
+        Me.PanelMenu.Size = New System.Drawing.Size(257, 729)
         Me.PanelMenu.TabIndex = 1
         '
         'Panel3
@@ -111,7 +111,7 @@ Partial Class FormPrincipal
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 151)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(257, 910)
+        Me.Panel3.Size = New System.Drawing.Size(257, 578)
         Me.Panel3.TabIndex = 9
         '
         'Panel2
@@ -407,14 +407,14 @@ Partial Class FormPrincipal
         Me.PanelBarraTitulo.Location = New System.Drawing.Point(0, 0)
         Me.PanelBarraTitulo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
-        Me.PanelBarraTitulo.Size = New System.Drawing.Size(1940, 39)
+        Me.PanelBarraTitulo.Size = New System.Drawing.Size(1366, 39)
         Me.PanelBarraTitulo.TabIndex = 0
         '
         'btnRestaurar
         '
         Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRestaurar.Image = CType(resources.GetObject("btnRestaurar.Image"), System.Drawing.Image)
-        Me.btnRestaurar.Location = New System.Drawing.Point(1877, 12)
+        Me.btnRestaurar.Location = New System.Drawing.Point(1303, 12)
         Me.btnRestaurar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnRestaurar.Name = "btnRestaurar"
         Me.btnRestaurar.Size = New System.Drawing.Size(16, 16)
@@ -427,7 +427,7 @@ Partial Class FormPrincipal
         '
         Me.btnMinimizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMinimizar.Image = CType(resources.GetObject("btnMinimizar.Image"), System.Drawing.Image)
-        Me.btnMinimizar.Location = New System.Drawing.Point(1841, 12)
+        Me.btnMinimizar.Location = New System.Drawing.Point(1267, 12)
         Me.btnMinimizar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(16, 16)
@@ -439,7 +439,7 @@ Partial Class FormPrincipal
         '
         Me.btnMaximizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnMaximizar.Image = CType(resources.GetObject("btnMaximizar.Image"), System.Drawing.Image)
-        Me.btnMaximizar.Location = New System.Drawing.Point(1877, 12)
+        Me.btnMaximizar.Location = New System.Drawing.Point(1303, 12)
         Me.btnMaximizar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnMaximizar.Name = "btnMaximizar"
         Me.btnMaximizar.Size = New System.Drawing.Size(16, 16)
@@ -451,7 +451,7 @@ Partial Class FormPrincipal
         '
         Me.btnCerrar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(1913, 12)
+        Me.btnCerrar.Location = New System.Drawing.Point(1339, 12)
         Me.btnCerrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(16, 16)
@@ -463,7 +463,7 @@ Partial Class FormPrincipal
         '
         Me.LOGO.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LOGO.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
-        Me.LOGO.Location = New System.Drawing.Point(344, 231)
+        Me.LOGO.Location = New System.Drawing.Point(57, 65)
         Me.LOGO.Name = "LOGO"
         Me.LOGO.Size = New System.Drawing.Size(995, 599)
         Me.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -474,7 +474,7 @@ Partial Class FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1940, 1100)
+        Me.ClientSize = New System.Drawing.Size(1366, 768)
         Me.Controls.Add(Me.PanelContenedor)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

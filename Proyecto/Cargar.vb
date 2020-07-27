@@ -798,68 +798,7 @@ Public Class Cargar
         End Try
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-#Region "Crear archivo y cambiar nombre"
-        If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then 'Si ok procede y declara direccion de txt
-            Dim direccioncompleta
-            Dim direccion2 As String
-            Dim nombrearchivo As String
-            Dim completa As String
-            Dim U125ml As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\125 ml"
-            Dim U250ml As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\250 ml"
-            Dim U500ml As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\500 ml"
-            Dim U1litro As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\1 Liter"
-            Dim U4litros As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\4 Liter"
-            Dim U19litros As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\19 Liter (5 GAL)"
-            Dim U209litros As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\209 Liters (55 Gals)"
-            Dim U1042litros As String = "T:\Public\Production\Licencias Tintas\Licencias Temporales\Josef Temporales\1042  Liter (275 Gal)"
-            Dim ruta As String
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
 
-            direccioncompleta = (OpenFileDialog1.FileName)  'Se agregar ' para escribir en sql
-            direccion2 = System.IO.Path.GetDirectoryName(OpenFileDialog1.FileName) 'Se agregar ' para escribir en sql
-            nombrearchivo = System.IO.Path.GetFileNameWithoutExtension(OpenFileDialog1.FileName) 'Se agregar ' para escribir en sql
-            ' completa = direccion & "\" & nombrearchivo & "1.txt"
-
-            If TextBox4.Text = "125 ml" Then
-                ruta = U125ml
-
-            ElseIf TextBox4.Text = "250 ml" Then
-                ruta = U250ml
-
-            ElseIf TextBox4.Text = "500 ml" Then
-                ruta = U500ml
-
-            ElseIf TextBox4.Text = "1 litro" Then
-                ruta = U1litro
-
-            ElseIf TextBox4.Text = "4 litros" Then
-                ruta = U4litros
-            ElseIf TextBox4.Text = "19 litros (5 Galones)" Then
-                ruta = U19litros
-            ElseIf TextBox4.Text = "209 litros (55 Galones)" Then
-                ruta = U209litros
-            ElseIf TextBox4.Text = "1042 litros (275 Galones)" Then
-                ruta = U1042litros
-
-            Else
-                MsgBox("La variable ruta no se pudo asignar con el volumen")
-                Exit Sub
-            End If
-
-
-            completa = ruta & "\" & TextBox1.Text & TextBox2.Text & "PRUEBAPRUEBAPRUEBA.txt"
-
-
-            My.Computer.FileSystem.CopyFile(
-            direccioncompleta,
-            completa,
-            Microsoft.VisualBasic.FileIO.UIOption.AllDialogs,
-            Microsoft.VisualBasic.FileIO.UICancelOption.DoNothing)
-
-        Else
-            cn.Close()
-            Exit Sub
-        End If
-#End Region
     End Sub
 End Class
