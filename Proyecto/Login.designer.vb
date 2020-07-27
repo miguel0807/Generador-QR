@@ -31,7 +31,6 @@ Partial Class Login
         Me.txtPass = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -50,14 +49,14 @@ Partial Class Login
         Me.titleBar.Location = New System.Drawing.Point(0, 0)
         Me.titleBar.Margin = New System.Windows.Forms.Padding(4)
         Me.titleBar.Name = "titleBar"
-        Me.titleBar.Size = New System.Drawing.Size(573, 49)
+        Me.titleBar.Size = New System.Drawing.Size(1145, 49)
         Me.titleBar.TabIndex = 0
         '
         'btnMinimize
         '
         Me.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMinimize.Image = CType(resources.GetObject("btnMinimize.Image"), System.Drawing.Image)
-        Me.btnMinimize.Location = New System.Drawing.Point(497, 15)
+        Me.btnMinimize.Location = New System.Drawing.Point(1073, 13)
         Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(16, 16)
@@ -69,7 +68,7 @@ Partial Class Login
         '
         Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-        Me.btnClose.Location = New System.Drawing.Point(536, 15)
+        Me.btnClose.Location = New System.Drawing.Point(1112, 13)
         Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(16, 16)
@@ -80,59 +79,68 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(44, 377)
+        Me.Label1.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Gray
+        Me.Label1.Location = New System.Drawing.Point(379, 364)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 28)
+        Me.Label1.Size = New System.Drawing.Size(84, 28)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Usuario"
         '
         'txtUser
         '
-        Me.txtUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(130, Byte), Integer))
-        Me.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtUser.BackColor = System.Drawing.Color.Gray
+        Me.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtUser.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.txtUser.Location = New System.Drawing.Point(49, 406)
+        Me.txtUser.ForeColor = System.Drawing.Color.White
+        Me.txtUser.Location = New System.Drawing.Point(384, 396)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(467, 28)
+        Me.txtUser.Size = New System.Drawing.Size(355, 35)
         Me.txtUser.TabIndex = 6
+        Me.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtPass
         '
-        Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(130, Byte), Integer))
-        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Font = New System.Drawing.Font("Ebrima", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.txtPass.Location = New System.Drawing.Point(49, 480)
+        Me.txtPass.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPass.BackColor = System.Drawing.Color.Gray
+        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
+        Me.txtPass.Font = New System.Drawing.Font("Ebrima", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtPass.Location = New System.Drawing.Point(384, 479)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(467, 23)
+        Me.txtPass.Size = New System.Drawing.Size(355, 31)
         Me.txtPass.TabIndex = 3
+        Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(44, 451)
+        Me.Label2.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Gray
+        Me.Label2.Location = New System.Drawing.Point(379, 447)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 28)
+        Me.Label2.Size = New System.Drawing.Size(118, 28)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Contraseña"
         '
         'btnLogin
         '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.btnLogin.BackColor = System.Drawing.Color.DimGray
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(49, 585)
+        Me.btnLogin.Location = New System.Drawing.Point(321, 536)
         Me.btnLogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(467, 55)
@@ -140,32 +148,23 @@ Partial Class Login
         Me.btnLogin.Text = "Entrar"
         Me.btnLogin.UseVisualStyleBackColor = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(130, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(49, 764)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(467, 2)
-        Me.Panel1.TabIndex = 9
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.Location = New System.Drawing.Point(0, 862)
+        Me.Panel2.Location = New System.Drawing.Point(0, 662)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(573, 12)
+        Me.Panel2.Size = New System.Drawing.Size(1145, 12)
         Me.Panel2.TabIndex = 10
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
-        Me.PictureBox1.Location = New System.Drawing.Point(78, 57)
+        Me.PictureBox1.Location = New System.Drawing.Point(90, 57)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(453, 306)
+        Me.PictureBox1.Size = New System.Drawing.Size(926, 303)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -173,11 +172,11 @@ Partial Class Login
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Ebrima", 12.0!)
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Silver
-        Me.CheckBox1.Location = New System.Drawing.Point(49, 671)
+        Me.CheckBox1.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.ForeColor = System.Drawing.Color.Gray
+        Me.CheckBox1.Location = New System.Drawing.Point(22, 608)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(185, 32)
+        Me.CheckBox1.Size = New System.Drawing.Size(197, 32)
         Me.CheckBox1.TabIndex = 5
         Me.CheckBox1.Text = "Recordar Usuario"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -186,11 +185,11 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(105, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(573, 874)
+        Me.AutoSize = True
+        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.ClientSize = New System.Drawing.Size(1145, 674)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.Label2)
@@ -224,7 +223,6 @@ Partial Class Login
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnMinimize As PictureBox
     Friend WithEvents btnClose As PictureBox
-    Friend WithEvents Panel1 As Panel
     Private WithEvents Panel2 As Panel
     Friend WithEvents CheckBox1 As CheckBox
 End Class

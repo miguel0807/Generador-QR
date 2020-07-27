@@ -7,11 +7,11 @@ Public Class Login
 
     Private Sub CustomizeComponents()
         'txtUser
-        txtUser.AutoSize = False
-        txtUser.Size = New Size(350, 30)
+        txtUser.AutoSize = True
+        ' txtUser.Size = New Size(350, 30)
         'txtPass
-        txtPass.AutoSize = False
-        txtPass.Size = New Size(350, 30)
+        txtPass.AutoSize = True
+        ' txtPass.Size = New Size(350, 30)
         txtPass.UseSystemPasswordChar = True
     End Sub
 
