@@ -125,6 +125,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="4 litros.Designer.vb">
+      <DependentUpon>4 litros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4 litros.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulos\ApplicationEvents.vb" />
     <Compile Include="Cargar.Designer.vb">
       <DependentUpon>Cargar.vb</DependentUpon>
@@ -218,6 +224,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="4 litros.resx">
+      <DependentUpon>4 litros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cargar.resx">
       <DependentUpon>Cargar.vb</DependentUpon>
       <SubType>Designer</SubType>

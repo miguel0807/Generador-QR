@@ -194,7 +194,7 @@ Partial Class Verificacion
         Me.botonAutomatico.Name = "botonAutomatico"
         Me.botonAutomatico.Size = New System.Drawing.Size(177, 100)
         Me.botonAutomatico.TabIndex = 14
-        Me.botonAutomatico.Text = "Automatico"
+        Me.botonAutomatico.Text = "Inicio"
         Me.botonAutomatico.UseVisualStyleBackColor = True
         '
         'txtBasedatos6
@@ -277,7 +277,7 @@ Partial Class Verificacion
         'botoncaja
         '
         Me.botoncaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botoncaja.Location = New System.Drawing.Point(32, 67)
+        Me.botoncaja.Location = New System.Drawing.Point(31, 17)
         Me.botoncaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.botoncaja.Name = "botoncaja"
         Me.botoncaja.Size = New System.Drawing.Size(124, 52)
