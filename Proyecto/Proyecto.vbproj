@@ -343,6 +343,9 @@
     <None Include="Resources\qr48.ico" />
     <None Include="Resources\comprobacion48.ico" />
     <None Include="Resources\buscar48.ico" />
+    <None Include="Resources\caja32.ico" />
+    <None Include="Resources\configuracion32.ico" />
+    <None Include="Resources\configuracion48.ico" />
     <Content Include="Resources\qr_code_14100.ico" />
     <Content Include="Resources\folder_images_23255.ico" />
     <None Include="Resources\packages.config" />

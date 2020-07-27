@@ -32,6 +32,11 @@ Generador QR
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Proyecto.My.Resources.Resources.caja32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Proyecto.My.Resources.Resources.cancel">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -73,6 +78,16 @@ Generador QR
 </summary>
 </member>
 <member name="P:Proyecto.My.Resources.Resources.configuracion">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.configuracion32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.configuracion48">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
