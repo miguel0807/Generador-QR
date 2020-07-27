@@ -204,6 +204,12 @@
     <Compile Include="ReimpresionBox.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="V4X4.Designer.vb">
+      <DependentUpon>V4X4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V4X4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="V6X1.Designer.vb">
       <DependentUpon>V6X1.vb</DependentUpon>
     </Compile>
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReimpresionBox.resx">
       <DependentUpon>ReimpresionBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V4X4.resx">
+      <DependentUpon>V4X4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="V6X1.resx">
       <DependentUpon>V6X1.vb</DependentUpon>
