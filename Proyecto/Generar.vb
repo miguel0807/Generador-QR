@@ -788,7 +788,8 @@ Bucle:
         Dim medioQR As String
         Dim medioE As String
 
-        maximoE = TextBox7.Width
+        maximoE = 167
+
         medioE = maximoE / 2
         maximoQR = PictureBox2.Image.Width
         medioQR = PictureBox2.Image.Width / 2
