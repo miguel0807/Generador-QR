@@ -112,12 +112,12 @@ Partial Class Login
         Me.txtPass.BackColor = System.Drawing.Color.Gray
         Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPass.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
-        Me.txtPass.Font = New System.Drawing.Font("Ebrima", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPass.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtPass.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPass.ForeColor = System.Drawing.Color.White
         Me.txtPass.Location = New System.Drawing.Point(384, 479)
         Me.txtPass.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPass.Name = "txtPass"
-        Me.txtPass.Size = New System.Drawing.Size(355, 31)
+        Me.txtPass.Size = New System.Drawing.Size(355, 35)
         Me.txtPass.TabIndex = 3
         Me.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -138,12 +138,12 @@ Partial Class Login
         Me.btnLogin.BackColor = System.Drawing.Color.DimGray
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Ebrima", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(321, 536)
+        Me.btnLogin.Location = New System.Drawing.Point(323, 553)
         Me.btnLogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(467, 55)
+        Me.btnLogin.Size = New System.Drawing.Size(490, 55)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "Entrar"
         Me.btnLogin.UseVisualStyleBackColor = False
