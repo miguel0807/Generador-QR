@@ -6,6 +6,7 @@ Public Class V6X1
     Public basedatos(5) As String
     Public manual As Boolean = False
     Dim caja As String
+    Dim orden As String
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
         MaskedTextBox2.Text = ""
@@ -98,7 +99,7 @@ Public Class V6X1
                     botonAutomatico.Enabled = True
 
                     Dim extraccion As String = textboxcaja.Text
-                    Dim orden As String
+
 
                     orden = vb.Mid(extraccion, 1, 8)
                     caja = vb.Mid(extraccion, 9, 5)
@@ -650,7 +651,7 @@ Public Class V6X1
         End If
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
             cn.Open()
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -679,7 +680,7 @@ Public Class V6X1
 
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -707,7 +708,7 @@ Public Class V6X1
 
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -752,7 +753,7 @@ Public Class V6X1
         End If
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -958,7 +959,7 @@ Public Class V6X1
         End If
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -1017,7 +1018,7 @@ Public Class V6X1
         End If
         If bueno1.Visible = True And bueno2.Visible = True And bueno3.Visible = True And bueno4.Visible = True And bueno5.Visible = True And bueno6.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
             cn.Close()
 
             cn.Open()

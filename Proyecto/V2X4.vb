@@ -7,6 +7,7 @@ Public Class _4_litros
     Public basedatos(1) As String
     Public manual As Boolean = False
     Dim caja As String
+    Dim orden As String
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
         MaskedTextBox2.Text = ""
@@ -83,7 +84,7 @@ Public Class _4_litros
                     botonAutomatico.Enabled = True
 
                     Dim extraccion As String = textboxcaja.Text
-                    Dim orden As String
+
 
                     orden = vb.Mid(extraccion, 1, 8)
                     caja = vb.Mid(extraccion, 9, 5)
@@ -413,13 +414,6 @@ Public Class _4_litros
 
 
 
-
-
-
-
-
-
-
     Private Sub Botella1_Tick(sender As Object, e As EventArgs) Handles Botella1.Tick
 
 
@@ -438,7 +432,7 @@ Public Class _4_litros
 
         If bueno1.Visible = True And bueno2.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -464,7 +458,7 @@ Public Class _4_litros
 
         If bueno1.Visible = True And bueno2.Visible = True Then
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")", cn)
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
             cn.Open()
@@ -528,11 +522,11 @@ Public Class _4_litros
         Label10.Visible = False
     End Sub
 
+    Private Sub MaskedTextBox2_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox2.MaskInputRejected
 
+    End Sub
 
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox1.MaskInputRejected
 
-
-
-
-
+    End Sub
 End Class

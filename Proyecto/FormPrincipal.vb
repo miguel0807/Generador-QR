@@ -290,7 +290,7 @@ Public Class FormPrincipal
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Formulario.Close()
-        AbrirFormEnPanel(Of V6X1)()
+        AbrirFormEnPanel(Of Verificacion)()
         My.Application.OpenForms.Cast(Of Form)()
 
 

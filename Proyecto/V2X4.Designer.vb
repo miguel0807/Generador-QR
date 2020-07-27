@@ -70,7 +70,7 @@ Partial Class _4_litros
         'equis2
         '
         Me.equis2.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis2.Location = New System.Drawing.Point(957, 208)
+        Me.equis2.Location = New System.Drawing.Point(788, 200)
         Me.equis2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis2.Name = "equis2"
         Me.equis2.Size = New System.Drawing.Size(60, 47)
@@ -81,7 +81,7 @@ Partial Class _4_litros
         'equis1
         '
         Me.equis1.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis1.Location = New System.Drawing.Point(957, 145)
+        Me.equis1.Location = New System.Drawing.Point(788, 137)
         Me.equis1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis1.Name = "equis1"
         Me.equis1.Size = New System.Drawing.Size(60, 47)
@@ -93,7 +93,7 @@ Partial Class _4_litros
         '
         Me.MaskedTextBox7.Enabled = False
         Me.MaskedTextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox7.Location = New System.Drawing.Point(211, 694)
+        Me.MaskedTextBox7.Location = New System.Drawing.Point(226, 354)
         Me.MaskedTextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox7.Mask = ">CCCCCCCC"
         Me.MaskedTextBox7.Name = "MaskedTextBox7"
@@ -105,7 +105,7 @@ Partial Class _4_litros
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Label10.Location = New System.Drawing.Point(1073, 568)
+        Me.Label10.Location = New System.Drawing.Point(858, 335)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(106, 29)
         Me.Label10.TabIndex = 225
@@ -115,19 +115,19 @@ Partial Class _4_litros
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(561, 568)
+        Me.DataGridView1.Location = New System.Drawing.Point(556, 304)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(507, 327)
+        Me.DataGridView1.Size = New System.Drawing.Size(269, 135)
         Me.DataGridView1.TabIndex = 224
         Me.DataGridView1.Visible = False
         '
         'botonVerificacionOrden
         '
         Me.botonVerificacionOrden.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botonVerificacionOrden.Location = New System.Drawing.Point(13, 675)
+        Me.botonVerificacionOrden.Location = New System.Drawing.Point(28, 335)
         Me.botonVerificacionOrden.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.botonVerificacionOrden.Name = "botonVerificacionOrden"
         Me.botonVerificacionOrden.Size = New System.Drawing.Size(181, 71)
@@ -138,7 +138,7 @@ Partial Class _4_litros
         'refrescar2
         '
         Me.refrescar2.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar2.Location = New System.Drawing.Point(633, 208)
+        Me.refrescar2.Location = New System.Drawing.Point(464, 200)
         Me.refrescar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar2.Name = "refrescar2"
         Me.refrescar2.Size = New System.Drawing.Size(60, 47)
@@ -149,7 +149,7 @@ Partial Class _4_litros
         'refrescar1
         '
         Me.refrescar1.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar1.Location = New System.Drawing.Point(633, 145)
+        Me.refrescar1.Location = New System.Drawing.Point(464, 137)
         Me.refrescar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar1.Name = "refrescar1"
         Me.refrescar1.Size = New System.Drawing.Size(60, 47)
@@ -160,7 +160,7 @@ Partial Class _4_litros
         'bueno2
         '
         Me.bueno2.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno2.Location = New System.Drawing.Point(957, 208)
+        Me.bueno2.Location = New System.Drawing.Point(788, 200)
         Me.bueno2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno2.Name = "bueno2"
         Me.bueno2.Size = New System.Drawing.Size(60, 47)
@@ -171,7 +171,7 @@ Partial Class _4_litros
         'bueno1
         '
         Me.bueno1.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno1.Location = New System.Drawing.Point(957, 145)
+        Me.bueno1.Location = New System.Drawing.Point(788, 137)
         Me.bueno1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno1.Name = "bueno1"
         Me.bueno1.Size = New System.Drawing.Size(60, 47)
@@ -182,7 +182,7 @@ Partial Class _4_litros
         'igual2
         '
         Me.igual2.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual2.Location = New System.Drawing.Point(957, 208)
+        Me.igual2.Location = New System.Drawing.Point(788, 200)
         Me.igual2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual2.Name = "igual2"
         Me.igual2.Size = New System.Drawing.Size(60, 47)
@@ -193,7 +193,7 @@ Partial Class _4_litros
         'igual1
         '
         Me.igual1.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual1.Location = New System.Drawing.Point(957, 145)
+        Me.igual1.Location = New System.Drawing.Point(788, 137)
         Me.igual1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual1.Name = "igual1"
         Me.igual1.Size = New System.Drawing.Size(60, 47)
@@ -211,7 +211,7 @@ Partial Class _4_litros
         Me.CircularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar3.InnerMargin = 2
         Me.CircularProgressBar3.InnerWidth = -1
-        Me.CircularProgressBar3.Location = New System.Drawing.Point(1020, 192)
+        Me.CircularProgressBar3.Location = New System.Drawing.Point(851, 184)
         Me.CircularProgressBar3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar3.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar3.Name = "CircularProgressBar3"
@@ -239,7 +239,7 @@ Partial Class _4_litros
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1033, 27)
+        Me.Label1.Location = New System.Drawing.Point(939, 27)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(132, 39)
@@ -284,7 +284,7 @@ Partial Class _4_litros
         '
         Me.MaskedTextBox2.Enabled = False
         Me.MaskedTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(700, 208)
+        Me.MaskedTextBox2.Location = New System.Drawing.Point(531, 200)
         Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox2.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox2.Name = "MaskedTextBox2"
@@ -296,7 +296,7 @@ Partial Class _4_litros
         '
         Me.MaskedTextBox1.Enabled = False
         Me.MaskedTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(700, 145)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(531, 137)
         Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox1.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
@@ -314,7 +314,7 @@ Partial Class _4_litros
         Me.CircularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar2.InnerMargin = 2
         Me.CircularProgressBar2.InnerWidth = -1
-        Me.CircularProgressBar2.Location = New System.Drawing.Point(1020, 129)
+        Me.CircularProgressBar2.Location = New System.Drawing.Point(851, 121)
         Me.CircularProgressBar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar2.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar2.Name = "CircularProgressBar2"
@@ -342,7 +342,7 @@ Partial Class _4_litros
         '
         Me.txtBasedatos1.BackColor = System.Drawing.SystemColors.Control
         Me.txtBasedatos1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos1.Location = New System.Drawing.Point(1229, 165)
+        Me.txtBasedatos1.Location = New System.Drawing.Point(996, 150)
         Me.txtBasedatos1.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos1.Name = "txtBasedatos1"
         Me.txtBasedatos1.ReadOnly = True
@@ -353,7 +353,7 @@ Partial Class _4_litros
         'controlTimer
         '
         Me.controlTimer.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.controlTimer.Location = New System.Drawing.Point(151, 121)
+        Me.controlTimer.Location = New System.Drawing.Point(556, 11)
         Me.controlTimer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.controlTimer.Name = "controlTimer"
         Me.controlTimer.Size = New System.Drawing.Size(137, 27)
@@ -364,7 +364,7 @@ Partial Class _4_litros
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(231, 161)
+        Me.Button5.Location = New System.Drawing.Point(636, 51)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(71, 26)
@@ -375,7 +375,7 @@ Partial Class _4_litros
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(124, 161)
+        Me.Button4.Location = New System.Drawing.Point(529, 51)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(71, 26)
@@ -405,7 +405,7 @@ Partial Class _4_litros
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(1297, 62)
+        Me.Label9.Location = New System.Drawing.Point(1077, 106)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(139, 29)
@@ -416,7 +416,7 @@ Partial Class _4_litros
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(775, 62)
+        Me.Label8.Location = New System.Drawing.Point(597, 106)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(96, 29)
@@ -429,7 +429,7 @@ Partial Class _4_litros
         'txtBasedatos2
         '
         Me.txtBasedatos2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos2.Location = New System.Drawing.Point(1229, 208)
+        Me.txtBasedatos2.Location = New System.Drawing.Point(996, 193)
         Me.txtBasedatos2.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos2.Name = "txtBasedatos2"
         Me.txtBasedatos2.ReadOnly = True
@@ -441,7 +441,7 @@ Partial Class _4_litros
         '
         Me.botonAutomatico.Enabled = False
         Me.botonAutomatico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botonAutomatico.Location = New System.Drawing.Point(28, 262)
+        Me.botonAutomatico.Location = New System.Drawing.Point(28, 129)
         Me.botonAutomatico.Margin = New System.Windows.Forms.Padding(4)
         Me.botonAutomatico.Name = "botonAutomatico"
         Me.botonAutomatico.Size = New System.Drawing.Size(177, 100)
@@ -463,7 +463,7 @@ Partial Class _4_litros
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(443, 208)
+        Me.Label3.Location = New System.Drawing.Point(274, 200)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(123, 29)
@@ -474,7 +474,7 @@ Partial Class _4_litros
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(443, 149)
+        Me.Label2.Location = New System.Drawing.Point(274, 141)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(123, 29)
@@ -485,7 +485,7 @@ Partial Class _4_litros
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1688, 1048)
+        Me.ClientSize = New System.Drawing.Size(1311, 468)
         Me.Controls.Add(Me.equis2)
         Me.Controls.Add(Me.equis1)
         Me.Controls.Add(Me.MaskedTextBox7)
