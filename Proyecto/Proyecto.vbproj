@@ -131,12 +131,6 @@
     <Compile Include="V2X4.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="V2x41.Designer.vb">
-      <DependentUpon>V2x41.vb</DependentUpon>
-    </Compile>
-    <Compile Include="V2x41.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Modulos\ApplicationEvents.vb" />
     <Compile Include="Cargar.Designer.vb">
       <DependentUpon>Cargar.vb</DependentUpon>
@@ -244,9 +238,6 @@
   <ItemGroup>
     <EmbeddedResource Include="V2X4.resx">
       <DependentUpon>V2X4.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="V2x41.resx">
-      <DependentUpon>V2x41.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cargar.resx">
       <DependentUpon>Cargar.vb</DependentUpon>

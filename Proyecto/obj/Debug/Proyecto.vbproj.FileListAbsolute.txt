@@ -150,7 +150,6 @@ C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\D
 C:\Users\malvarado\source\repos\Versiones\2.0 Actualizar\Projecto\Proyecto\obj\Debug\Generador QR.pdb
 C:\Users\malvarado\source\repos\Projecto\Proyecto\bin\Debug\Common.xml
 C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.ReimpresionBox.resources
-C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto._4_litros.resources
 C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.V4X4.resources
 C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.V6X1.resources
 C:\Users\malvarado\source\repos\Projecto\Proyecto\obj\Debug\Proyecto.Verificacion.resources

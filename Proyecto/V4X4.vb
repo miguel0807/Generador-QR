@@ -917,4 +917,8 @@ Public Class V4X4
     Private Sub V4X4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CenterToScreen()
     End Sub
+
+    Private Sub MaskedTextBox7_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox7.MaskInputRejected
+
+    End Sub
 End Class
