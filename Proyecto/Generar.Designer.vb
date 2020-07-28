@@ -110,7 +110,7 @@ Partial Class Generar
         'LicenciaDatos
         '
         Me.LicenciaDatos.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LicenciaDatos.Location = New System.Drawing.Point(58, 2)
+        Me.LicenciaDatos.Location = New System.Drawing.Point(78, 2)
         Me.LicenciaDatos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LicenciaDatos.Name = "LicenciaDatos"
         Me.LicenciaDatos.Size = New System.Drawing.Size(431, 34)

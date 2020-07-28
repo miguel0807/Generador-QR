@@ -394,8 +394,15 @@ Bucle:
 
 
                         TextBox12.Text = OrdenDatos.Text & sumacaja
-                        TextBox7.Text = "Caja #" & caja
+                        TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
+
+                        cn.Open()
+                        'Resta Conteo
+                        Dim conteo5 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
+                        conteo5.ExecuteNonQuery()
+                        cn.Close()
+                        'Resta Conteo
 
                     End If
 
@@ -459,7 +466,7 @@ Bucle:
 
 
                         TextBox12.Text = OrdenDatos.Text & sumacaja
-                        TextBox7.Text = "Caja #" & caja
+                        TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
 
                     End If
