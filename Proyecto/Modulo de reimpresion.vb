@@ -309,9 +309,9 @@ Public Class Modulo_de_reimpresion
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles beliminar.Click
 #Region "Seleccionar y eliminar licencia"
-        Try
+        'Try
 
-            Me.DataGridView1.Select() 'Seleccionar primera fila del datagridview
+        Me.DataGridView1.Select() 'Seleccionar primera fila del datagridview
 #Region "Verifica si la licencia se elimino"
             If Me.DataGridView1.CurrentRow.DefaultCellStyle.BackColor = Color.Red Then
 
@@ -370,9 +370,9 @@ Public Class Modulo_de_reimpresion
 
                     'Guarda licencia eliminada en basedatos Eliminadas
                     conectar()
-                    Dim registrar As New SqlCommand("insert into Eliminados (Etiqueta, Codigo, Fecha, Volumen, Usuario, [Order], Batch, Material, MaterialDescription,Responsable,FechaHora) values (" & "'" & Etiqueta & "'" & ",'" & Codigo & "','" & Fecha & "','" & Volumen & "','" & Usuario & "'," & Order & ",'" & Batch & "'," & Material & ",'" & MaterialDescription & "','" & Nombre & "','" & FechaEliminacion & "')", cn)
-                    registrar.ExecuteNonQuery()
-                    desconectar()
+                Dim registrar As New SqlCommand("insert into Eliminados (Etiqueta, Codigo, Fecha, Volumen, Usuario, [Order], Batch, Material, MaterialDescription,Responsable,FechaHora) values (" & "'" & Etiqueta & "'" & ",'" & Codigo & "','" & Fecha & "','" & Volumen & "','" & Usuario & "'," & Order & ",'" & Batch & "'," & Material & ",'" & MaterialDescription & "','" & Nombre & "','" & FechaEliminacion & "')", cn)
+                ' registrar.ExecuteNonQuery() 'Falta arreglar regiatro de eliminacion
+                desconectar()
 
 
                     'Elimina Licencia de basedatosOficial
@@ -386,9 +386,9 @@ Public Class Modulo_de_reimpresion
                 End If
 #End Region
             End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'End Try
 
 #End Region
 
