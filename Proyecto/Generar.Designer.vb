@@ -51,14 +51,14 @@ Partial Class Generar
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
-        Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintDialog2 = New System.Windows.Forms.PrintDialog()
         Me.OrdenDatos = New System.Windows.Forms.TextBox()
         Me.DescripcionDatos = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -75,9 +75,9 @@ Partial Class Generar
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.SuspendLayout()
@@ -153,6 +153,7 @@ Partial Class Generar
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox4.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(86, 147)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -164,6 +165,7 @@ Partial Class Generar
         'TextBox5
         '
         Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextBox5.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox5.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(193, 599)
         Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -405,36 +407,6 @@ Partial Class Generar
         Me.PictureBox1.TabIndex = 42
         Me.PictureBox1.TabStop = False
         '
-        'Panel5
-        '
-        Me.Panel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.Button2)
-        Me.Panel5.Controls.Add(Me.Label9)
-        Me.Panel5.Controls.Add(Me.Ribbon)
-        Me.Panel5.Location = New System.Drawing.Point(378, 287)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(333, 37)
-        Me.Panel5.TabIndex = 71
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(3, 266)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(153, 58)
-        Me.Button4.TabIndex = 72
-        Me.Button4.Text = "Información"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'PrintDocument2
-        '
-        '
-        'PrintDialog2
-        '
-        Me.PrintDialog2.UseEXDialog = True
-        '
         'Panel6
         '
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -479,6 +451,36 @@ Partial Class Generar
         Me.TextBox12.TabIndex = 40
         Me.TextBox12.Text = "prueba"
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel5
+        '
+        Me.Panel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.Button2)
+        Me.Panel5.Controls.Add(Me.Label9)
+        Me.Panel5.Controls.Add(Me.Ribbon)
+        Me.Panel5.Location = New System.Drawing.Point(378, 287)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(333, 37)
+        Me.Panel5.TabIndex = 71
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(3, 266)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(153, 58)
+        Me.Button4.TabIndex = 72
+        Me.Button4.Text = "Información"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'PrintDocument2
+        '
+        '
+        'PrintDialog2
+        '
+        Me.PrintDialog2.UseEXDialog = True
         '
         'OrdenDatos
         '
@@ -643,7 +645,7 @@ Partial Class Generar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1091, 682)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Label5)
@@ -679,11 +681,11 @@ Partial Class Generar
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.Panel9.ResumeLayout(False)

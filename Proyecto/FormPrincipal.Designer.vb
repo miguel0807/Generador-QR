@@ -25,6 +25,7 @@ Partial Class FormPrincipal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
         Me.PanelContenedor = New System.Windows.Forms.Panel()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
+        Me.LOGO = New System.Windows.Forms.PictureBox()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -47,9 +48,9 @@ Partial Class FormPrincipal
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
-        Me.LOGO = New System.Windows.Forms.PictureBox()
         Me.PanelContenedor.SuspendLayout()
         Me.PanelFormularios.SuspendLayout()
+        CType(Me.LOGO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMenu.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -59,7 +60,6 @@ Partial Class FormPrincipal
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LOGO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelContenedor
@@ -86,6 +86,17 @@ Partial Class FormPrincipal
         Me.PanelFormularios.Size = New System.Drawing.Size(1109, 729)
         Me.PanelFormularios.TabIndex = 2
         '
+        'LOGO
+        '
+        Me.LOGO.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LOGO.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
+        Me.LOGO.Location = New System.Drawing.Point(57, 65)
+        Me.LOGO.Name = "LOGO"
+        Me.LOGO.Size = New System.Drawing.Size(995, 599)
+        Me.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.LOGO.TabIndex = 2
+        Me.LOGO.TabStop = False
+        '
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.DimGray
@@ -109,9 +120,9 @@ Partial Class FormPrincipal
         Me.Panel3.Controls.Add(Me.GenerarL)
         Me.Panel3.Controls.Add(Me.CargarL)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 151)
+        Me.Panel3.Location = New System.Drawing.Point(0, 164)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(257, 578)
+        Me.Panel3.Size = New System.Drawing.Size(257, 565)
         Me.Panel3.TabIndex = 9
         '
         'Panel2
@@ -317,7 +328,7 @@ Partial Class FormPrincipal
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(257, 151)
+        Me.Panel1.Size = New System.Drawing.Size(257, 164)
         Me.Panel1.TabIndex = 5
         '
         'ConfiguracionL
@@ -333,7 +344,7 @@ Partial Class FormPrincipal
         Me.ConfiguracionL.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConfiguracionL.ForeColor = System.Drawing.Color.Gainsboro
         Me.ConfiguracionL.Image = Global.Proyecto.My.Resources.Resources.configuracion32
-        Me.ConfiguracionL.Location = New System.Drawing.Point(3, 112)
+        Me.ConfiguracionL.Location = New System.Drawing.Point(3, 125)
         Me.ConfiguracionL.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ConfiguracionL.Name = "ConfiguracionL"
         Me.ConfiguracionL.Size = New System.Drawing.Size(38, 38)
@@ -352,7 +363,7 @@ Partial Class FormPrincipal
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button4.Image = Global.Proyecto.My.Resources.Resources.logout__1_1
-        Me.Button4.Location = New System.Drawing.Point(206, 108)
+        Me.Button4.Location = New System.Drawing.Point(206, 121)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(51, 40)
@@ -459,17 +470,6 @@ Partial Class FormPrincipal
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
-        'LOGO
-        '
-        Me.LOGO.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.LOGO.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
-        Me.LOGO.Location = New System.Drawing.Point(57, 65)
-        Me.LOGO.Name = "LOGO"
-        Me.LOGO.Size = New System.Drawing.Size(995, 599)
-        Me.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.LOGO.TabIndex = 2
-        Me.LOGO.TabStop = False
-        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -484,6 +484,7 @@ Partial Class FormPrincipal
         Me.Text = "Generador QR"
         Me.PanelContenedor.ResumeLayout(False)
         Me.PanelFormularios.ResumeLayout(False)
+        CType(Me.LOGO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMenu.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -496,7 +497,6 @@ Partial Class FormPrincipal
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LOGO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

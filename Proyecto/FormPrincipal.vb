@@ -398,12 +398,13 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        CenterToScreen()
 
         AbrirFormEnPanel(Of Presentacion)()
         ' Me.WindowState = FormWindowState.Maximized
-        ' Me.Size = My.Computer.Screen.WorkingArea.Size
-        Me.Location = New System.Drawing.Point(0, 0)
+        'Me.Size = My.Computer.Screen.WorkingArea.Size
+
+        ' Me.Location = New System.Drawing.Point(0, 0)
 
         Label1.Text = ActiveUser.firstName + " " + ActiveUser.lastName
         Label2.Text = ActiveUser.email
