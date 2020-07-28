@@ -15,6 +15,7 @@ Public Class Generar
     Dim sumacaja As Integer
     Dim verificado As Integer = 3
     Dim tipoCaja As Integer = 0
+    Dim extra As Integer = 0
 
 
 
@@ -56,12 +57,12 @@ Public Class Generar
         FUENTE = New Font(LicenciaDatos.Font, FontStyle.Bold)
         'Calcula la posicion para ser impresa en picturebox1
 
-        POSICION = New Point(98, 105) 'Pruebas
+        POSICION = New Point(111, 105) 'Pruebas
 
         'Escribe etiqueta usando textbox1
         AREA_IMPRESION.DrawString(EtiquetaDatos.Text, TextBox3.Font, LAPIZ, POSICION)
         'Imprime el qr
-        e.Graphics.DrawImage(PictureBox1.Image, 160, 20, 70, 70) 'Original 65,65
+        e.Graphics.DrawImage(PictureBox1.Image, 173, 20, 70, 70) 'Original 65,65
 
 
 #End Region
@@ -394,6 +395,7 @@ Bucle:
 
 
                         TextBox12.Text = OrdenDatos.Text & sumacaja
+
                         TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
 
@@ -703,9 +705,9 @@ Bucle:
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Try
+        'Try
 
-            PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
+        PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
 
 
 #Region "Comentario"
@@ -774,9 +776,9 @@ Bucle:
 
 
 
-        Catch ex As Exception
-            MsgBox(vbCrLf & ex.Message)
-        End Try
+        'Catch ex As Exception
+        '    MsgBox(vbCrLf & ex.Message)
+        'End Try
 
     End Sub
 
@@ -795,24 +797,46 @@ Bucle:
         Dim medioQR As String
         Dim medioE As String
 
-        maximoE = 167
-
-        medioE = maximoE / 2
-        maximoQR = PictureBox2.Image.Width
-        medioQR = PictureBox2.Image.Width / 2
-
-
-
         'Selecciona textbox3 para configurar el tipo de letra
         FUENTE = New Font(TextBox12.Font, FontStyle.Bold)
         'Calcula la posicion para ser impresa en picturebox1
 
-        POSICION = New Point(144, 105) 'Pruebas
+
+
+
+
+        Dim distanciaqr As Integer = 160 + 6 + 65
+
+        maximoE = 167 - 12
+        medioE = maximoE / 2
+        maximoQR = 65
+        medioQR = maximoQR / 2
+        If TextBox7.Text = "Licencias" Then
+            extra = 5
+        Else
+
+            If caja <= 9 Then
+                extra = 11
+            End If
+
+            If caja >= 10 Then
+                extra = 6
+            End If
+            If caja >= 100 Then
+                extra = 2
+            End If
+
+            If caja >= 1000 Then
+                extra = -9
+            End If
+
+        End If
+        POSICION = New Point(distanciaqr - medioE + extra, 105) 'Pruebas
 
         'Escribe etiqueta usando textbox1
         AREA_IMPRESION.DrawString(TextBox7.Text, TextBox3.Font, LAPIZ, POSICION)
         'Imprime el qr
-        e.Graphics.DrawImage(PictureBox2.Image, 160, 20, 70, 70) 'Original 65,65
+        e.Graphics.DrawImage(PictureBox2.Image, 173, 20, 70, 70) 'Original 65,65
 
 
 

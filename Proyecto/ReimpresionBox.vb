@@ -3,6 +3,7 @@
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
 
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         PrintDocument2.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 

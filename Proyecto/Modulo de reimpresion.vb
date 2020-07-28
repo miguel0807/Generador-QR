@@ -254,11 +254,11 @@ Public Class Modulo_de_reimpresion
             FUENTE = New Font(TextBox2.Font, FontStyle.Bold)
             'Calcula la posicion para ser impresa en picturebox1
 
-            POSICION = New Point(98, 105)
+            POSICION = New Point(111, 105)
 
             AREA_IMPRESION.DrawString(TextBox3.Text, TextBox5.Font, LAPIZ, POSICION)
 
-            e.Graphics.DrawImage(PictureBox1.Image, 160, 20, 70, 70)
+            e.Graphics.DrawImage(PictureBox1.Image, 173, 20, 70, 70)
 
         Catch ex As Exception
             MsgBox(ex.Message)
