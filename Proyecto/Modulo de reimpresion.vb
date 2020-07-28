@@ -7,7 +7,7 @@ Public Class Modulo_de_reimpresion
     Dim Nombre As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        DataGridView1.Visible = True
 
 #Region "Busqueda por fecha y volumen"
         If RadioButton1.Checked = True Then
@@ -51,8 +51,11 @@ Public Class Modulo_de_reimpresion
 
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
+
                 'Label8.Text = tabla.DisplayedRowCount(0) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -91,7 +94,9 @@ Public Class Modulo_de_reimpresion
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
                 ' Label8.Text = tabla.DisplayedRowCount(0) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -140,7 +145,9 @@ Public Class Modulo_de_reimpresion
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
                 ' Label8.Text = tabla.DisplayedRowCount(1) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
 
             Catch ex As Exception
@@ -149,14 +156,16 @@ Public Class Modulo_de_reimpresion
 #End Region
 
         End If
+        Panel1.Visible = False
 
     End Sub
 
     Private Sub Modulo_de_reimpresion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Nombre = ActiveUser.firstName + " " + ActiveUser.lastName 'Guarda el usuario en variable llamada nombre
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles bgenerar.Click
 #Region "Reimprime licencia"
         Try
 
@@ -298,7 +307,7 @@ Public Class Modulo_de_reimpresion
     End Sub
 #End Region
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles beliminar.Click
 #Region "Seleccionar y eliminar licencia"
         Try
 
@@ -397,5 +406,15 @@ Public Class Modulo_de_reimpresion
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         ReimpresionBox.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If Panel1.Visible = True Then
+
+            Panel1.Visible = False
+        Else
+            Panel1.Visible = True
+
+        End If
     End Sub
 End Class
