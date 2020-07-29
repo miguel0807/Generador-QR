@@ -903,6 +903,7 @@ Public Class V4X4
 
                 botonVerificacionOrden.Focus()
                 MaskedTextBox7.Enabled = False
+                desconectar()
             End If
 
         Catch ex As Exception

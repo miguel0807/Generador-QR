@@ -458,12 +458,13 @@ Imports System.Data.SqlClient
 
 
             If bueno1.Visible = True And bueno2.Visible = True Then
-                'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Open()
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
 
 
-                cn.Open()
-                registrarVerificado.ExecuteNonQuery()
+
+            registrarVerificado.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
                 cn.Close()
                 MsgBox("Etiquetas Verificadas con exito")
@@ -580,6 +581,7 @@ Imports System.Data.SqlClient
 
                 botonVerificacionOrden.Focus()
                 MaskedTextBox7.Enabled = False
+                desconectar()
             End If
 
         Catch ex As Exception
@@ -589,5 +591,9 @@ Imports System.Data.SqlClient
 
     Private Sub MaskedTextBox7_LostFocus(sender As Object, e As EventArgs) Handles MaskedTextBox7.LostFocus
         MaskedTextBox7.Enabled = False
+    End Sub
+
+    Private Sub V2X4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

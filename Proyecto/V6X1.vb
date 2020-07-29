@@ -1309,6 +1309,7 @@ Public Class V6X1
 
                 botonVerificacionOrden.Focus()
                 MaskedTextBox7.Enabled = False
+                desconectar()
             End If
 
         Catch ex As Exception
