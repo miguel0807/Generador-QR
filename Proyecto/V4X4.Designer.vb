@@ -24,8 +24,6 @@ Partial Class V4X4
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Botella4 = New System.Windows.Forms.Timer(Me.components)
-        Me.Botella5 = New System.Windows.Forms.Timer(Me.components)
-        Me.Botella6 = New System.Windows.Forms.Timer(Me.components)
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -814,8 +812,6 @@ Partial Class V4X4
 
     End Sub
     Friend WithEvents Botella4 As Timer
-    Friend WithEvents Botella5 As Timer
-    Friend WithEvents Botella6 As Timer
     Friend WithEvents equis4 As PictureBox
     Friend WithEvents equis3 As PictureBox
     Friend WithEvents equis2 As PictureBox

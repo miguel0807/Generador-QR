@@ -56,6 +56,7 @@ Partial Class V2X4
         Me.textboxcaja = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.equis2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.equis1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -469,10 +470,10 @@ Partial Class V2X4
         Me.textboxcaja.BackColor = System.Drawing.SystemColors.Control
         Me.textboxcaja.Enabled = False
         Me.textboxcaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.textboxcaja.Location = New System.Drawing.Point(173, 16)
+        Me.textboxcaja.Location = New System.Drawing.Point(58, 22)
         Me.textboxcaja.Margin = New System.Windows.Forms.Padding(4)
         Me.textboxcaja.Name = "textboxcaja"
-        Me.textboxcaja.Size = New System.Drawing.Size(219, 34)
+        Me.textboxcaja.Size = New System.Drawing.Size(15, 34)
         Me.textboxcaja.TabIndex = 231
         '
         'Label3
@@ -497,12 +498,22 @@ Partial Class V2X4
         Me.Label2.TabIndex = 229
         Me.Label2.Text = "Botella 1:"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(597, 38)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(124, 48)
+        Me.Button1.TabIndex = 259
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'V2X4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1091, 682)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.equis2)
         Me.Controls.Add(Me.equis1)
         Me.Controls.Add(Me.MaskedTextBox7)
@@ -582,4 +593,5 @@ Partial Class V2X4
     Friend WithEvents textboxcaja As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
 End Class

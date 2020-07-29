@@ -1,6 +1,7 @@
 ﻿
 Imports System.Data.SqlClient
-    Imports vb = Microsoft.VisualBasic
+Imports vb = Microsoft.VisualBasic
+Imports Common
 
 Public Class V4X4
     Public tiempo As Integer = 0
@@ -8,6 +9,7 @@ Public Class V4X4
     Public manual As Boolean = False
     Dim caja As String
     Dim orden As String
+    Dim nombre As String
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
         MaskedTextBox2.Text = ""
@@ -585,6 +587,13 @@ Public Class V4X4
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -616,6 +625,13 @@ Public Class V4X4
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -644,6 +660,13 @@ Public Class V4X4
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -688,6 +711,13 @@ Public Class V4X4
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -917,9 +947,18 @@ Public Class V4X4
 
     Private Sub V4X4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CenterToScreen()
+        Nombre = ActiveUser.firstName + " " + ActiveUser.lastName
     End Sub
 
     Private Sub MaskedTextBox7_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox7.MaskInputRejected
+
+    End Sub
+
+    Private Sub Botella5_Tick(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Botella6_Tick(sender As Object, e As EventArgs)
 
     End Sub
 End Class

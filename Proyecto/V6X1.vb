@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports vb = Microsoft.VisualBasic
+Imports Common
 
 Public Class V6X1
     Public tiempo As Integer = 0
@@ -7,6 +8,7 @@ Public Class V6X1
     Public manual As Boolean = False
     Dim caja As String
     Dim orden As String
+    Dim nombre As String
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
         MaskedTextBox2.Text = ""
@@ -656,6 +658,14 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -687,6 +697,14 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -715,6 +733,13 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -760,6 +785,13 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -966,6 +998,13 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -1025,6 +1064,13 @@ Public Class V6X1
             registrarVerificado.ExecuteNonQuery()
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
             MsgBox("Etiquetas Verificadas con exito")
             botoncaja.Focus()
         End If
@@ -1248,6 +1294,7 @@ Public Class V6X1
 
     Private Sub Verificacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CenterToScreen()
+        nombre = ActiveUser.firstName + " " + ActiveUser.lastName
     End Sub
 
     Private Sub OrdenVerificacion_Click(sender As Object, e As EventArgs) Handles botonVerificacionOrden.Click

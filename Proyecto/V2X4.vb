@@ -1,16 +1,18 @@
 ﻿
 
 Imports System.Data.SqlClient
-    Imports vb = Microsoft.VisualBasic
+Imports vb = Microsoft.VisualBasic
+Imports Common
 
-    Public Class V2X4
+Public Class V2X4
         Public tiempo As Integer = 0
         Public basedatos(1) As String
         Public manual As Boolean = False
         Dim caja As String
-        Dim orden As String
+    Dim orden As String
+    Dim Nombre As String
 
-        Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
+    Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles refrescar2.Click
             MaskedTextBox2.Text = ""
             bueno2.Visible = False
             igual2.Visible = False
@@ -432,15 +434,22 @@ Imports System.Data.SqlClient
 
 
             If bueno1.Visible = True And bueno2.Visible = True Then
-                'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
-
-
-                cn.Open()
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
                 registrarVerificado.ExecuteNonQuery()
-                'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                cn.Close()
-                MsgBox("Etiquetas Verificadas con exito")
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & Nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
+
+            MsgBox("Etiquetas Verificadas con exito")
                 botoncaja.Focus()
             End If
             tiempo = tiempo + 1
@@ -461,13 +470,18 @@ Imports System.Data.SqlClient
             'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
             cn.Open()
             Dim registrarVerificado As New SqlCommand("Update BaseDatosOficial SET Verificado=1 where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
-
-
-
             registrarVerificado.ExecuteNonQuery()
-                'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                cn.Close()
-                MsgBox("Etiquetas Verificadas con exito")
+            'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
+            cn.Close()
+
+
+            Dim actualizarnombre As New SqlCommand("Update BaseDatosOficial SET Usuariocampo=('" & Nombre & "'  ) where caja = (" & caja & ")and [order]=(" & orden & ")", cn)
+            cn.Open()
+            actualizarnombre.ExecuteNonQuery()
+            cn.Close()
+
+
+            MsgBox("Etiquetas Verificadas con exito")
                 botoncaja.Focus()
             End If
 
@@ -594,6 +608,12 @@ Imports System.Data.SqlClient
     End Sub
 
     Private Sub V2X4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Nombre = ActiveUser.firstName + " " + ActiveUser.lastName
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
 End Class
