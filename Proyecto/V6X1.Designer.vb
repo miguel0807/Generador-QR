@@ -123,7 +123,7 @@ Partial Class V6X1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(431, 139)
+        Me.Label2.Location = New System.Drawing.Point(88, 151)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(123, 29)
@@ -134,7 +134,7 @@ Partial Class V6X1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(431, 198)
+        Me.Label3.Location = New System.Drawing.Point(88, 214)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(123, 29)
@@ -145,7 +145,7 @@ Partial Class V6X1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(431, 262)
+        Me.Label4.Location = New System.Drawing.Point(88, 278)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(123, 29)
@@ -156,7 +156,7 @@ Partial Class V6X1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(431, 330)
+        Me.Label5.Location = New System.Drawing.Point(88, 346)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(123, 29)
@@ -167,7 +167,7 @@ Partial Class V6X1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(431, 396)
+        Me.Label6.Location = New System.Drawing.Point(88, 412)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(123, 29)
@@ -178,7 +178,7 @@ Partial Class V6X1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(431, 458)
+        Me.Label7.Location = New System.Drawing.Point(88, 474)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(123, 29)
@@ -187,21 +187,23 @@ Partial Class V6X1
         '
         'botonAutomatico
         '
+        Me.botonAutomatico.AutoSize = True
         Me.botonAutomatico.Enabled = False
         Me.botonAutomatico.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botonAutomatico.Location = New System.Drawing.Point(16, 252)
-        Me.botonAutomatico.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.botonAutomatico.Location = New System.Drawing.Point(30, 87)
+        Me.botonAutomatico.Margin = New System.Windows.Forms.Padding(4)
         Me.botonAutomatico.Name = "botonAutomatico"
-        Me.botonAutomatico.Size = New System.Drawing.Size(177, 100)
+        Me.botonAutomatico.Size = New System.Drawing.Size(166, 39)
         Me.botonAutomatico.TabIndex = 14
         Me.botonAutomatico.Text = "Automatico"
         Me.botonAutomatico.UseVisualStyleBackColor = True
         '
         'txtBasedatos6
         '
+        Me.txtBasedatos6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos6.Location = New System.Drawing.Point(1217, 373)
-        Me.txtBasedatos6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos6.Location = New System.Drawing.Point(639, 379)
+        Me.txtBasedatos6.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos6.Name = "txtBasedatos6"
         Me.txtBasedatos6.ReadOnly = True
         Me.txtBasedatos6.Size = New System.Drawing.Size(301, 34)
@@ -210,9 +212,10 @@ Partial Class V6X1
         '
         'txtBasedatos5
         '
+        Me.txtBasedatos5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos5.Location = New System.Drawing.Point(1217, 330)
-        Me.txtBasedatos5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos5.Location = New System.Drawing.Point(639, 336)
+        Me.txtBasedatos5.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos5.Name = "txtBasedatos5"
         Me.txtBasedatos5.ReadOnly = True
         Me.txtBasedatos5.Size = New System.Drawing.Size(301, 34)
@@ -221,9 +224,10 @@ Partial Class V6X1
         '
         'txtBasedatos4
         '
+        Me.txtBasedatos4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos4.Location = New System.Drawing.Point(1217, 287)
-        Me.txtBasedatos4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos4.Location = New System.Drawing.Point(639, 293)
+        Me.txtBasedatos4.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos4.Name = "txtBasedatos4"
         Me.txtBasedatos4.ReadOnly = True
         Me.txtBasedatos4.Size = New System.Drawing.Size(301, 34)
@@ -232,9 +236,10 @@ Partial Class V6X1
         '
         'txtBasedatos3
         '
+        Me.txtBasedatos3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos3.Location = New System.Drawing.Point(1217, 244)
-        Me.txtBasedatos3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos3.Location = New System.Drawing.Point(639, 250)
+        Me.txtBasedatos3.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos3.Name = "txtBasedatos3"
         Me.txtBasedatos3.ReadOnly = True
         Me.txtBasedatos3.Size = New System.Drawing.Size(301, 34)
@@ -243,9 +248,10 @@ Partial Class V6X1
         '
         'txtBasedatos2
         '
+        Me.txtBasedatos2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos2.Location = New System.Drawing.Point(1217, 198)
-        Me.txtBasedatos2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos2.Location = New System.Drawing.Point(639, 204)
+        Me.txtBasedatos2.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos2.Name = "txtBasedatos2"
         Me.txtBasedatos2.ReadOnly = True
         Me.txtBasedatos2.Size = New System.Drawing.Size(301, 34)
@@ -256,7 +262,7 @@ Partial Class V6X1
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(763, 52)
+        Me.Label8.Location = New System.Drawing.Point(303, 115)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(96, 29)
@@ -265,9 +271,10 @@ Partial Class V6X1
         '
         'Label9
         '
+        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(1285, 52)
+        Me.Label9.Location = New System.Drawing.Point(709, 120)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(139, 29)
@@ -276,11 +283,12 @@ Partial Class V6X1
         '
         'botoncaja
         '
+        Me.botoncaja.AutoSize = True
         Me.botoncaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botoncaja.Location = New System.Drawing.Point(32, 67)
-        Me.botoncaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.botoncaja.Location = New System.Drawing.Point(16, 1)
+        Me.botoncaja.Margin = New System.Windows.Forms.Padding(4)
         Me.botoncaja.Name = "botoncaja"
-        Me.botoncaja.Size = New System.Drawing.Size(124, 52)
+        Me.botoncaja.Size = New System.Drawing.Size(99, 52)
         Me.botoncaja.TabIndex = 23
         Me.botoncaja.Text = "# Caja"
         Me.botoncaja.UseVisualStyleBackColor = True
@@ -295,7 +303,7 @@ Partial Class V6X1
         Me.CircularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar1.InnerMargin = 2
         Me.CircularProgressBar1.InnerWidth = -1
-        Me.CircularProgressBar1.Location = New System.Drawing.Point(172, 18)
+        Me.CircularProgressBar1.Location = New System.Drawing.Point(125, 1)
         Me.CircularProgressBar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar1.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar1.Name = "CircularProgressBar1"
@@ -323,7 +331,7 @@ Partial Class V6X1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1021, 17)
+        Me.Label1.Location = New System.Drawing.Point(526, 9)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(132, 39)
@@ -336,7 +344,7 @@ Partial Class V6X1
         'controlTimer
         '
         Me.controlTimer.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.controlTimer.Location = New System.Drawing.Point(139, 111)
+        Me.controlTimer.Location = New System.Drawing.Point(819, 26)
         Me.controlTimer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.controlTimer.Name = "controlTimer"
         Me.controlTimer.Size = New System.Drawing.Size(137, 27)
@@ -347,7 +355,7 @@ Partial Class V6X1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(219, 151)
+        Me.Button5.Location = New System.Drawing.Point(885, 66)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(71, 26)
@@ -358,7 +366,7 @@ Partial Class V6X1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(112, 151)
+        Me.Button4.Location = New System.Drawing.Point(792, 66)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(71, 26)
@@ -369,10 +377,11 @@ Partial Class V6X1
         '
         'txtBasedatos1
         '
+        Me.txtBasedatos1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtBasedatos1.BackColor = System.Drawing.SystemColors.Control
         Me.txtBasedatos1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.txtBasedatos1.Location = New System.Drawing.Point(1217, 155)
-        Me.txtBasedatos1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBasedatos1.Location = New System.Drawing.Point(639, 161)
+        Me.txtBasedatos1.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBasedatos1.Name = "txtBasedatos1"
         Me.txtBasedatos1.ReadOnly = True
         Me.txtBasedatos1.Size = New System.Drawing.Size(301, 34)
@@ -389,7 +398,7 @@ Partial Class V6X1
         Me.CircularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar2.InnerMargin = 2
         Me.CircularProgressBar2.InnerWidth = -1
-        Me.CircularProgressBar2.Location = New System.Drawing.Point(1008, 119)
+        Me.CircularProgressBar2.Location = New System.Drawing.Point(487, 138)
         Me.CircularProgressBar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar2.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar2.Name = "CircularProgressBar2"
@@ -417,7 +426,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox1.Enabled = False
         Me.MaskedTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(688, 135)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(230, 148)
         Me.MaskedTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox1.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
@@ -429,7 +438,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox2.Enabled = False
         Me.MaskedTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(688, 198)
+        Me.MaskedTextBox2.Location = New System.Drawing.Point(230, 211)
         Me.MaskedTextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox2.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox2.Name = "MaskedTextBox2"
@@ -441,7 +450,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox3.Enabled = False
         Me.MaskedTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(688, 262)
+        Me.MaskedTextBox3.Location = New System.Drawing.Point(230, 275)
         Me.MaskedTextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox3.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox3.Name = "MaskedTextBox3"
@@ -453,7 +462,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox4.Enabled = False
         Me.MaskedTextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(688, 330)
+        Me.MaskedTextBox4.Location = New System.Drawing.Point(230, 343)
         Me.MaskedTextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox4.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox4.Name = "MaskedTextBox4"
@@ -465,7 +474,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox5.Enabled = False
         Me.MaskedTextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox5.Location = New System.Drawing.Point(688, 396)
+        Me.MaskedTextBox5.Location = New System.Drawing.Point(230, 409)
         Me.MaskedTextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox5.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox5.Name = "MaskedTextBox5"
@@ -477,7 +486,7 @@ Partial Class V6X1
         '
         Me.MaskedTextBox6.Enabled = False
         Me.MaskedTextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox6.Location = New System.Drawing.Point(688, 458)
+        Me.MaskedTextBox6.Location = New System.Drawing.Point(230, 471)
         Me.MaskedTextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox6.Mask = ">CCCC-CCCC-CCCC"
         Me.MaskedTextBox6.Name = "MaskedTextBox6"
@@ -495,7 +504,7 @@ Partial Class V6X1
         Me.CircularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar3.InnerMargin = 2
         Me.CircularProgressBar3.InnerWidth = -1
-        Me.CircularProgressBar3.Location = New System.Drawing.Point(1008, 182)
+        Me.CircularProgressBar3.Location = New System.Drawing.Point(487, 208)
         Me.CircularProgressBar3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar3.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar3.Name = "CircularProgressBar3"
@@ -529,7 +538,7 @@ Partial Class V6X1
         Me.CircularProgressBar4.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar4.InnerMargin = 2
         Me.CircularProgressBar4.InnerWidth = -1
-        Me.CircularProgressBar4.Location = New System.Drawing.Point(1008, 246)
+        Me.CircularProgressBar4.Location = New System.Drawing.Point(487, 266)
         Me.CircularProgressBar4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar4.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar4.Name = "CircularProgressBar4"
@@ -572,7 +581,7 @@ Partial Class V6X1
         Me.CircularProgressBar5.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar5.InnerMargin = 2
         Me.CircularProgressBar5.InnerWidth = -1
-        Me.CircularProgressBar5.Location = New System.Drawing.Point(1008, 314)
+        Me.CircularProgressBar5.Location = New System.Drawing.Point(487, 334)
         Me.CircularProgressBar5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar5.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar5.Name = "CircularProgressBar5"
@@ -606,7 +615,7 @@ Partial Class V6X1
         Me.CircularProgressBar6.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar6.InnerMargin = 2
         Me.CircularProgressBar6.InnerWidth = -1
-        Me.CircularProgressBar6.Location = New System.Drawing.Point(1008, 380)
+        Me.CircularProgressBar6.Location = New System.Drawing.Point(487, 400)
         Me.CircularProgressBar6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar6.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar6.Name = "CircularProgressBar6"
@@ -640,7 +649,7 @@ Partial Class V6X1
         Me.CircularProgressBar7.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar7.InnerMargin = 2
         Me.CircularProgressBar7.InnerWidth = -1
-        Me.CircularProgressBar7.Location = New System.Drawing.Point(1008, 442)
+        Me.CircularProgressBar7.Location = New System.Drawing.Point(487, 462)
         Me.CircularProgressBar7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar7.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar7.Name = "CircularProgressBar7"
@@ -677,16 +686,17 @@ Partial Class V6X1
         '
         Me.textboxcaja.Enabled = False
         Me.textboxcaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.textboxcaja.Location = New System.Drawing.Point(77, 25)
-        Me.textboxcaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.textboxcaja.Location = New System.Drawing.Point(57, 10)
+        Me.textboxcaja.Margin = New System.Windows.Forms.Padding(4)
         Me.textboxcaja.Name = "textboxcaja"
-        Me.textboxcaja.Size = New System.Drawing.Size(9, 34)
+        Me.textboxcaja.Size = New System.Drawing.Size(20, 34)
         Me.textboxcaja.TabIndex = 13
         '
         'botonVerificacionOrden
         '
+        Me.botonVerificacionOrden.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.botonVerificacionOrden.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.botonVerificacionOrden.Location = New System.Drawing.Point(1, 665)
+        Me.botonVerificacionOrden.Location = New System.Drawing.Point(16, 550)
         Me.botonVerificacionOrden.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.botonVerificacionOrden.Name = "botonVerificacionOrden"
         Me.botonVerificacionOrden.Size = New System.Drawing.Size(181, 71)
@@ -696,8 +706,9 @@ Partial Class V6X1
         '
         'DataGridView1
         '
+        Me.DataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(549, 558)
+        Me.DataGridView1.Location = New System.Drawing.Point(572, 419)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
@@ -708,9 +719,10 @@ Partial Class V6X1
         '
         'Label10
         '
+        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.Label10.Location = New System.Drawing.Point(1061, 558)
+        Me.Label10.Location = New System.Drawing.Point(973, 388)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(106, 29)
         Me.Label10.TabIndex = 163
@@ -719,9 +731,10 @@ Partial Class V6X1
         '
         'MaskedTextBox7
         '
+        Me.MaskedTextBox7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.MaskedTextBox7.Enabled = False
         Me.MaskedTextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox7.Location = New System.Drawing.Point(199, 684)
+        Me.MaskedTextBox7.Location = New System.Drawing.Point(230, 568)
         Me.MaskedTextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaskedTextBox7.Mask = ">CCCCCCCC"
         Me.MaskedTextBox7.Name = "MaskedTextBox7"
@@ -732,7 +745,7 @@ Partial Class V6X1
         'equis1
         '
         Me.equis1.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis1.Location = New System.Drawing.Point(945, 135)
+        Me.equis1.Location = New System.Drawing.Point(487, 148)
         Me.equis1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis1.Name = "equis1"
         Me.equis1.Size = New System.Drawing.Size(60, 47)
@@ -743,7 +756,7 @@ Partial Class V6X1
         'refrescar6
         '
         Me.refrescar6.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar6.Location = New System.Drawing.Point(621, 458)
+        Me.refrescar6.Location = New System.Drawing.Point(30, 474)
         Me.refrescar6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar6.Name = "refrescar6"
         Me.refrescar6.Size = New System.Drawing.Size(60, 47)
@@ -754,7 +767,7 @@ Partial Class V6X1
         'refrescar5
         '
         Me.refrescar5.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar5.Location = New System.Drawing.Point(621, 396)
+        Me.refrescar5.Location = New System.Drawing.Point(30, 412)
         Me.refrescar5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar5.Name = "refrescar5"
         Me.refrescar5.Size = New System.Drawing.Size(60, 47)
@@ -765,7 +778,7 @@ Partial Class V6X1
         'refrescar4
         '
         Me.refrescar4.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar4.Location = New System.Drawing.Point(621, 330)
+        Me.refrescar4.Location = New System.Drawing.Point(30, 346)
         Me.refrescar4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar4.Name = "refrescar4"
         Me.refrescar4.Size = New System.Drawing.Size(60, 47)
@@ -776,7 +789,7 @@ Partial Class V6X1
         'refrescar3
         '
         Me.refrescar3.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar3.Location = New System.Drawing.Point(621, 262)
+        Me.refrescar3.Location = New System.Drawing.Point(30, 280)
         Me.refrescar3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar3.Name = "refrescar3"
         Me.refrescar3.Size = New System.Drawing.Size(60, 47)
@@ -787,7 +800,7 @@ Partial Class V6X1
         'refrescar2
         '
         Me.refrescar2.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar2.Location = New System.Drawing.Point(621, 198)
+        Me.refrescar2.Location = New System.Drawing.Point(30, 214)
         Me.refrescar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar2.Name = "refrescar2"
         Me.refrescar2.Size = New System.Drawing.Size(60, 47)
@@ -798,7 +811,7 @@ Partial Class V6X1
         'refrescar1
         '
         Me.refrescar1.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar1.Location = New System.Drawing.Point(621, 135)
+        Me.refrescar1.Location = New System.Drawing.Point(30, 151)
         Me.refrescar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar1.Name = "refrescar1"
         Me.refrescar1.Size = New System.Drawing.Size(60, 47)
@@ -809,7 +822,7 @@ Partial Class V6X1
         'bueno6
         '
         Me.bueno6.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno6.Location = New System.Drawing.Point(945, 458)
+        Me.bueno6.Location = New System.Drawing.Point(487, 471)
         Me.bueno6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno6.Name = "bueno6"
         Me.bueno6.Size = New System.Drawing.Size(60, 47)
@@ -820,7 +833,7 @@ Partial Class V6X1
         'bueno5
         '
         Me.bueno5.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno5.Location = New System.Drawing.Point(945, 390)
+        Me.bueno5.Location = New System.Drawing.Point(487, 409)
         Me.bueno5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno5.Name = "bueno5"
         Me.bueno5.Size = New System.Drawing.Size(60, 47)
@@ -831,7 +844,7 @@ Partial Class V6X1
         'bueno4
         '
         Me.bueno4.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno4.Location = New System.Drawing.Point(945, 330)
+        Me.bueno4.Location = New System.Drawing.Point(487, 343)
         Me.bueno4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno4.Name = "bueno4"
         Me.bueno4.Size = New System.Drawing.Size(60, 47)
@@ -842,7 +855,7 @@ Partial Class V6X1
         'bueno3
         '
         Me.bueno3.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno3.Location = New System.Drawing.Point(945, 262)
+        Me.bueno3.Location = New System.Drawing.Point(487, 275)
         Me.bueno3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno3.Name = "bueno3"
         Me.bueno3.Size = New System.Drawing.Size(60, 47)
@@ -853,7 +866,7 @@ Partial Class V6X1
         'bueno2
         '
         Me.bueno2.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno2.Location = New System.Drawing.Point(945, 198)
+        Me.bueno2.Location = New System.Drawing.Point(487, 211)
         Me.bueno2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno2.Name = "bueno2"
         Me.bueno2.Size = New System.Drawing.Size(60, 47)
@@ -864,7 +877,7 @@ Partial Class V6X1
         'bueno1
         '
         Me.bueno1.Image = Global.Proyecto.My.Resources.Resources.checkbueno
-        Me.bueno1.Location = New System.Drawing.Point(945, 135)
+        Me.bueno1.Location = New System.Drawing.Point(487, 148)
         Me.bueno1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.bueno1.Name = "bueno1"
         Me.bueno1.Size = New System.Drawing.Size(60, 47)
@@ -875,7 +888,7 @@ Partial Class V6X1
         'igual6
         '
         Me.igual6.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual6.Location = New System.Drawing.Point(945, 458)
+        Me.igual6.Location = New System.Drawing.Point(487, 471)
         Me.igual6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual6.Name = "igual6"
         Me.igual6.Size = New System.Drawing.Size(60, 47)
@@ -886,7 +899,7 @@ Partial Class V6X1
         'igual5
         '
         Me.igual5.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual5.Location = New System.Drawing.Point(945, 390)
+        Me.igual5.Location = New System.Drawing.Point(487, 409)
         Me.igual5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual5.Name = "igual5"
         Me.igual5.Size = New System.Drawing.Size(60, 47)
@@ -897,7 +910,7 @@ Partial Class V6X1
         'igual4
         '
         Me.igual4.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual4.Location = New System.Drawing.Point(945, 330)
+        Me.igual4.Location = New System.Drawing.Point(487, 343)
         Me.igual4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual4.Name = "igual4"
         Me.igual4.Size = New System.Drawing.Size(60, 47)
@@ -908,7 +921,7 @@ Partial Class V6X1
         'igual3
         '
         Me.igual3.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual3.Location = New System.Drawing.Point(945, 262)
+        Me.igual3.Location = New System.Drawing.Point(487, 275)
         Me.igual3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual3.Name = "igual3"
         Me.igual3.Size = New System.Drawing.Size(60, 47)
@@ -919,7 +932,7 @@ Partial Class V6X1
         'igual2
         '
         Me.igual2.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual2.Location = New System.Drawing.Point(945, 198)
+        Me.igual2.Location = New System.Drawing.Point(487, 211)
         Me.igual2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual2.Name = "igual2"
         Me.igual2.Size = New System.Drawing.Size(60, 47)
@@ -930,7 +943,7 @@ Partial Class V6X1
         'igual1
         '
         Me.igual1.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual1.Location = New System.Drawing.Point(945, 135)
+        Me.igual1.Location = New System.Drawing.Point(487, 148)
         Me.igual1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual1.Name = "igual1"
         Me.igual1.Size = New System.Drawing.Size(60, 47)
@@ -941,7 +954,7 @@ Partial Class V6X1
         'equis2
         '
         Me.equis2.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis2.Location = New System.Drawing.Point(945, 198)
+        Me.equis2.Location = New System.Drawing.Point(487, 211)
         Me.equis2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis2.Name = "equis2"
         Me.equis2.Size = New System.Drawing.Size(60, 47)
@@ -952,7 +965,7 @@ Partial Class V6X1
         'equis3
         '
         Me.equis3.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis3.Location = New System.Drawing.Point(945, 262)
+        Me.equis3.Location = New System.Drawing.Point(487, 275)
         Me.equis3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis3.Name = "equis3"
         Me.equis3.Size = New System.Drawing.Size(60, 47)
@@ -963,7 +976,7 @@ Partial Class V6X1
         'equis4
         '
         Me.equis4.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis4.Location = New System.Drawing.Point(945, 330)
+        Me.equis4.Location = New System.Drawing.Point(487, 343)
         Me.equis4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis4.Name = "equis4"
         Me.equis4.Size = New System.Drawing.Size(60, 47)
@@ -974,7 +987,7 @@ Partial Class V6X1
         'equis5
         '
         Me.equis5.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis5.Location = New System.Drawing.Point(945, 390)
+        Me.equis5.Location = New System.Drawing.Point(487, 409)
         Me.equis5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis5.Name = "equis5"
         Me.equis5.Size = New System.Drawing.Size(60, 47)
@@ -985,7 +998,7 @@ Partial Class V6X1
         'equis6
         '
         Me.equis6.Image = Global.Proyecto.My.Resources.Resources.equis
-        Me.equis6.Location = New System.Drawing.Point(945, 458)
+        Me.equis6.Location = New System.Drawing.Point(487, 471)
         Me.equis6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.equis6.Name = "equis6"
         Me.equis6.Size = New System.Drawing.Size(60, 47)
@@ -993,11 +1006,18 @@ Partial Class V6X1
         Me.equis6.TabStop = False
         Me.equis6.Visible = False
         '
-        'Verificacion
+        'V6X1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1688, 896)
+        Me.ClientSize = New System.Drawing.Size(1091, 682)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.CircularProgressBar7)
+        Me.Controls.Add(Me.CircularProgressBar6)
+        Me.Controls.Add(Me.CircularProgressBar5)
+        Me.Controls.Add(Me.CircularProgressBar4)
+        Me.Controls.Add(Me.CircularProgressBar3)
+        Me.Controls.Add(Me.CircularProgressBar2)
         Me.Controls.Add(Me.equis6)
         Me.Controls.Add(Me.equis5)
         Me.Controls.Add(Me.equis4)
@@ -1006,7 +1026,6 @@ Partial Class V6X1
         Me.Controls.Add(Me.equis1)
         Me.Controls.Add(Me.MaskedTextBox7)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.botonVerificacionOrden)
         Me.Controls.Add(Me.refrescar6)
         Me.Controls.Add(Me.refrescar5)
@@ -1026,18 +1045,12 @@ Partial Class V6X1
         Me.Controls.Add(Me.igual3)
         Me.Controls.Add(Me.igual2)
         Me.Controls.Add(Me.igual1)
-        Me.Controls.Add(Me.CircularProgressBar7)
-        Me.Controls.Add(Me.CircularProgressBar6)
-        Me.Controls.Add(Me.CircularProgressBar5)
-        Me.Controls.Add(Me.CircularProgressBar4)
-        Me.Controls.Add(Me.CircularProgressBar3)
         Me.Controls.Add(Me.MaskedTextBox6)
         Me.Controls.Add(Me.MaskedTextBox5)
         Me.Controls.Add(Me.MaskedTextBox4)
         Me.Controls.Add(Me.MaskedTextBox3)
         Me.Controls.Add(Me.MaskedTextBox2)
         Me.Controls.Add(Me.MaskedTextBox1)
-        Me.Controls.Add(Me.CircularProgressBar2)
         Me.Controls.Add(Me.txtBasedatos1)
         Me.Controls.Add(Me.controlTimer)
         Me.Controls.Add(Me.Button5)
@@ -1060,8 +1073,8 @@ Partial Class V6X1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "Verificacion"
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "V6X1"
         Me.Text = "Verificacion"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.equis1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -2,6 +2,8 @@
 Imports vb = Microsoft.VisualBasic
 Imports System.Math
 Imports Common
+
+
 Public Class Generar
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     'Se declara variable cantidad de licencias
@@ -398,14 +400,7 @@ Bucle:
 
                         TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
-
-                        cn.Open()
-                        'Resta Conteo
-                        Dim conteo5 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
-                        conteo5.ExecuteNonQuery()
-                        cn.Close()
-                        'Resta Conteo
-
+                        conteoRibbon()
                     End If
 
 
@@ -470,6 +465,7 @@ Bucle:
                         TextBox12.Text = OrdenDatos.Text & sumacaja
                         TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
+                        conteoRibbon()
 
                     End If
 
@@ -853,7 +849,5 @@ Bucle:
             MsgBox(ex.Message)
         End Try
     End Sub
-
-
 
 End Class

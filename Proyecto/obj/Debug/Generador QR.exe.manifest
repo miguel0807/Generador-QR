@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Generador QR.exe" size="928184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Generador QR.exe" size="929208">
       <assemblyIdentity name="Generador QR" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KRLoOz5ZLOpaAfUwYslnIwiCZ/OlilEnbxZsL9p/OAc=</dsig:DigestValue>
+        <dsig:DigestValue>qn4nLo19tKihSiYf5rY2NcQ0H3VxagO5H2I3JOESIYM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

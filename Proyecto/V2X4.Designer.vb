@@ -153,7 +153,7 @@ Partial Class V2X4
         'refrescar2
         '
         Me.refrescar2.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar2.Location = New System.Drawing.Point(13, 288)
+        Me.refrescar2.Location = New System.Drawing.Point(16, 291)
         Me.refrescar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar2.Name = "refrescar2"
         Me.refrescar2.Size = New System.Drawing.Size(60, 47)
@@ -164,7 +164,7 @@ Partial Class V2X4
         'refrescar1
         '
         Me.refrescar1.Image = Global.Proyecto.My.Resources.Resources.reload
-        Me.refrescar1.Location = New System.Drawing.Point(13, 225)
+        Me.refrescar1.Location = New System.Drawing.Point(16, 228)
         Me.refrescar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.refrescar1.Name = "refrescar1"
         Me.refrescar1.Size = New System.Drawing.Size(60, 47)
@@ -208,7 +208,7 @@ Partial Class V2X4
         'igual1
         '
         Me.igual1.Image = Global.Proyecto.My.Resources.Resources.igual
-        Me.igual1.Location = New System.Drawing.Point(501, 228)
+        Me.igual1.Location = New System.Drawing.Point(501, 229)
         Me.igual1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.igual1.Name = "igual1"
         Me.igual1.Size = New System.Drawing.Size(60, 47)
@@ -226,7 +226,7 @@ Partial Class V2X4
         Me.CircularProgressBar3.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar3.InnerMargin = 2
         Me.CircularProgressBar3.InnerWidth = -1
-        Me.CircularProgressBar3.Location = New System.Drawing.Point(567, 288)
+        Me.CircularProgressBar3.Location = New System.Drawing.Point(501, 288)
         Me.CircularProgressBar3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar3.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar3.Name = "CircularProgressBar3"
@@ -272,7 +272,7 @@ Partial Class V2X4
         Me.CircularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar1.InnerMargin = 2
         Me.CircularProgressBar1.InnerWidth = -1
-        Me.CircularProgressBar1.Location = New System.Drawing.Point(399, 13)
+        Me.CircularProgressBar1.Location = New System.Drawing.Point(144, 13)
         Me.CircularProgressBar1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar1.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar1.Name = "CircularProgressBar1"
@@ -332,7 +332,7 @@ Partial Class V2X4
         Me.CircularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar2.InnerMargin = 2
         Me.CircularProgressBar2.InnerWidth = -1
-        Me.CircularProgressBar2.Location = New System.Drawing.Point(567, 225)
+        Me.CircularProgressBar2.Location = New System.Drawing.Point(501, 227)
         Me.CircularProgressBar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar2.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar2.Name = "CircularProgressBar2"
@@ -433,7 +433,7 @@ Partial Class V2X4
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(279, 197)
+        Me.Label8.Location = New System.Drawing.Point(306, 186)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(96, 29)
@@ -500,7 +500,7 @@ Partial Class V2X4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(597, 38)
+        Me.Button1.Location = New System.Drawing.Point(597, 51)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(124, 48)
         Me.Button1.TabIndex = 259

@@ -1,5 +1,5 @@
 ﻿
-
+Imports System.Data.SqlClient
 
 Module Procesos
     Sub ComparacionMasket()
@@ -27,4 +27,14 @@ Module Procesos
         Proyecto.V6X1.igual5.Visible = True
         Proyecto.V6X1.igual6.Visible = True
     End Sub
+    Public Sub conteoRibbon()
+        Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
+        cn.Open()
+        conteo1.ExecuteNonQuery()
+        cn.Close()
+        'Resta Conteo
+
+
+    End Sub
+
 End Module

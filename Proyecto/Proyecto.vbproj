@@ -169,7 +169,6 @@
     <Compile Include="Generar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\Module1.vb" />
     <Compile Include="Modulo de reimpresion.Designer.vb">
       <DependentUpon>Modulo de reimpresion.vb</DependentUpon>
     </Compile>
