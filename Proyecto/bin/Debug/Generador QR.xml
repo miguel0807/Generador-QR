@@ -22,7 +22,17 @@ Generador QR
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Proyecto.My.Resources.Resources.buscar48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Proyecto.My.Resources.Resources.BusquedaBaseDatos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.caja32">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -47,12 +57,57 @@ Generador QR
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Proyecto.My.Resources.Resources.cargar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Proyecto.My.Resources.Resources.Cargar_licencias">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Proyecto.My.Resources.Resources.checkbueno">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.comprobacion48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Proyecto.My.Resources.Resources.configuracion">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.configuracion32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.configuracion48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.equis">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.fondogris">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.grisclaro">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.igual">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -102,7 +157,27 @@ Generador QR
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Proyecto.My.Resources.Resources.qr48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Proyecto.My.Resources.Resources.qrscanner_6999">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.reimpresion48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.reimpresion481">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.reload">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -118,6 +193,16 @@ Generador QR
 </summary>
 </member>
 <member name="P:Proyecto.My.Resources.Resources.settings_783521">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.verficador48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Proyecto.My.Resources.Resources.Verificador">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

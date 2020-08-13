@@ -74,6 +74,13 @@ Partial Class Form1
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel8.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -96,14 +103,16 @@ Partial Class Form1
         Me.Panel8.Controls.Add(Me.CircularProgressBar2)
         Me.Panel8.Controls.Add(Me.Button3)
         Me.Panel8.Controls.Add(Me.Button4)
-        Me.Panel8.Location = New System.Drawing.Point(-1161, 355)
+        Me.Panel8.Location = New System.Drawing.Point(-1161, 354)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(386, 368)
+        Me.Panel8.Size = New System.Drawing.Size(387, 368)
         Me.Panel8.TabIndex = 103
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(108, 19)
+        Me.Button7.Location = New System.Drawing.Point(108, 18)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(55, 17)
         Me.Button7.TabIndex = 80
@@ -114,7 +123,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Location = New System.Drawing.Point(163, 323)
+        Me.Label1.Location = New System.Drawing.Point(163, 322)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(74, 19)
         Me.Label1.TabIndex = 4
@@ -130,7 +139,8 @@ Partial Class Form1
         Me.CircularProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.CircularProgressBar2.InnerMargin = 2
         Me.CircularProgressBar2.InnerWidth = -1
-        Me.CircularProgressBar2.Location = New System.Drawing.Point(50, 49)
+        Me.CircularProgressBar2.Location = New System.Drawing.Point(51, 49)
+        Me.CircularProgressBar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CircularProgressBar2.MarqueeAnimationSpeed = 2000
         Me.CircularProgressBar2.Name = "CircularProgressBar2"
         Me.CircularProgressBar2.OuterColor = System.Drawing.Color.Gray
@@ -154,9 +164,10 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(50, 313)
+        Me.Button3.Location = New System.Drawing.Point(51, 313)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(73, 29)
+        Me.Button3.Size = New System.Drawing.Size(73, 30)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "Iniciar"
         Me.Button3.UseVisualStyleBackColor = True
@@ -164,8 +175,9 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(275, 313)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(73, 29)
+        Me.Button4.Size = New System.Drawing.Size(73, 30)
         Me.Button4.TabIndex = 1
         Me.Button4.Text = "Reiniciar"
         Me.Button4.UseVisualStyleBackColor = True
@@ -175,23 +187,25 @@ Partial Class Form1
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.ProgressBar2)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(-1006, 192)
+        Me.Panel1.Location = New System.Drawing.Point(-1005, 192)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(617, 87)
         Me.Panel1.TabIndex = 102
         '
         'ProgressBar2
         '
-        Me.ProgressBar2.Location = New System.Drawing.Point(125, 3)
+        Me.ProgressBar2.Location = New System.Drawing.Point(125, 2)
+        Me.ProgressBar2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ProgressBar2.Name = "ProgressBar2"
-        Me.ProgressBar2.Size = New System.Drawing.Size(346, 40)
+        Me.ProgressBar2.Size = New System.Drawing.Size(347, 39)
         Me.ProgressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous
         Me.ProgressBar2.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(122, 46)
+        Me.Label2.Location = New System.Drawing.Point(123, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(32, 17)
         Me.Label2.TabIndex = 3
@@ -203,9 +217,10 @@ Partial Class Form1
         Me.Panel6.Controls.Add(Me.TextBox7)
         Me.Panel6.Controls.Add(Me.PictureBox2)
         Me.Panel6.Controls.Add(Me.TextBox12)
-        Me.Panel6.Location = New System.Drawing.Point(-1606, -133)
+        Me.Panel6.Location = New System.Drawing.Point(-1605, -133)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(547, 421)
+        Me.Panel6.Size = New System.Drawing.Size(547, 420)
         Me.Panel6.TabIndex = 101
         Me.Panel6.Visible = False
         '
@@ -213,6 +228,7 @@ Partial Class Form1
         '
         Me.TextBox7.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox7.Location = New System.Drawing.Point(160, 378)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(221, 34)
         Me.TextBox7.TabIndex = 43
@@ -222,15 +238,17 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Location = New System.Drawing.Point(144, 121)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(246, 228)
+        Me.PictureBox2.Size = New System.Drawing.Size(245, 228)
         Me.PictureBox2.TabIndex = 42
         Me.PictureBox2.TabStop = False
         '
         'TextBox12
         '
         Me.TextBox12.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(58, 40)
+        Me.TextBox12.Location = New System.Drawing.Point(59, 39)
+        Me.TextBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(431, 34)
         Me.TextBox12.TabIndex = 40
@@ -240,6 +258,7 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(-1812, 90)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(153, 58)
         Me.Button8.TabIndex = 100
@@ -253,14 +272,16 @@ Partial Class Form1
         Me.Panel5.Controls.Add(Me.Button9)
         Me.Panel5.Controls.Add(Me.Label9)
         Me.Panel5.Controls.Add(Me.Ribbon)
-        Me.Panel5.Location = New System.Drawing.Point(-1812, 723)
+        Me.Panel5.Location = New System.Drawing.Point(-1812, 722)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(363, 55)
         Me.Panel5.TabIndex = 99
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(285, 13)
+        Me.Button9.Location = New System.Drawing.Point(285, 14)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 63
@@ -274,7 +295,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(3, 13)
+        Me.Label9.Location = New System.Drawing.Point(3, 14)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(104, 29)
         Me.Label9.TabIndex = 62
@@ -288,7 +309,7 @@ Partial Class Form1
         Me.Ribbon.AutoSize = True
         Me.Ribbon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Ribbon.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Ribbon.Location = New System.Drawing.Point(142, 13)
+        Me.Ribbon.Location = New System.Drawing.Point(141, 14)
         Me.Ribbon.Name = "Ribbon"
         Me.Ribbon.Size = New System.Drawing.Size(67, 26)
         Me.Ribbon.TabIndex = 60
@@ -302,14 +323,16 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.TextBox4)
         Me.Panel2.Location = New System.Drawing.Point(-756, 302)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(547, 421)
+        Me.Panel2.Size = New System.Drawing.Size(547, 420)
         Me.Panel2.TabIndex = 98
         '
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(160, 378)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(221, 34)
         Me.TextBox3.TabIndex = 43
@@ -319,15 +342,17 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Location = New System.Drawing.Point(144, 121)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(246, 228)
+        Me.PictureBox3.Size = New System.Drawing.Size(245, 228)
         Me.PictureBox3.TabIndex = 42
         Me.PictureBox3.TabStop = False
         '
         'TextBox4
         '
         Me.TextBox4.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(58, 40)
+        Me.TextBox4.Location = New System.Drawing.Point(59, 39)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(431, 34)
         Me.TextBox4.TabIndex = 40
@@ -340,6 +365,7 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.TextBox5)
         Me.Panel3.Location = New System.Drawing.Point(-1505, 404)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(245, 116)
         Me.Panel3.TabIndex = 97
@@ -358,6 +384,7 @@ Partial Class Form1
         '
         Me.TextBox5.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(95, 52)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(59, 34)
         Me.TextBox5.TabIndex = 47
@@ -374,6 +401,7 @@ Partial Class Form1
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Location = New System.Drawing.Point(-1585, 566)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(409, 98)
         Me.Button10.TabIndex = 96
@@ -387,6 +415,7 @@ Partial Class Form1
         Me.Panel10.Controls.Add(Me.Label4)
         Me.Panel10.Controls.Add(Me.FechaDatos)
         Me.Panel10.Location = New System.Drawing.Point(-1812, 784)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(363, 55)
         Me.Panel10.TabIndex = 94
@@ -415,15 +444,17 @@ Partial Class Form1
         '
         'Nombre
         '
-        Me.Nombre.Location = New System.Drawing.Point(-666, 126)
+        Me.Nombre.Location = New System.Drawing.Point(-667, 126)
+        Me.Nombre.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(278, 22)
+        Me.Nombre.Size = New System.Drawing.Size(279, 22)
         Me.Nombre.TabIndex = 93
         Me.Nombre.Visible = False
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(-1418, 339)
+        Me.Button11.Location = New System.Drawing.Point(-1419, 338)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(57, 38)
         Me.Button11.TabIndex = 92
@@ -436,6 +467,7 @@ Partial Class Form1
         Me.ParteDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ParteDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ParteDatos.Location = New System.Drawing.Point(-728, 30)
+        Me.ParteDatos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ParteDatos.Name = "ParteDatos"
         Me.ParteDatos.ReadOnly = True
         Me.ParteDatos.Size = New System.Drawing.Size(519, 30)
@@ -447,6 +479,7 @@ Partial Class Form1
         Me.LoteDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LoteDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoteDatos.Location = New System.Drawing.Point(-728, -14)
+        Me.LoteDatos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LoteDatos.Name = "LoteDatos"
         Me.LoteDatos.ReadOnly = True
         Me.LoteDatos.Size = New System.Drawing.Size(519, 30)
@@ -458,7 +491,7 @@ Partial Class Form1
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(-1022, 67)
+        Me.Label6.Location = New System.Drawing.Point(-1021, 66)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(120, 29)
         Me.Label6.TabIndex = 89
@@ -469,7 +502,7 @@ Partial Class Form1
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(-1022, 31)
+        Me.Label7.Location = New System.Drawing.Point(-1021, 31)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(210, 29)
         Me.Label7.TabIndex = 88
@@ -480,7 +513,7 @@ Partial Class Form1
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(-1022, -14)
+        Me.Label8.Location = New System.Drawing.Point(-1021, -14)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(195, 29)
         Me.Label8.TabIndex = 87
@@ -490,7 +523,8 @@ Partial Class Form1
         '
         Me.VolumenDatos.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.VolumenDatos.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VolumenDatos.Location = New System.Drawing.Point(-728, 72)
+        Me.VolumenDatos.Location = New System.Drawing.Point(-728, 71)
+        Me.VolumenDatos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.VolumenDatos.Name = "VolumenDatos"
         Me.VolumenDatos.Size = New System.Drawing.Size(519, 30)
         Me.VolumenDatos.TabIndex = 86
@@ -500,6 +534,7 @@ Partial Class Form1
         '
         Me.TextBox6.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(-1477, -1)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(83, 34)
         Me.TextBox6.TabIndex = 85
@@ -521,6 +556,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(1045, 28)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 58)
         Me.Button1.TabIndex = 104
@@ -531,7 +567,8 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(506, 174)
+        Me.Button2.Location = New System.Drawing.Point(507, 174)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(121, 82)
         Me.Button2.TabIndex = 105
@@ -561,46 +598,121 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(208, 169)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(95, 22)
         Me.TextBox1.TabIndex = 108
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(323, 105)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(95, 22)
         Me.TextBox2.TabIndex = 109
         '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(208, 236)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(95, 22)
         Me.TextBox8.TabIndex = 110
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(208, 328)
+        Me.TextBox9.Location = New System.Drawing.Point(208, 327)
+        Me.TextBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(94, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(95, 22)
         Me.TextBox9.TabIndex = 112
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(67, 333)
+        Me.Label12.Location = New System.Drawing.Point(67, 334)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(44, 17)
         Me.Label12.TabIndex = 111
         Me.Label12.Text = "#Caja"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(783, 372)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(123, 68)
+        Me.Button5.TabIndex = 113
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(731, 496)
+        Me.TextBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox10.TabIndex = 114
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(732, 561)
+        Me.TextBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox11.TabIndex = 115
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(731, 608)
+        Me.TextBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox13.TabIndex = 116
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.Black
+        Me.Label13.Location = New System.Drawing.Point(620, 496)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(60, 17)
+        Me.Label13.TabIndex = 117
+        Me.Label13.Text = "Licencia"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.ForeColor = System.Drawing.Color.Black
+        Me.Label14.Location = New System.Drawing.Point(620, 561)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(48, 17)
+        Me.Label14.TabIndex = 118
+        Me.Label14.Text = "Orden"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(620, 612)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(36, 17)
+        Me.Label15.TabIndex = 119
+        Me.Label15.Text = "Caja"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1343, 707)
+        Me.ClientSize = New System.Drawing.Size(1343, 706)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.TextBox8)
@@ -630,6 +742,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.Label11)
         Me.ForeColor = System.Drawing.Color.Transparent
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel8.ResumeLayout(False)
@@ -703,4 +816,11 @@ Partial Class Form1
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label12 As Label
+    Friend WithEvents Button5 As Button
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
 End Class

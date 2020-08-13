@@ -29,7 +29,7 @@
     <ProductName>Generador QR</ProductName>
     <PublisherName>Miguel Alvarado</PublisherName>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>48</ApplicationRevision>
+    <ApplicationRevision>75</ApplicationRevision>
     <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -125,6 +125,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="V2X4.Designer.vb">
+      <DependentUpon>V2X4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V2X4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulos\ApplicationEvents.vb" />
     <Compile Include="Cargar.Designer.vb">
       <DependentUpon>Cargar.vb</DependentUpon>
@@ -163,13 +169,13 @@
     <Compile Include="Generar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modulos\Module1.vb" />
     <Compile Include="Modulo de reimpresion.Designer.vb">
       <DependentUpon>Modulo de reimpresion.vb</DependentUpon>
     </Compile>
     <Compile Include="Modulo de reimpresion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Modulos\Procesos.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -191,6 +197,30 @@
     <Compile Include="Presentacion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReimpresionBox.Designer.vb">
+      <DependentUpon>ReimpresionBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReimpresionBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V4X4.Designer.vb">
+      <DependentUpon>V4X4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V4X4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V6X1.Designer.vb">
+      <DependentUpon>V6X1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="V6X1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verificacion.Designer.vb">
+      <DependentUpon>Verificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Verificador.Designer.vb">
       <DependentUpon>Verificador.vb</DependentUpon>
     </Compile>
@@ -205,6 +235,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="V2X4.resx">
+      <DependentUpon>V2X4.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cargar.resx">
       <DependentUpon>Cargar.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -240,6 +273,18 @@
     <EmbeddedResource Include="Presentacion.resx">
       <DependentUpon>Presentacion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReimpresionBox.resx">
+      <DependentUpon>ReimpresionBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V4X4.resx">
+      <DependentUpon>V4X4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V6X1.resx">
+      <DependentUpon>V6X1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verificacion.resx">
+      <DependentUpon>Verificacion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Verificador.resx">
       <DependentUpon>Verificador.vb</DependentUpon>
     </EmbeddedResource>
@@ -273,7 +318,24 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\reimpresion481.ico" />
+    <None Include="Resources\reimpresion48.ico" />
+    <None Include="Resources\verficador48.ico" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\Verificador.ico" />
     <None Include="Resources\settings_783521.ico" />
+    <None Include="Resources\igual.png" />
+    <None Include="Resources\checkbueno.png" />
+    <None Include="Resources\equis.png" />
+    <None Include="Resources\fondogris.jpg" />
+    <None Include="Resources\grisclaro.jpg" />
+    <None Include="Resources\cargar.ico" />
+    <None Include="Resources\qr48.ico" />
+    <None Include="Resources\comprobacion48.ico" />
+    <None Include="Resources\buscar48.ico" />
+    <None Include="Resources\caja32.ico" />
+    <None Include="Resources\configuracion32.ico" />
+    <None Include="Resources\configuracion48.ico" />
     <Content Include="Resources\qr_code_14100.ico" />
     <Content Include="Resources\folder_images_23255.ico" />
     <None Include="Resources\packages.config" />

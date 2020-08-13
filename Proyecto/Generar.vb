@@ -2,15 +2,22 @@
 Imports vb = Microsoft.VisualBasic
 Imports System.Math
 Imports Common
+
+
 Public Class Generar
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     'Se declara variable cantidad de licencias
     Dim u As Long
     Dim f As Long
     Dim printController As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia
+    Dim printController2 As New System.Drawing.Printing.StandardPrintController 'Se declara esta variable para evitar que se muestre el cuadro de impresion al genera licencia  
     Dim cantidadCajas As Integer
     Dim cantidadbotella As Integer
     Dim caja As Integer
+    Dim sumacaja As Integer
+    Dim verificado As Integer = 3
+    Dim tipoCaja As Integer = 0
+    Dim extra As Integer = 0
 
 
 
@@ -52,12 +59,12 @@ Public Class Generar
         FUENTE = New Font(LicenciaDatos.Font, FontStyle.Bold)
         'Calcula la posicion para ser impresa en picturebox1
 
-        POSICION = New Point(98, 105) 'Pruebas
+        POSICION = New Point(111, 105) 'Pruebas
 
         'Escribe etiqueta usando textbox1
         AREA_IMPRESION.DrawString(EtiquetaDatos.Text, TextBox3.Font, LAPIZ, POSICION)
         'Imprime el qr
-        e.Graphics.DrawImage(PictureBox1.Image, 160, 20, 70, 70) 'Original 65,65
+        e.Graphics.DrawImage(PictureBox1.Image, 173, 20, 70, 70) 'Original 65,65
 
 
 #End Region
@@ -216,6 +223,7 @@ Public Class Generar
         Try
 #Region "Declaracion de variables y actualizacion ProgressBar1"
             PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
+            PrintDocument2.PrintController = printController2 'Se declara la variable para quitar cuadro de impresion 
             Dim licenciarestante As Integer = TextBox4.Text
             Dim cantidadlicencias As Integer = TextBox5.Text
 
@@ -268,7 +276,28 @@ Public Class Generar
             'Configuracion Impresora
 
 #End Region
+
+#Region "Escribir tipo de orden 4 LITROS"
+            If VolumenDatos.Text = "4 litros" Then
+                Dim input As String
+Bucle:
+                input = InputBox("Escriba que tipo de orden de 4 litros es (4X4 o 2X4)")
+
+                If input = "2X4" Then
+                    tipoCaja = 2
+
+                ElseIf input = "4X4" Then
+                    tipoCaja = 4
+
+                Else
+                    GoTo Bucle
+                End If
+            End If
+#End Region
 #Region "Bucle"
+
+
+
 
             For f = 1 To u
 
@@ -302,6 +331,8 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+
+                    verificado = 3
 #End Region
 #Region "250 ml"
                 ElseIf VolumenDatos.Text = "250 ml" Then
@@ -311,6 +342,7 @@ Public Class Generar
                     Dim conteo1 As New SqlCommand("update Conteo Set Ribbon= Ribbon- 1", cn)
                     conteo1.ExecuteNonQuery()
                     cn.Close()
+                    verificado = 3
                     'Resta Conteo
 #End Region
 #Region "500 ml"
@@ -354,24 +386,21 @@ Public Class Generar
                     Dim Volumen As Integer = 6
                     Dim resultado As Double
 
-
                     TotalLicencias = TextBox4.Text
-
                     resultado = TotalLicencias / Volumen
-
                     caja = Math.Ceiling(resultado)
-
-
+                    sumacaja = caja + 90000
                     If resultado Mod 1 Then
 
-
                     Else
-                        TextBox7.Text = "Caja #" & caja
+
+
+
+                        TextBox12.Text = OrdenDatos.Text & sumacaja
+
+                        TextBox7.Text = "Box #" & caja
                         PrintDocument2.Print()
-
-
-
-
+                        conteoRibbon()
                     End If
 
 
@@ -386,10 +415,65 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
-
+                    verificado = 0
 #End Region
 #Region "4 litros"
                 ElseIf VolumenDatos.Text = "4 litros" Then
+
+
+
+#Region "Conectarse SAP Y determinar cantidad total de cajas en orden"
+                    conectar()
+
+                    Dim adaptador5 As New SqlDataAdapter("select*from SAP where Batch=" & "'" & LoteDatos.Text & "'" & "" & "And Material=" & ParteDatos.Text & "", cn) 'Funciona con lote y material
+
+                    Dim ds1 As New DataSet
+                    adaptador5.Fill(ds1, "datos")
+                    'El item selecciona de cual columna de la base de datos se conectara y row es la fila
+                    If ds1.Tables("datos").Rows.Count > 0 Then
+
+
+                        Label15.Text = ds1.Tables("datos").Rows(0).Item(6).ToString
+                        cantidadCajas = Label15.Text
+                        Label16.Text = cantidadCajas
+
+
+
+                        cantidadbotella = cantidadCajas * tipoCaja
+                    End If
+                    desconectar()
+
+#End Region
+
+
+#Region "Determinar # de caja para etiqueta"
+
+                    Dim TotalLicencias As Integer
+                    Dim Volumen As Integer = tipoCaja
+                    Dim resultado As Double
+
+                    TotalLicencias = TextBox4.Text
+                    resultado = TotalLicencias / Volumen
+                    caja = Math.Ceiling(resultado)
+                    sumacaja = caja + 90000
+                    If resultado Mod 1 Then
+
+                    Else
+
+
+
+                        TextBox12.Text = OrdenDatos.Text & sumacaja
+                        TextBox7.Text = "Box #" & caja
+                        PrintDocument2.Print()
+                        conteoRibbon()
+
+                    End If
+
+
+#End Region
+
+
+
                     PrintDocument1.Print()
 
 
@@ -399,6 +483,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 0
 #End Region
 #Region "5 Galones"
                 ElseIf VolumenDatos.Text = "19 litros (5 Galones)" Then
@@ -412,6 +497,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
 #End Region
 #Region "209 litros(55 Galones)"
                 ElseIf VolumenDatos.Text = "209 litros (55 Galones)" Then
@@ -426,6 +512,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
 
 #End Region
 #Region "1042 litros (275 Galones)"
@@ -442,6 +529,7 @@ Public Class Generar
                     conteo1.ExecuteNonQuery()
                     cn.Close()
                     'Resta Conteo
+                    verificado = 3
                 End If
 #End Region
 
@@ -456,8 +544,9 @@ Public Class Generar
 #End Region
 #Region "Guardado de QR impreso en BaseDatosOficial"
 
+
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
-                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & caja & ")", cn)
+                Dim registrar As New SqlCommand("insert into BaseDatosOficial values (" & TextBox6.Text & ",'" & EtiquetaDatos.Text & "','" & LicenciaDatos.Text & "','" & FechaDatos.Text & "','" & VolumenDatos.Text & "','" & Nombre.Text & "','" & OrdenDatos.Text & "','" & LoteDatos.Text & "','" & ParteDatos.Text & "','" & DescripcionDatos.Text & "'," & sumacaja & "," & verificado & ",'" & "Por Asignar" & "')", cn)
                 cn.Open()
                 registrar.ExecuteNonQuery()
                 'Guarda la etiqueta+codigo+volumen+fecha en BaseDatos
@@ -612,9 +701,9 @@ Public Class Generar
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Try
+        'Try
 
-            PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
+        PrintDocument1.PrintController = printController 'Se declara la variable para quitar cuadro de impresion 
 
 
 #Region "Comentario"
@@ -683,9 +772,9 @@ Public Class Generar
 
 
 
-        Catch ex As Exception
-            MsgBox(vbCrLf & ex.Message)
-        End Try
+        'Catch ex As Exception
+        '    MsgBox(vbCrLf & ex.Message)
+        'End Try
 
     End Sub
 
@@ -704,23 +793,46 @@ Public Class Generar
         Dim medioQR As String
         Dim medioE As String
 
-        maximoE = TextBox7.Width
-        medioE = maximoE / 2
-        maximoQR = PictureBox2.Image.Width
-        medioQR = PictureBox2.Image.Width / 2
-
-
-
         'Selecciona textbox3 para configurar el tipo de letra
         FUENTE = New Font(TextBox12.Font, FontStyle.Bold)
         'Calcula la posicion para ser impresa en picturebox1
 
-        POSICION = New Point(144, 105) 'Pruebas
+
+
+
+
+        Dim distanciaqr As Integer = 160 + 6 + 65
+
+        maximoE = 167 - 12
+        medioE = maximoE / 2
+        maximoQR = 65
+        medioQR = maximoQR / 2
+        If TextBox7.Text = "Licencias" Then
+            extra = 5
+        Else
+
+            If caja <= 9 Then
+                extra = 11
+            End If
+
+            If caja >= 10 Then
+                extra = 6
+            End If
+            If caja >= 100 Then
+                extra = 2
+            End If
+
+            If caja >= 1000 Then
+                extra = -9
+            End If
+
+        End If
+        POSICION = New Point(distanciaqr - medioE + extra, 105) 'Pruebas
 
         'Escribe etiqueta usando textbox1
         AREA_IMPRESION.DrawString(TextBox7.Text, TextBox3.Font, LAPIZ, POSICION)
         'Imprime el qr
-        e.Graphics.DrawImage(PictureBox2.Image, 160, 20, 70, 70) 'Original 65,65
+        e.Graphics.DrawImage(PictureBox2.Image, 173, 20, 70, 70) 'Original 65,65
 
 
 
@@ -738,11 +850,4 @@ Public Class Generar
         End Try
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
-
-    End Sub
 End Class

@@ -7,7 +7,7 @@ Public Class Modulo_de_reimpresion
     Dim Nombre As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        DataGridView1.Visible = True
 
 #Region "Busqueda por fecha y volumen"
         If RadioButton1.Checked = True Then
@@ -51,8 +51,11 @@ Public Class Modulo_de_reimpresion
 
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
+
                 'Label8.Text = tabla.DisplayedRowCount(0) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -91,7 +94,9 @@ Public Class Modulo_de_reimpresion
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
                 ' Label8.Text = tabla.DisplayedRowCount(0) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -140,7 +145,9 @@ Public Class Modulo_de_reimpresion
                 'Habilita conteo de filas en datagridview
                 Label8.Visible = True
                 ' Label8.Text = tabla.DisplayedRowCount(1) - 1
-                Label8.Text = tabla.RowCount - 1
+                Label8.Text = "Cantidad de Resultados: " & tabla.RowCount - 1
+                bgenerar.Visible = True
+                beliminar.Visible = True
 
 
             Catch ex As Exception
@@ -149,14 +156,16 @@ Public Class Modulo_de_reimpresion
 #End Region
 
         End If
+        Panel1.Visible = False
 
     End Sub
 
     Private Sub Modulo_de_reimpresion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Nombre = ActiveUser.firstName + " " + ActiveUser.lastName 'Guarda el usuario en variable llamada nombre
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles bgenerar.Click
 #Region "Reimprime licencia"
         Try
 
@@ -245,11 +254,11 @@ Public Class Modulo_de_reimpresion
             FUENTE = New Font(TextBox2.Font, FontStyle.Bold)
             'Calcula la posicion para ser impresa en picturebox1
 
-            POSICION = New Point(98, 105)
+            POSICION = New Point(111, 105)
 
             AREA_IMPRESION.DrawString(TextBox3.Text, TextBox5.Font, LAPIZ, POSICION)
 
-            e.Graphics.DrawImage(PictureBox1.Image, 160, 20, 70, 70)
+            e.Graphics.DrawImage(PictureBox1.Image, 173, 20, 70, 70)
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -298,11 +307,11 @@ Public Class Modulo_de_reimpresion
     End Sub
 #End Region
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles beliminar.Click
 #Region "Seleccionar y eliminar licencia"
-        Try
+        'Try
 
-            Me.DataGridView1.Select() 'Seleccionar primera fila del datagridview
+        Me.DataGridView1.Select() 'Seleccionar primera fila del datagridview
 #Region "Verifica si la licencia se elimino"
             If Me.DataGridView1.CurrentRow.DefaultCellStyle.BackColor = Color.Red Then
 
@@ -361,9 +370,9 @@ Public Class Modulo_de_reimpresion
 
                     'Guarda licencia eliminada en basedatos Eliminadas
                     conectar()
-                    Dim registrar As New SqlCommand("insert into Eliminados (Etiqueta, Codigo, Fecha, Volumen, Usuario, [Order], Batch, Material, MaterialDescription,Responsable,FechaHora) values (" & "'" & Etiqueta & "'" & ",'" & Codigo & "','" & Fecha & "','" & Volumen & "','" & Usuario & "'," & Order & ",'" & Batch & "'," & Material & ",'" & MaterialDescription & "','" & Nombre & "','" & FechaEliminacion & "')", cn)
-                    registrar.ExecuteNonQuery()
-                    desconectar()
+                Dim registrar As New SqlCommand("insert into Eliminados (Etiqueta, Codigo, Fecha, Volumen, Usuario, [Order], Batch, Material, MaterialDescription,Responsable,FechaHora) values (" & "'" & Etiqueta & "'" & ",'" & Codigo & "','" & Fecha & "','" & Volumen & "','" & Usuario & "'," & Order & ",'" & Batch & "'," & Material & ",'" & MaterialDescription & "','" & Nombre & "','" & FechaEliminacion & "')", cn)
+                ' registrar.ExecuteNonQuery() 'Falta arreglar regiatro de eliminacion
+                desconectar()
 
 
                     'Elimina Licencia de basedatosOficial
@@ -377,9 +386,9 @@ Public Class Modulo_de_reimpresion
                 End If
 #End Region
             End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'End Try
 
 #End Region
 
@@ -389,5 +398,23 @@ Public Class Modulo_de_reimpresion
         MaskedTextBox1.Clear()
 
         MaskedTextBox1.Focus()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        ReimpresionBox.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If Panel1.Visible = True Then
+
+            Panel1.Visible = False
+        Else
+            Panel1.Visible = True
+
+        End If
     End Sub
 End Class

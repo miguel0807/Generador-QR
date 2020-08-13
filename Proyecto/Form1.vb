@@ -1,4 +1,5 @@
 ﻿Imports System.Deployment.Application
+Imports vb = Microsoft.VisualBasic
 
 
 Public Class Form1
@@ -62,7 +63,18 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim extraccion1 As String = TextBox10.Text
+        Dim Cadena2 As String = TextBox10.Text
+        TextBox11.Text = vb.Mid(extraccion1, 1, 8)
+        TextBox13.Text = vb.Mid(extraccion1, 9, 5)
+
+
 
     End Sub
+
 End Class
+
+

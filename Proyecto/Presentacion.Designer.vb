@@ -30,7 +30,7 @@ Partial Class Presentacion
         '
         Me.LOGO.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LOGO.Image = Global.Proyecto.My.Resources.Resources.Matthews_Marking_MAS_Spot
-        Me.LOGO.Location = New System.Drawing.Point(425, 323)
+        Me.LOGO.Location = New System.Drawing.Point(272, 123)
         Me.LOGO.Name = "LOGO"
         Me.LOGO.Size = New System.Drawing.Size(995, 599)
         Me.LOGO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -41,6 +41,7 @@ Partial Class Presentacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.ClientSize = New System.Drawing.Size(1680, 1015)
         Me.Controls.Add(Me.LOGO)
         Me.Name = "Presentacion"
