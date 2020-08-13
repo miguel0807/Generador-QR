@@ -15,4 +15,3 @@ C:\Users\malvarado\source\repos\Projecto\Common\obj\Debug\Common.vbproj.Generate
 C:\Users\malvarado\source\repos\Projecto\Common\obj\Debug\Common.dll
 C:\Users\malvarado\source\repos\Projecto\Common\obj\Debug\Common.xml
 C:\Users\malvarado\source\repos\Projecto\Common\obj\Debug\Common.pdb
-C:\Users\malvarado\source\repos\Projecto\Common\obj\Debug\Common.vbprojAssemblyReference.cache
